@@ -2,6 +2,7 @@
 #define LOGINWINDOW_H
 
 #include <QDialog>
+#include <ui_loginwindow.h>
 
 namespace Ui {
 class LoginWindow;
@@ -16,10 +17,11 @@ public:
     ~LoginWindow();
 
 private slots:
-    void on_pushButton_3_clicked();
+    bool on_login_clicked();
 
 private:
     Ui::LoginWindow *ui;
+
 };
 
 #endif // LOGINWINDOW_H

@@ -9,8 +9,5 @@ int main(int argc, char *argv[])
     MainWindow w;
     LoginWindow login;
     login.show();
-
-
-
     return a.exec();
 }
