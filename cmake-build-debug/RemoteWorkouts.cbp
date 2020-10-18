@@ -138,6 +138,15 @@
 		<Unit filename="E:/Projects/RemoteWorkouts/mainwindow.ui">
 			<Option target="RemoteWorkouts"/>
 		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/newuserwindow.cpp">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/newuserwindow.h">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/newuserwindow.ui">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
 		<Unit filename="E:/Projects/RemoteWorkouts/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

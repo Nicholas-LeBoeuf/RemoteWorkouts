@@ -2,5 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../:\Projects\RemoteWorkouts\.idea/dataSources/
+/../../../../../:\_SNHU\- Soph Software Engineering\RemoteWorkouts\.idea/dataSources/
 /dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

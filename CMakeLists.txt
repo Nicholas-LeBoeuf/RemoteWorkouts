@@ -46,7 +46,10 @@ else()
     loginwindow.cpp
     loginwindow.h
     loginwindow.ui
-  )
+    newuserwindow.cpp
+    newuserwindow.h
+    newuserwindow.ui
+    )
 endif()
 
 target_link_libraries(RemoteWorkouts PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)

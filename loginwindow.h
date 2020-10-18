@@ -18,6 +18,7 @@ public:
 
 private slots:
     bool on_login_clicked();
+    void on_newuser_clicked();
 
 private:
     Ui::LoginWindow *ui;

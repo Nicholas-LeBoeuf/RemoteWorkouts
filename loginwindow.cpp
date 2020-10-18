@@ -1,5 +1,6 @@
 #include "loginwindow.h"
 #include "ui_loginwindow.h"
+#include "newuserwindow.h"
 #include <iostream>
 #include <QMessageBox>
 #include <QWidget>
@@ -39,3 +40,10 @@ LoginWindow::~LoginWindow()
     delete ui;
 }
 
+
+void LoginWindow::on_newuser_clicked()
+{
+    newuserwindow newuserwindow;
+    newuserwindow.exec();
+    update();
+}

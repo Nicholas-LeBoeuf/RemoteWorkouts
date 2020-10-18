@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/Projects/RemoteWorkouts/loginwindow.cpp" "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj"
   "E:/Projects/RemoteWorkouts/main.cpp" "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/main.cpp.obj"
   "E:/Projects/RemoteWorkouts/mainwindow.cpp" "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj"
+  "E:/Projects/RemoteWorkouts/newuserwindow.cpp" "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
