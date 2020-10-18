@@ -1,0 +1,4 @@
+E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir
+E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts_autogen.dir
