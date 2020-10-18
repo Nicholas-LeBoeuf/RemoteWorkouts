@@ -12,3 +12,8 @@ newuserwindow::~newuserwindow()
 {
     delete ui;
 }
+
+void newuserwindow::on_pushButton_2_clicked()
+{
+    close();
+}

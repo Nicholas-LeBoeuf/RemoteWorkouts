@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/mocs_compilation.cpp" "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj"
-  "E:/Projects/RemoteWorkouts/loginwindow.cpp" "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj"
-  "E:/Projects/RemoteWorkouts/main.cpp" "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/main.cpp.obj"
-  "E:/Projects/RemoteWorkouts/mainwindow.cpp" "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj"
-  "E:/Projects/RemoteWorkouts/newuserwindow.cpp" "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj"
+  "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/mocs_compilation.cpp" "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj"
+  "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/loginwindow.cpp" "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj"
+  "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/main.cpp" "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/main.cpp.obj"
+  "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/mainwindow.cpp" "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj"
+  "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.cpp" "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,12 +24,12 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "../"
   "RemoteWorkouts_autogen/include"
-  "F:/Qt/5.15.1/mingw81_64/include"
-  "F:/Qt/5.15.1/mingw81_64/include/QtWidgets"
-  "F:/Qt/5.15.1/mingw81_64/include/QtGui"
-  "F:/Qt/5.15.1/mingw81_64/include/QtANGLE"
-  "F:/Qt/5.15.1/mingw81_64/include/QtCore"
-  "F:/Qt/5.15.1/mingw81_64/./mkspecs/win32-g++"
+  "C:/Qt/5.14.1/mingw73_64/include"
+  "C:/Qt/5.14.1/mingw73_64/include/QtWidgets"
+  "C:/Qt/5.14.1/mingw73_64/include/QtGui"
+  "C:/Qt/5.14.1/mingw73_64/include/QtANGLE"
+  "C:/Qt/5.14.1/mingw73_64/include/QtCore"
+  "C:/Qt/5.14.1/mingw73_64/./mkspecs/win32-g++"
   )
 
 # Targets to which this target links.
