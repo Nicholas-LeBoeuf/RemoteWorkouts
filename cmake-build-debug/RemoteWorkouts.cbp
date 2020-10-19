@@ -32,6 +32,7 @@
 					<Add directory="D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/include"/>
 					<Add directory="C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc"/>
 					<Add directory="C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn"/>
+					<Add directory="C:/Boost/boost_1_74_0"/>
 					<Add directory="C:/Qt/5.14.1/mingw73_64/include"/>
 					<Add directory="C:/Qt/5.14.1/mingw73_64/include/QtWidgets"/>
 					<Add directory="C:/Qt/5.14.1/mingw73_64/include/QtGui"/>
@@ -67,6 +68,7 @@
 					<Add directory="D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/include"/>
 					<Add directory="C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc"/>
 					<Add directory="C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn"/>
+					<Add directory="C:/Boost/boost_1_74_0"/>
 					<Add directory="C:/Qt/5.14.1/mingw73_64/include"/>
 					<Add directory="C:/Qt/5.14.1/mingw73_64/include/QtWidgets"/>
 					<Add directory="C:/Qt/5.14.1/mingw73_64/include/QtGui"/>

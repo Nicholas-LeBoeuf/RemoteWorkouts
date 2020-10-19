@@ -26,6 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "RemoteWorkouts_autogen/include"
   "C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc"
   "C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn"
+  "C:/Boost/boost_1_74_0"
   "C:/Qt/5.14.1/mingw73_64/include"
   "C:/Qt/5.14.1/mingw73_64/include/QtWidgets"
   "C:/Qt/5.14.1/mingw73_64/include/QtGui"

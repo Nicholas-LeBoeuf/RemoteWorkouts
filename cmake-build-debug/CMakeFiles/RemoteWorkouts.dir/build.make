@@ -163,6 +163,7 @@ RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/build.make
+RemoteWorkouts.exe: C:/Program\ Files/MySQL/Connector\ C++\ 8.0/lib64/vs14/mysqlcppconn8.lib
 RemoteWorkouts.exe: C:/Qt/5.14.1/mingw73_64/lib/libQt5Widgets.a
 RemoteWorkouts.exe: C:/Qt/5.14.1/mingw73_64/lib/libQt5Gui.a
 RemoteWorkouts.exe: C:/Qt/5.14.1/mingw73_64/lib/libQt5Core.a

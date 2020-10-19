@@ -900,6 +900,201 @@ CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj
  D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/mainwindow.h
  RemoteWorkouts_autogen/include/ui_mainwindow.h
 CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj
+ C:/Boost/boost_1_74_0/boost/assert.hpp
+ C:/Boost/boost_1_74_0/boost/assert/source_location.hpp
+ C:/Boost/boost_1_74_0/boost/checked_delete.hpp
+ C:/Boost/boost_1_74_0/boost/config.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/borland.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/clang.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/codegear.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/comeau.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/common_edg.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/compaq_cxx.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/cray.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/digitalmars.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/gcc.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/gcc_xml.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/greenhills.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/hp_acc.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/intel.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/kai.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/metrowerks.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/mpw.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/nvcc.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/pathscale.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/pgi.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/sgi_mipspro.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/sunpro_cc.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/vacpp.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/visualc.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/xlcpp.hpp
+ C:/Boost/boost_1_74_0/boost/config/compiler/xlcpp_zos.hpp
+ C:/Boost/boost_1_74_0/boost/config/detail/posix_features.hpp
+ C:/Boost/boost_1_74_0/boost/config/detail/select_compiler_config.hpp
+ C:/Boost/boost_1_74_0/boost/config/detail/select_platform_config.hpp
+ C:/Boost/boost_1_74_0/boost/config/detail/select_stdlib_config.hpp
+ C:/Boost/boost_1_74_0/boost/config/detail/suffix.hpp
+ C:/Boost/boost_1_74_0/boost/config/helper_macros.hpp
+ C:/Boost/boost_1_74_0/boost/config/no_tr1/utility.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/aix.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/amigaos.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/beos.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/bsd.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/cray.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/cygwin.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/hpux.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/irix.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/linux.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/macos.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/qnxnto.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/solaris.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/symbian.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/vms.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/vxworks.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/win32.hpp
+ C:/Boost/boost_1_74_0/boost/config/platform/zos.hpp
+ C:/Boost/boost_1_74_0/boost/config/pragma_message.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/dinkumware.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/libcomo.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/libcpp.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/libstdcpp3.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/modena.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/msl.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/roguewave.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/sgi.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/stlport.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/vacpp.hpp
+ C:/Boost/boost_1_74_0/boost/config/stdlib/xlcpp_zos.hpp
+ C:/Boost/boost_1_74_0/boost/config/user.hpp
+ C:/Boost/boost_1_74_0/boost/config/workaround.hpp
+ C:/Boost/boost_1_74_0/boost/core/addressof.hpp
+ C:/Boost/boost_1_74_0/boost/core/checked_delete.hpp
+ C:/Boost/boost_1_74_0/boost/core/demangle.hpp
+ C:/Boost/boost_1_74_0/boost/core/typeinfo.hpp
+ C:/Boost/boost_1_74_0/boost/cstdint.hpp
+ C:/Boost/boost_1_74_0/boost/current_function.hpp
+ C:/Boost/boost_1_74_0/boost/detail/workaround.hpp
+ C:/Boost/boost_1_74_0/boost/exception/exception.hpp
+ C:/Boost/boost_1_74_0/boost/limits.hpp
+ C:/Boost/boost_1_74_0/boost/scoped_ptr.hpp
+ C:/Boost/boost_1_74_0/boost/shared_ptr.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/bad_weak_ptr.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/lightweight_mutex.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/local_counted_base.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/local_sp_deleter.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/lwm_pthreads.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/lwm_std_mutex.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/lwm_win32_cs.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/operator_bool.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/quick_allocator.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/shared_count.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_convertible.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_acc_ia64.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_aix.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_cw_ppc.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_gcc_ia64.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_gcc_mips.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_gcc_ppc.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_gcc_sparc.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_nt.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_pt.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_snc_ps3.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_spin.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_std_atomic.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_sync.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_vacpp_ppc.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_base_w32.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_counted_impl.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_disable_deprecated.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_has_gcc_intrinsics.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_interlocked.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_noexcept.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_nullptr_t.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_obsolete.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_thread_pause.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_thread_sleep.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_thread_yield.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_typeinfo_.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/sp_win32_sleep.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/spinlock.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/spinlock_gcc_arm.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/spinlock_nt.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/spinlock_pool.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/spinlock_pt.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/spinlock_std_atomic.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/spinlock_sync.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/spinlock_w32.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/detail/yield_k.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/scoped_ptr.hpp
+ C:/Boost/boost_1_74_0/boost/smart_ptr/shared_ptr.hpp
+ C:/Boost/boost_1_74_0/boost/static_assert.hpp
+ C:/Boost/boost_1_74_0/boost/throw_exception.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/add_lvalue_reference.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/add_reference.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/add_rvalue_reference.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/alignment_of.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/conditional.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/declval.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/config.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/is_function_cxx_03.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/is_function_cxx_11.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/is_function_msvc10_fix.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/is_function_ptr_helper.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/is_function_ptr_tester.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/is_mem_fun_pointer_tester.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/is_member_function_pointer_cxx_03.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/is_rvalue_reference_msvc10_fix.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/detail/yes_no_type.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/integral_constant.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/intrinsics.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_abstract.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_arithmetic.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_array.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_class.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_complete.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_convertible.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_enum.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_floating_point.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_function.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_integral.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_lvalue_reference.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_member_function_pointer.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_member_pointer.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_pod.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_pointer.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_polymorphic.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_reference.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_rvalue_reference.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_same.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_scalar.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_union.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_void.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/is_volatile.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/remove_cv.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/remove_reference.hpp
+ C:/Boost/boost_1_74_0/boost/type_traits/type_with_alignment.hpp
+ C:/Boost/boost_1_74_0/boost/version.hpp
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/build_config.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/config.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/connection.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/datatype.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/driver.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/exception.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/prepared_statement.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/resultset.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/resultset_metadata.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/sqlstring.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/statement.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/variant.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/warning.h
+ C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/mysql_connection.h
  C:/Qt/5.14.1/mingw73_64/include/QtCore/QVariant
  C:/Qt/5.14.1/mingw73_64/include/QtCore/qalgorithms.h
  C:/Qt/5.14.1/mingw73_64/include/QtCore/qarraydata.h
@@ -1013,6 +1208,7 @@ CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QDialog
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QLabel
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QLineEdit
+ C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QMessageBox
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QPushButton
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qabstractbutton.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qapplication.h
@@ -1021,6 +1217,7 @@ CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qframe.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlabel.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlineedit.h
+ C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qmessagebox.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qpushbutton.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qsizepolicy.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qtwidgets-config.h
