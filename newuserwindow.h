@@ -14,6 +14,14 @@ class newuserwindow : public QDialog
 public:
     explicit newuserwindow(QWidget *parent = nullptr);
     ~newuserwindow();
+    bool checkFields();
+    bool checkPassword();
+    int main();
+
+private slots:
+    void on_pushButton_2_clicked();
+
+    void on_CreateButton_clicked();
 
 private:
     Ui::newuserwindow *ui;
