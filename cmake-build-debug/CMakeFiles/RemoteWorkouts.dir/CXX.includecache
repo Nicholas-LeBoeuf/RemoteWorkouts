@@ -6,20 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../loginwindow.h
-QDialog
--
-ui_loginwindow.h
--
-
-../mainwindow.h
-QMainWindow
--
-
-../newuserwindow.h
-QDialog
--
-
 C:/Qt/5.14.1/mingw73_64/include/QtCore/QVariant
 qvariant.h
 C:/Qt/5.14.1/mingw73_64/include/QtCore/qvariant.h
@@ -1156,10 +1142,6 @@ C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QLineEdit
 qlineedit.h
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlineedit.h
 
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QMainWindow
-qmainwindow.h
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qmainwindow.h
-
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QMessageBox
 qmessagebox.h
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qmessagebox.h
@@ -1294,14 +1276,6 @@ QtCore/qstring.h
 QtCore/qmargins.h
 -
 
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qmainwindow.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qwidget.h
--
-QtWidgets/qtabwidget.h
--
-
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qmessagebox.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1320,14 +1294,6 @@ QtWidgets/qtwidgetsglobal.h
 QtCore/qobject.h
 -
 QtCore/qalgorithms.h
--
-
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qtabwidget.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qwidget.h
--
-QtGui/qicon.h
 -
 
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qtwidgets-config.h
@@ -1370,44 +1336,6 @@ QtGui/qkeysequence.h
 QtGui/qevent.h
 -
 
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/moc_loginwindow.cpp
-memory
--
-loginwindow.h
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/loginwindow.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/moc_mainwindow.cpp
-memory
--
-mainwindow.h
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/mainwindow.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/moc_newuserwindow.cpp
-memory
--
-newuserwindow.h
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/newuserwindow.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/mocs_compilation.cpp
-EWIEGA46WW/moc_loginwindow.cpp
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/moc_loginwindow.cpp
-EWIEGA46WW/moc_mainwindow.cpp
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/moc_mainwindow.cpp
-EWIEGA46WW/moc_newuserwindow.cpp
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/moc_newuserwindow.cpp
-
 D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/loginwindow.cpp
 loginwindow.h
 D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/loginwindow.h
@@ -1427,12 +1355,6 @@ QDialog
 -
 ui_loginwindow.h
 -
-
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.cpp
-newuserwindow.h
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.h
-ui_newuserwindow.h
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/ui_newuserwindow.h
 
 D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.h
 QDialog
@@ -1458,19 +1380,5 @@ QtWidgets/QSpacerItem
 QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
--
-
-RemoteWorkouts_autogen/include/ui_newuserwindow.h
-QtCore/QVariant
--
-QtWidgets/QApplication
--
-QtWidgets/QDialog
--
-QtWidgets/QLabel
--
-QtWidgets/QLineEdit
--
-QtWidgets/QPushButton
 -
 

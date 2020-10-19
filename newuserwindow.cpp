@@ -17,3 +17,8 @@ void newuserwindow::on_pushButton_2_clicked()
 {
     close();
 }
+
+void newuserwindow::on_CreateButton_clicked()
+{
+
+}
