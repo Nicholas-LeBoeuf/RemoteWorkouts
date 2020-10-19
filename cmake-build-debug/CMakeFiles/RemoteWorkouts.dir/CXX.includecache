@@ -6,6 +6,118 @@
 
 #IncludeRegexTransform: 
 
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/build_config.h
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/config.h
+stdint.h
+-
+inttypes.h
+-
+stdint.h
+-
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/connection.h
+map
+-
+build_config.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/build_config.h
+warning.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/warning.h
+sqlstring.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/sqlstring.h
+variant.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/variant.h
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/datatype.h
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/driver.h
+connection.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/connection.h
+build_config.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/build_config.h
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/exception.h
+build_config.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/build_config.h
+stdexcept
+-
+string
+-
+memory
+-
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/prepared_statement.h
+iostream
+-
+statement.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/statement.h
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/resultset.h
+config.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/config.h
+list
+-
+map
+-
+iostream
+-
+sqlstring.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/sqlstring.h
+resultset_metadata.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/resultset_metadata.h
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/resultset_metadata.h
+sqlstring.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/sqlstring.h
+datatype.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/datatype.h
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/sqlstring.h
+string
+-
+algorithm
+-
+build_config.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/build_config.h
+iostream
+-
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/statement.h
+config.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/config.h
+resultset.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/resultset.h
+string
+-
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/variant.h
+string
+-
+map
+-
+list
+-
+algorithm
+-
+typeinfo
+-
+build_config.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/build_config.h
+sqlstring.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/sqlstring.h
+exception.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/exception.h
+
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/warning.h
+stdexcept
+-
+string
+-
+memory
+-
+sqlstring.h
+C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/sqlstring.h
+
 C:/Qt/5.14.1/mingw73_64/include/QtCore/QVariant
 qvariant.h
 C:/Qt/5.14.1/mingw73_64/include/QtCore/qvariant.h
@@ -1130,10 +1242,6 @@ C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QDialog
 qdialog.h
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qdialog.h
 
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QHBoxLayout
-qboxlayout.h
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qboxlayout.h
-
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QLabel
 qlabel.h
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlabel.h
@@ -1149,18 +1257,6 @@ C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qmessagebox.h
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QPushButton
 qpushbutton.h
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qpushbutton.h
-
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QSpacerItem
-qlayoutitem.h
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlayoutitem.h
-
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QVBoxLayout
-qboxlayout.h
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qboxlayout.h
-
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QWidget
-qwidget.h
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qwidget.h
 
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qabstractbutton.h
 QtWidgets/qtwidgetsglobal.h
@@ -1190,16 +1286,6 @@ QtWidgets/qdesktopwidget.h
 QtGui/qguiapplication.h
 -
 
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qboxlayout.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qlayout.h
--
-QtWidgets/qwidget.h
--
-limits.h
--
-
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qdesktopwidget.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1218,50 +1304,10 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qwidget.h
 -
 
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qgridlayout.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qlayout.h
--
-QtWidgets/qwidget.h
--
-limits.h
--
-
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlabel.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtWidgets/qframe.h
--
-
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlayout.h
-QtWidgets/qtwidgetsglobal.h
--
-QtCore/qobject.h
--
-QtWidgets/qlayoutitem.h
--
-QtWidgets/qsizepolicy.h
--
-QtCore/qrect.h
--
-QtCore/qmargins.h
--
-limits.h
--
-QtWidgets/qboxlayout.h
--
-QtWidgets/qgridlayout.h
--
-
-C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlayoutitem.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qsizepolicy.h
--
-QtCore/qrect.h
--
-limits.h
 -
 
 C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlineedit.h
@@ -1336,49 +1382,39 @@ QtGui/qkeysequence.h
 QtGui/qevent.h
 -
 
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/loginwindow.cpp
-loginwindow.h
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/loginwindow.h
-ui_loginwindow.h
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/ui_loginwindow.h
-newuserwindow.h
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.h
+D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.cpp
+stdlib.h
+-
 iostream
 -
+cppconn/driver.h
+-
+cppconn/exception.h
+-
+cppconn/prepared_statement.h
+-
+newuserwindow.h
+D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.h
+ui_newuserwindow.h
+D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/ui_newuserwindow.h
 QMessageBox
--
-QWidget
--
-
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/loginwindow.h
-QDialog
--
-ui_loginwindow.h
 -
 
 D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.h
 QDialog
 -
 
-RemoteWorkouts_autogen/include/ui_loginwindow.h
+RemoteWorkouts_autogen/include/ui_newuserwindow.h
 QtCore/QVariant
 -
 QtWidgets/QApplication
 -
 QtWidgets/QDialog
 -
-QtWidgets/QHBoxLayout
--
 QtWidgets/QLabel
 -
 QtWidgets/QLineEdit
 -
 QtWidgets/QPushButton
--
-QtWidgets/QSpacerItem
--
-QtWidgets/QVBoxLayout
--
-QtWidgets/QWidget
 -
 

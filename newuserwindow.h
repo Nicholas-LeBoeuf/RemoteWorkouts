@@ -14,6 +14,7 @@ class newuserwindow : public QDialog
 public:
     explicit newuserwindow(QWidget *parent = nullptr);
     ~newuserwindow();
+    bool checkFields();
 
 private slots:
     void on_pushButton_2_clicked();
