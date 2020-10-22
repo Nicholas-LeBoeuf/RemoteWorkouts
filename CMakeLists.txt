@@ -11,11 +11,6 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(FULL_PATH_TO_MYSQL_CONNECTOR_CPP_DIR "C:/Program Files/MySQL/Connector C++ 8.0")
-
-set(FULL_PATH_TO_BOOST_DIR "C:/Boost/boost_1_74_0")
-
-
 # QtCreator supports the following variables for Android, which are identical to qmake Android variables.
 # Check http://doc.qt.io/qt-5/deployment-android.html for more information.
 # They need to be set before the find_package(Qt5 ...) call.
@@ -56,24 +51,5 @@ else()
     newuserwindow.ui
     )
 endif()
-
-target_include_directories(${PROJECT_NAME} PRIVATE
-        ${FULL_PATH_TO_MYSQL_CONNECTOR_CPP_DIR}/include/jdbc
-        )
-target_include_directories(${PROJECT_NAME} PRIVATE
-        ${FULL_PATH_TO_MYSQL_CONNECTOR_CPP_DIR}/include/jdbc/cppconn
-        )
-target_link_libraries(${PROJECT_NAME} PRIVATE
-        ${FULL_PATH_TO_MYSQL_CONNECTOR_CPP_DIR}/lib64/vs14/mysqlcppconn8.lib
-        )
-
-target_include_directories(${PROJECT_NAME} PRIVATE
-        C:/Boost/boost_1_74_0
-        )
-target_link_libraries(${PROJECT_NAME} PRIVATE
-        ${FULL_PATH_TO_BOOST_DIR}/boost
-        )
-
-
 
 target_link_libraries(RemoteWorkouts PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)

@@ -1,5 +1,4 @@
-C:\Users\njleb\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -DCMAKE_C_COMPILER=C:/Qt/Tools/mingw730_64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/Qt/Tools/mingw730_64/bin/c++.exe -G "CodeBlocks - MinGW Makefiles" "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts"
+"F:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\Projects\RemoteWorkouts
 -- Configuring done
-WARNING: Target "RemoteWorkouts" requests linking to directory "C:/Boost/boost_1_74_0/boost".  Targets may link only to libraries.  CMake is dropping the item.
 -- Generating done
--- Build files have been written to: D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug
+-- Build files have been written to: E:/Projects/RemoteWorkouts/cmake-build-debug
