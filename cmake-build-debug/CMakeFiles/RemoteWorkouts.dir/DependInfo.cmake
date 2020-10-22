@@ -16,6 +16,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "QT_CORE_LIB"
   "QT_GUI_LIB"
+  "QT_SQL_LIB"
   "QT_WIDGETS_LIB"
   )
 
@@ -30,6 +31,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "F:/Qt/5.15.1/mingw81_64/include/QtANGLE"
   "F:/Qt/5.15.1/mingw81_64/include/QtCore"
   "F:/Qt/5.15.1/mingw81_64/./mkspecs/win32-g++"
+  "F:/Qt/5.15.1/mingw81_64/include/QtSql"
   )
 
 # Targets to which this target links.

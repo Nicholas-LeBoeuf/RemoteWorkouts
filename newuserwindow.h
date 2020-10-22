@@ -15,6 +15,11 @@ public:
     explicit newuserwindow(QWidget *parent = nullptr);
     ~newuserwindow();
 
+
+
+private slots:
+    void on_CreateButton_clicked();
+
 private:
     Ui::newuserwindow *ui;
 };

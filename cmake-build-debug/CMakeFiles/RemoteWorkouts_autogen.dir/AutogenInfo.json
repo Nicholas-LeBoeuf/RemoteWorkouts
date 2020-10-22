@@ -28,7 +28,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/include",
 	"MOC_COMPILATION_FILE" : "E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_SQL_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -46,6 +46,7 @@
 		"F:/Qt/5.15.1/mingw81_64/include/QtANGLE",
 		"F:/Qt/5.15.1/mingw81_64/include/QtCore",
 		"F:/Qt/5.15.1/mingw81_64/mkspecs/win32-g++",
+		"F:/Qt/5.15.1/mingw81_64/include/QtSql",
 		"F:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
 		"F:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
 		"F:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
