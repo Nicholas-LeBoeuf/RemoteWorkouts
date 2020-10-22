@@ -4,7 +4,7 @@
 # compile CXX with F:/Qt/Tools/mingw810_64/bin/g++.exe
 CXX_FLAGS = -g   -std=gnu++11
 
-CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
 
 CXX_INCLUDES = @CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 

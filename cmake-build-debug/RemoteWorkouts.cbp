@@ -5,7 +5,7 @@
 		<Option title="RemoteWorkouts"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Qt\;CMake Files\Qt\5.15.1\;CMake Files\Qt\5.15.1\mingw81_64\;CMake Files\Qt\5.15.1\mingw81_64\lib\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Widgets\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Gui\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Core\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Qt\;CMake Files\Qt\5.15.1\;CMake Files\Qt\5.15.1\mingw81_64\;CMake Files\Qt\5.15.1\mingw81_64\lib\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Widgets\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Gui\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Core\;CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Sql\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="E:/Projects/RemoteWorkouts/cmake-build-debug"/>
@@ -27,6 +27,7 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_SQL_LIB"/>
 					<Add directory="E:/Projects/RemoteWorkouts/cmake-build-debug"/>
 					<Add directory="E:/Projects/RemoteWorkouts"/>
 					<Add directory="E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/include"/>
@@ -36,6 +37,7 @@
 					<Add directory="F:/Qt/5.15.1/mingw81_64/include/QtANGLE"/>
 					<Add directory="F:/Qt/5.15.1/mingw81_64/include/QtCore"/>
 					<Add directory="F:/Qt/5.15.1/mingw81_64/./mkspecs/win32-g++"/>
+					<Add directory="F:/Qt/5.15.1/mingw81_64/include/QtSql"/>
 					<Add directory="F:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="F:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="F:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -60,6 +62,7 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_SQL_LIB"/>
 					<Add directory="E:/Projects/RemoteWorkouts/cmake-build-debug"/>
 					<Add directory="E:/Projects/RemoteWorkouts"/>
 					<Add directory="E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/include"/>
@@ -69,6 +72,7 @@
 					<Add directory="F:/Qt/5.15.1/mingw81_64/include/QtANGLE"/>
 					<Add directory="F:/Qt/5.15.1/mingw81_64/include/QtCore"/>
 					<Add directory="F:/Qt/5.15.1/mingw81_64/./mkspecs/win32-g++"/>
+					<Add directory="F:/Qt/5.15.1/mingw81_64/include/QtSql"/>
 					<Add directory="F:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="F:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="F:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -245,6 +249,24 @@
 		</Unit>
 		<Unit filename="E:/Projects/RemoteWorkouts/Qt/5.15.1/mingw81_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
 			<Option virtualFolder="CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/Qt/5.15.1/mingw81_64/lib/cmake/Qt5Sql/Qt5SqlConfig.cmake">
+			<Option virtualFolder="CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/Qt/5.15.1/mingw81_64/lib/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/Qt/5.15.1/mingw81_64/lib/cmake/Qt5Sql/Qt5Sql_QMYSQLDriverPlugin.cmake">
+			<Option virtualFolder="CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/Qt/5.15.1/mingw81_64/lib/cmake/Qt5Sql/Qt5Sql_QODBCDriverPlugin.cmake">
+			<Option virtualFolder="CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/Qt/5.15.1/mingw81_64/lib/cmake/Qt5Sql/Qt5Sql_QPSQLDriverPlugin.cmake">
+			<Option virtualFolder="CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/Qt/5.15.1/mingw81_64/lib/cmake/Qt5Sql/Qt5Sql_QSQLiteDriverPlugin.cmake">
+			<Option virtualFolder="CMake Files\Qt\5.15.1\mingw81_64\lib\cmake\Qt5Sql\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

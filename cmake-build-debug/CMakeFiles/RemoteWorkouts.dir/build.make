@@ -164,6 +164,7 @@ RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/build.make
 RemoteWorkouts.exe: F:/Qt/5.15.1/mingw81_64/lib/libQt5Widgets.a
+RemoteWorkouts.exe: F:/Qt/5.15.1/mingw81_64/lib/libQt5Sql.a
 RemoteWorkouts.exe: F:/Qt/5.15.1/mingw81_64/lib/libQt5Gui.a
 RemoteWorkouts.exe: F:/Qt/5.15.1/mingw81_64/lib/libQt5Core.a
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/linklibs.rsp
