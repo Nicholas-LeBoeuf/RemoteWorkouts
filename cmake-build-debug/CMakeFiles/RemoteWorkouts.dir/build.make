@@ -80,71 +80,71 @@ CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj: C
 CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj: RemoteWorkouts_autogen/mocs_compilation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\RemoteWorkouts_autogen\mocs_compilation.cpp.obj -c "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\RemoteWorkouts_autogen\mocs_compilation.cpp"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\RemoteWorkouts_autogen\mocs_compilation.cpp.obj -c "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\RemoteWorkouts_autogen\mocs_compilation.cpp"
 
 CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.i"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\RemoteWorkouts_autogen\mocs_compilation.cpp" > CMakeFiles\RemoteWorkouts.dir\RemoteWorkouts_autogen\mocs_compilation.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\RemoteWorkouts_autogen\mocs_compilation.cpp" > CMakeFiles\RemoteWorkouts.dir\RemoteWorkouts_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.s"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\RemoteWorkouts_autogen\mocs_compilation.cpp" -o CMakeFiles\RemoteWorkouts.dir\RemoteWorkouts_autogen\mocs_compilation.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\RemoteWorkouts_autogen\mocs_compilation.cpp" -o CMakeFiles\RemoteWorkouts.dir\RemoteWorkouts_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/RemoteWorkouts.dir/main.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/main.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RemoteWorkouts.dir/main.cpp.obj"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\main.cpp.obj -c "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\main.cpp"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\main.cpp.obj -c "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\main.cpp"
 
 CMakeFiles/RemoteWorkouts.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RemoteWorkouts.dir/main.cpp.i"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\main.cpp" > CMakeFiles\RemoteWorkouts.dir\main.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\main.cpp" > CMakeFiles\RemoteWorkouts.dir\main.cpp.i
 
 CMakeFiles/RemoteWorkouts.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RemoteWorkouts.dir/main.cpp.s"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\main.cpp" -o CMakeFiles\RemoteWorkouts.dir\main.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\main.cpp" -o CMakeFiles\RemoteWorkouts.dir\main.cpp.s
 
 CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj: ../mainwindow.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\mainwindow.cpp.obj -c "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\mainwindow.cpp"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\mainwindow.cpp.obj -c "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\mainwindow.cpp"
 
 CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.i"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\mainwindow.cpp" > CMakeFiles\RemoteWorkouts.dir\mainwindow.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\mainwindow.cpp" > CMakeFiles\RemoteWorkouts.dir\mainwindow.cpp.i
 
 CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.s"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\mainwindow.cpp" -o CMakeFiles\RemoteWorkouts.dir\mainwindow.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\mainwindow.cpp" -o CMakeFiles\RemoteWorkouts.dir\mainwindow.cpp.s
 
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: ../loginwindow.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\loginwindow.cpp.obj -c "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\loginwindow.cpp"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\loginwindow.cpp.obj -c "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\loginwindow.cpp"
 
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.i"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\loginwindow.cpp" > CMakeFiles\RemoteWorkouts.dir\loginwindow.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\loginwindow.cpp" > CMakeFiles\RemoteWorkouts.dir\loginwindow.cpp.i
 
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.s"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\loginwindow.cpp" -o CMakeFiles\RemoteWorkouts.dir\loginwindow.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\loginwindow.cpp" -o CMakeFiles\RemoteWorkouts.dir\loginwindow.cpp.s
 
 CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj: ../newuserwindow.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\newuserwindow.cpp.obj -c "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\newuserwindow.cpp"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\newuserwindow.cpp.obj -c "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\newuserwindow.cpp"
 
 CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.i"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\newuserwindow.cpp" > CMakeFiles\RemoteWorkouts.dir\newuserwindow.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\newuserwindow.cpp" > CMakeFiles\RemoteWorkouts.dir\newuserwindow.cpp.i
 
 CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.s"
-	C:\Qt\Tools\mingw730_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\newuserwindow.cpp" -o CMakeFiles\RemoteWorkouts.dir\newuserwindow.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\_SNHU\- Soph Software Engineering\RemoteWorkouts\newuserwindow.cpp" -o CMakeFiles\RemoteWorkouts.dir\newuserwindow.cpp.s
 
 # Object files for target RemoteWorkouts
 RemoteWorkouts_OBJECTS = \

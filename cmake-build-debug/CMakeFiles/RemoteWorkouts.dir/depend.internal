@@ -268,6 +268,7 @@ CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QHBoxLayout
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QLabel
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QLineEdit
+ C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QMainWindow
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QMessageBox
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QPushButton
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QSpacerItem
@@ -284,14 +285,17 @@ CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlayout.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlayoutitem.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlineedit.h
+ C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qmainwindow.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qmessagebox.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qpushbutton.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qsizepolicy.h
+ C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qtabwidget.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qtwidgets-config.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qtwidgetsglobal.h
  C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qwidget.h
  D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/loginwindow.cpp
  D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/loginwindow.h
+ D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/mainwindow.h
  D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.h
  RemoteWorkouts_autogen/include/ui_loginwindow.h
 CMakeFiles/RemoteWorkouts.dir/main.cpp.obj

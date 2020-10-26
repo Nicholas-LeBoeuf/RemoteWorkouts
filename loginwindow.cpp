@@ -1,6 +1,7 @@
 #include "loginwindow.h"
 #include "ui_loginwindow.h"
 #include "newuserwindow.h"
+#include "mainwindow.h"
 #include <iostream>
 #include <QMessageBox>
 #include <QWidget>
@@ -44,10 +45,10 @@ bool LoginWindow::on_login_clicked()
                 pwattempt.prepare("select password from users where password='" + password + "';");
                 if (pwattempt.exec()){
                     pwattempt.next();
-                    if (password == pwattempt.value(0).toString()){
-                        QMessageBox msgBox;
-                        msgBox.setText("you have logged in");
-                        msgBox.exec();
+                    if (password == pwattempt.value(0).toString()) {
+                        MainWindow *newMain = new MainWindow();
+                        newMain->show();
+                        this->hide();
                     }
                     else {
                         QMessageBox msgBox;

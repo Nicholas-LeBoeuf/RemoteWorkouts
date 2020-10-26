@@ -267,6 +267,7 @@ CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/inclu
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QHBoxLayout
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QLabel
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QLineEdit
+CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QMainWindow
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QMessageBox
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QPushButton
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/QSpacerItem
@@ -283,14 +284,17 @@ CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/inclu
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlayout.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlayoutitem.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qlineedit.h
+CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qmainwindow.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qmessagebox.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qpushbutton.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qsizepolicy.h
+CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qtabwidget.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qtwidgets-config.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qtwidgetsglobal.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: C:/Qt/5.14.1/mingw73_64/include/QtWidgets/qwidget.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: ../loginwindow.cpp
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: ../loginwindow.h
+CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: ../mainwindow.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: ../newuserwindow.h
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: RemoteWorkouts_autogen/include/ui_loginwindow.h
 
