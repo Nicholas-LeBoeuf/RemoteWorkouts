@@ -1,33 +1,33 @@
 {
-	"BUILD_DIR" : "E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen",
-	"CMAKE_BINARY_DIR" : "E:/Projects/RemoteWorkouts/cmake-build-debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "E:/Projects/RemoteWorkouts/cmake-build-debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "E:/Projects/RemoteWorkouts",
-	"CMAKE_EXECUTABLE" : "F:/Program Files/JetBrains/CLion 2020.2/bin/cmake/win/bin/cmake.exe",
-	"CMAKE_SOURCE_DIR" : "E:/Projects/RemoteWorkouts",
+	"BUILD_DIR" : "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen",
+	"CMAKE_BINARY_DIR" : "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts",
+	"CMAKE_EXECUTABLE" : "C:/Users/njleb/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/win/bin/cmake.exe",
+	"CMAKE_SOURCE_DIR" : "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"E:/Projects/RemoteWorkouts/loginwindow.h",
+			"D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/loginwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_loginwindow.cpp"
 		],
 		[
-			"E:/Projects/RemoteWorkouts/mainwindow.h",
+			"D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp"
 		],
 		[
-			"E:/Projects/RemoteWorkouts/newuserwindow.h",
+			"D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_newuserwindow.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/include",
-	"MOC_COMPILATION_FILE" : "E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_SQL_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -38,50 +38,59 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"E:/Projects/RemoteWorkouts/cmake-build-debug",
-		"E:/Projects/RemoteWorkouts",
-		"F:/Qt/5.15.1/mingw81_64/include",
-		"F:/Qt/5.15.1/mingw81_64/include/QtWidgets",
-		"F:/Qt/5.15.1/mingw81_64/include/QtGui",
-		"F:/Qt/5.15.1/mingw81_64/include/QtANGLE",
-		"F:/Qt/5.15.1/mingw81_64/include/QtCore",
-		"F:/Qt/5.15.1/mingw81_64/mkspecs/win32-g++",
-		"F:/Qt/5.15.1/mingw81_64/include/QtSql",
-		"F:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
-		"F:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
-		"F:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
-		"F:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include",
-		"F:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
-		"F:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include"
+		"D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug",
+		"D:/_SNHU/- Soph Software Engineering/RemoteWorkouts",
+		"C:/Qt/5.14.1/mingw73_64/include",
+		"C:/Qt/5.14.1/mingw73_64/include/QtWidgets",
+		"C:/Qt/5.14.1/mingw73_64/include/QtGui",
+		"C:/Qt/5.14.1/mingw73_64/include/QtANGLE",
+		"C:/Qt/5.14.1/mingw73_64/include/QtCore",
+		"C:/Qt/5.14.1/mingw73_64/mkspecs/win32-g++",
+		"C:/Qt/5.14.1/mingw73_64/include/QtSql",
+		"C:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+		"C:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+		"C:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+		"C:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+		"C:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+		"C:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include"
 	],
 	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
 	"MOC_OPTIONS" : [],
 	"MOC_PATH_PREFIX" : true,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"F:/Qt/Tools/mingw810_64/bin/g++.exe",
+		"C:/Qt/Tools/mingw810_64/bin/g++.exe",
 		"-dM",
 		"-E",
 		"-c",
-		"F:/Program Files/JetBrains/CLion 2020.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
+		"C:/Users/njleb/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/win/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 4,
-	"PARSE_CACHE_FILE" : "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts_autogen.dir/ParseCache.txt",
-	"QT_MOC_EXECUTABLE" : "F:/Qt/5.15.1/mingw81_64/bin/moc.exe",
-	"QT_UIC_EXECUTABLE" : "F:/Qt/5.15.1/mingw81_64/bin/uic.exe",
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Qt/5.14.1/mingw73_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "C:/Qt/5.14.1/mingw73_64/bin/uic.exe",
 	"QT_VERSION_MAJOR" : 5,
-	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts_autogen.dir/AutogenUsed.txt",
+	"QT_VERSION_MINOR" : 14,
+	"SETTINGS_FILE" : "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "E:/Projects/RemoteWorkouts/loginwindow.cpp", "MU" ],
-		[ "E:/Projects/RemoteWorkouts/main.cpp", "MU" ],
-		[ "E:/Projects/RemoteWorkouts/mainwindow.cpp", "MU" ],
-		[ "E:/Projects/RemoteWorkouts/newuserwindow.cpp", "MU" ]
+		[
+			"D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/loginwindow.cpp",
+			"MU"
+		],
+		[ "D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/main.cpp", "MU" ],
+		[
+			"D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/mainwindow.cpp",
+			"MU"
+		],
+		[
+			"D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/newuserwindow.cpp",
+			"MU"
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
