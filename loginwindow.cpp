@@ -7,6 +7,7 @@
 #include <QWidget>
 #include <QSqlDatabase>
 #include <QSqlQuery>
+#include <QDebug>
 
 
 LoginWindow::LoginWindow(QWidget *parent) :
@@ -21,7 +22,7 @@ bool LoginWindow::on_login_clicked()
     QSqlDatabase loginbase;
     loginbase = QSqlDatabase::addDatabase("QMYSQL");
 
-    loginbase.setHostName("24.61.234.35");
+    loginbase.setHostName("localhost");
     loginbase.setDatabaseName("remoteworkouts");
     loginbase.setUserName("defaultuser");
     loginbase.setPassword("defaultuserpassword");
@@ -29,25 +30,25 @@ bool LoginWindow::on_login_clicked()
 
     const QString username = ui->username->text();
     const QString password = ui->password->text();
-    //std::string userstr = username.toStdString();
-    //std::string passstr = password.toStdString();
 
     if (fieldCheck())
     {
 
         QSqlQuery unattempt;
         QSqlQuery pwattempt;
+        QSqlQuery idsend;
 
         unattempt.prepare("select username from users where username='" + username + "';");
         if (unattempt.exec()){
             unattempt.next();
             if (username == unattempt.value(0).toString()){
-                pwattempt.prepare("select password from users where password='" + password + "';");
+                pwattempt.prepare("select password from users where username='" + username + "' and password='" + password + "';");
                 if (pwattempt.exec()){
                     pwattempt.next();
                     if (password == pwattempt.value(0).toString()) {
                         MainWindow *newMain = new MainWindow();
                         newMain->show();
+                        loginbase.close();
                         this->hide();
                     }
                     else {

@@ -13,9 +13,12 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    void setuser(QString rec);
+    QString getUser();
     ~MainWindow();
 
 private:
     Ui::MainWindow *ui;
+    QString received;
 };
 #endif // MAINWINDOW_H
