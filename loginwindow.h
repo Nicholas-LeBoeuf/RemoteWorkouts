@@ -15,6 +15,7 @@ class LoginWindow : public QDialog
 public:
     explicit LoginWindow(QWidget *parent = nullptr);
     ~LoginWindow();
+    bool fieldCheck();
 
 private slots:
     bool on_login_clicked();
