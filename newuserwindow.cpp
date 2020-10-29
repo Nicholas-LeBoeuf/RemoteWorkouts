@@ -19,7 +19,7 @@ void newuserwindow::on_CreateButton_clicked() {
     QSqlDatabase loginbase;
     loginbase = QSqlDatabase::addDatabase("QMYSQL");
 
-    loginbase.setHostName("localhost");
+    loginbase.setHostName("24.61.234.35");
     loginbase.setDatabaseName("remoteworkouts");
     loginbase.setUserName("defaultuser");
     loginbase.setPassword("defaultuserpassword");
@@ -34,7 +34,7 @@ void newuserwindow::on_CreateButton_clicked() {
         if (passwordValidation()) {
 
 
-            QSqlQuery unattempt, createacct;
+            QSqlQuery unattempt, createacct, createdefaultinfo;
 
             unattempt.prepare("select username from users where username='" + username + "';");
             if (unattempt.exec()) {
@@ -44,7 +44,20 @@ void newuserwindow::on_CreateButton_clicked() {
                             "insert into users (username, firstname, lastname, password) values ('" + username +
                             "', '" +
                             fname + "', '" + lname + "', '" + password + "');");
+
                     createacct.exec();
+
+                    QSqlQuery IDtemp; "select ID from users where username = '" + username + "';";
+                    IDtemp.prepare("select ID from users where username = '" + username + "';");
+                    IDtemp.exec();
+                    IDtemp.next();
+                    QString ID = IDtemp.value(0).toString();
+                    createdefaultinfo.prepare(
+                            "insert into userInfo(UserID, Age, Weight, HeightInches, Gender, Goal) values ('" + ID + "', '" + "0" +
+                            "', '" + "0" + "', '" + "0" + "', '" + "NULL" + "', '" + "0" "');");
+
+                    createdefaultinfo.exec();
+                    qDebug() << createdefaultinfo.lastQuery();
                     QMessageBox msgBox;
                     msgBox.setText("account created");
                     msgBox.exec();
