@@ -4,7 +4,6 @@
 #include "mainwindow.h"
 #include <iostream>
 #include <QMessageBox>
-#include <QWidget>
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QDebug>
@@ -46,9 +45,14 @@ bool LoginWindow::on_login_clicked()
                 if (pwattempt.exec()){
                     pwattempt.next();
                     if (password == pwattempt.value(0).toString()) {
+                        idsend.prepare("select ID from users where username='" + username + "';");
+                        idsend.exec();
+                        idsend.next();
+                        QString idsent = idsend.value(0).toString();
                         MainWindow *newMain = new MainWindow();
+                        newMain->setUser(idsent);
+                        newMain->loadData();
                         newMain->show();
-                        loginbase.close();
                         this->hide();
                     }
                     else {

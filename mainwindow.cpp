@@ -1,11 +1,9 @@
 #include <QMainWindow>
 #include <iostream>
 #include <QMessageBox>
-#include <QWidget>
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QDebug>
-#include <string.h>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -13,16 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow) {
     ui->setupUi(this);
-    QSqlDatabase logindata;
-    logindata = QSqlDatabase::addDatabase("QMYSQL");
 
-    logindata.setHostName("localhost");
-    logindata.setDatabaseName("remoteworkouts");
-    logindata.setUserName("defaultuser");
-    logindata.setPassword("defaultuserpassword");
-    logindata.open();
-
-    QSqlQuery name;
 }
 
 MainWindow::~MainWindow()
@@ -30,7 +19,18 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::setuser(QString rec){
+void MainWindow::loadData(){
+    QSqlDatabase logindata = QSqlDatabase::database("qt_sql_default_connection");
+
+    QSqlQuery name;
+    name.prepare("select firstname, lastname from users where ID='" + getUser() + "';");
+    name.exec();
+    name.next();
+    ui->firstname->setText(name.value(0).toString());
+    ui->lastname->setText(name.value(1).toString());
+}
+
+void MainWindow::setUser(QString rec){
     received = rec;
 }
 
