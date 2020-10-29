@@ -18,6 +18,11 @@ public:
     ~MainWindow();
     void loadData();
 
+private slots:
+
+
+    void on_edit_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString received;

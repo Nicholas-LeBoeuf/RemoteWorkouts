@@ -36,7 +36,7 @@ if(ANDROID)
     loginwindow.cpp
     loginwindow.h
     loginwindow.ui
-  )
+          )
 else()
   add_executable(RemoteWorkouts
     main.cpp
@@ -49,7 +49,10 @@ else()
     newuserwindow.cpp
     newuserwindow.h
     newuserwindow.ui
-    )
+    edituserinfo.cpp
+    edituserinfo.h
+    edituserinfo.ui
+          )
 endif()
 
 target_link_libraries(RemoteWorkouts PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Sql)
