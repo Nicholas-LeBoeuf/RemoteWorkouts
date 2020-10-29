@@ -39,7 +39,13 @@ void MainWindow::loadData(){
     ui->UserWeight->setText(userInfo.value(2).toString());
     ui->UserHeight->setText(userInfo.value(3).toString());
     ui->UserGender->setText(userInfo.value(4).toString());
-    ui->UserGoal->setText(userInfo.value(5).toString());
+    if (userInfo.value(5).toString() == "1")
+        ui->UserGoal->setText("Lose Weight");
+    else if (userInfo.value(5).toString() == "2")
+        ui->UserGoal->setText("Gain Muscle");
+    else if (userInfo.value(5).toString() == "3")
+        ui->UserGoal->setText("Stay Fit");
+
 
 }
 
