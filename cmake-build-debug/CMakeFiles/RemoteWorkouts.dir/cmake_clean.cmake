@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj"
+  "CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.obj"
   "CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj"
   "CMakeFiles/RemoteWorkouts.dir/main.cpp.obj"
   "CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj"
