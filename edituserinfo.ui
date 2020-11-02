@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>766</width>
-    <height>575</height>
+    <height>478</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>10</y>
+     <x>170</x>
+     <y>0</y>
      <width>181</width>
      <height>141</height>
     </rect>
@@ -34,8 +34,8 @@
   <widget class="QLabel" name="firstname">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>10</y>
+     <x>350</x>
+     <y>0</y>
      <width>181</width>
      <height>141</height>
     </rect>
@@ -53,7 +53,7 @@
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>10</y>
+     <y>0</y>
      <width>181</width>
      <height>141</height>
     </rect>
@@ -88,7 +88,7 @@
   <widget class="QLabel" name="HeightLabel">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>170</x>
      <y>150</y>
      <width>171</width>
      <height>41</height>
@@ -121,28 +121,10 @@
     <string>Gender:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="GoalLabel">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>460</y>
-     <width>61</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Goal:</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="WeightLabel">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>200</x>
      <y>200</y>
      <width>141</width>
      <height>41</height>
@@ -160,9 +142,9 @@
   <widget class="QLabel" name="Text1">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>340</y>
-     <width>521</width>
+     <x>260</x>
+     <y>320</y>
+     <width>271</width>
      <height>21</height>
     </rect>
    </property>
@@ -172,61 +154,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Please insert the number for the goal you want to achieve -  </string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="Text2">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>370</y>
-     <width>151</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>1.) Lose Weight</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="Text3">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>400</y>
-     <width>151</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>2.) Gain Muscle</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="Text4">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>430</y>
-     <width>151</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>3.) Just Stay Fit</string>
+    <string>Which goal are you working towards?</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="userAge">
@@ -281,31 +209,46 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="userGoal">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>470</y>
-     <width>113</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QPushButton" name="editButton">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>500</y>
+     <x>340</x>
+     <y>410</y>
      <width>80</width>
      <height>25</height>
     </rect>
    </property>
    <property name="text">
-    <string>Edit</string>
+    <string>Update info</string>
    </property>
+  </widget>
+  <widget class="QComboBox" name="goalCombo">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>360</y>
+     <width>281</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Make a selection...</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Losing weight</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Gaining muscle</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Staying fit</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>

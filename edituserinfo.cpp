@@ -24,14 +24,26 @@ void EditUserInfo::on_editButton_clicked()
     const QString height = ui->userHeight->text();
     const QString weight = ui->userWeight->text();
     const QString gender = ui->userGender->text();
-    const QString goal = ui->userGoal->text();
+    const QString goal = ui->goalCombo->currentText();
 
     QSqlQuery updatedata;
+    QString goalID;
+
+    if(ui->goalCombo->currentText() == "Losing weight"){
+        goalID = "1";
+    }
+    else if(ui->goalCombo->currentText() == "Gaining muscle"){
+        goalID = "2";
+    }
+    else if(ui->goalCombo->currentText() == "Staying fit"){
+        goalID = "3";
+    }
 
     updatedata.prepare(
-            "UPDATE userinfo SET Age='" + age + "', Weight='" + weight + "', HeightInches='" + height + "', Gender='" + gender + "', Goal='" + goal + "' WHERE userID='" + getUser() + "'"
+            "UPDATE userinfo SET Age='" + age + "', Weight='" + weight + "', HeightInches='" + height + "', Gender='" + gender + "', Goal='" + goalID + "' WHERE userID='" + getUser() + "'"
             );
     updatedata.exec();
+    //qDebug() << updatedata.lastQuery();
     close();
 }
 

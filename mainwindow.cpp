@@ -62,8 +62,11 @@ QString MainWindow::getUser(){
 
 void MainWindow::on_edit_clicked()
 {
-    EditUserInfo EditUserInfo;
+    EditUserInfo EditUserInfo(this);
     EditUserInfo.setUser(getUser());
     EditUserInfo.exec();
-    update();
+    if(EditUserInfo.close()){
+        loadData();
+    }
+    //update();
 }
