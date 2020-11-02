@@ -59,6 +59,11 @@ void newuserwindow::on_CreateButton_clicked() {
                     createdefaultinfo.exec();
                     qDebug() << createdefaultinfo.lastQuery();
                     QMessageBox msgBox;
+
+                    QSqlQuery wh;
+                    wh.prepare("create table " + ID + "_wh (weight double not null, date varchar(30) not null);");
+                    wh.exec();
+
                     msgBox.setText("account created");
                     msgBox.exec();
                 }
