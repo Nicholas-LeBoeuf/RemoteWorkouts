@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RemoteWorkouts.dir/main.cpp.obj"
   "CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj"
   "CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj"
+  "CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.obj"
   "CMakeFiles/RemoteWorkouts_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/RemoteWorkouts_autogen.dir/ParseCache.txt"
   "RemoteWorkouts_autogen"

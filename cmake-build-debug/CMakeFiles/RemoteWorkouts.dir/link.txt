@@ -1,3 +1,3 @@
-"F:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\RemoteWorkouts.dir/objects.a
-F:\Qt\Tools\mingw810_64\bin\ar.exe cr CMakeFiles\RemoteWorkouts.dir/objects.a @CMakeFiles\RemoteWorkouts.dir\objects1.rsp
-F:\Qt\Tools\mingw810_64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\RemoteWorkouts.dir/objects.a -Wl,--no-whole-archive  -o RemoteWorkouts.exe -Wl,--out-implib,libRemoteWorkouts.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\RemoteWorkouts.dir\linklibs.rsp
+C:\Users\njleb\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\RemoteWorkouts.dir/objects.a
+C:\Qt\Tools\mingw810_64\bin\ar.exe cr CMakeFiles\RemoteWorkouts.dir/objects.a @CMakeFiles\RemoteWorkouts.dir\objects1.rsp
+C:\Qt\Tools\mingw810_64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\RemoteWorkouts.dir/objects.a -Wl,--no-whole-archive  -o RemoteWorkouts.exe -Wl,--out-implib,libRemoteWorkouts.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\RemoteWorkouts.dir\linklibs.rsp
