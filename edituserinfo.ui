@@ -13,242 +13,171 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>0</y>
-     <width>181</width>
-     <height>141</height>
+     <x>100</x>
+     <y>40</y>
+     <width>571</width>
+     <height>371</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Edit Info for </string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="firstname">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>0</y>
-     <width>181</width>
-     <height>141</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>FirstName</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lastname">
-   <property name="geometry">
-    <rect>
-     <x>490</x>
-     <y>0</y>
-     <width>181</width>
-     <height>141</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>LastName</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="AgeLabel">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>110</y>
-     <width>51</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Age:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="HeightLabel">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>150</y>
-     <width>171</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Height (Inches):</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="GenderLabel">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>250</y>
-     <width>91</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Gender:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="WeightLabel">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>200</y>
-     <width>141</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Weight(Lbs):</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="Text1">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>320</y>
-     <width>271</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Which goal are you working towards?</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="userAge">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>120</y>
-     <width>113</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="userHeight">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>160</y>
-     <width>113</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="userWeight">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>210</y>
-     <width>113</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="userGender">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>260</y>
-     <width>113</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="editButton">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>410</y>
-     <width>80</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Update info</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="goalCombo">
-   <property name="geometry">
-    <rect>
-     <x>250</x>
-     <y>360</y>
-     <width>281</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="placeholderText">
-    <string>Make a selection...</string>
-   </property>
-   <item>
-    <property name="text">
-     <string>Losing weight</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Gaining muscle</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Staying fit</string>
-    </property>
-   </item>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string>Edit Your Profile</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="HeightLabel">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Height (in inches):</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="userHeight">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="AgeLabel">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Age:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="userAge">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="WeightLabel">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Weight (in pounds):</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="userWeight">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="GenderLabel">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Gender:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="userGender">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="Text1">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Which goal are you working towards?</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="goalCombo">
+      <property name="placeholderText">
+       <string>Make a selection...</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Losing weight</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gaining muscle</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Staying fit</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="editButton">
+      <property name="text">
+       <string>Update info</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

@@ -273,21 +273,28 @@ CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.obj
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QApplication
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QComboBox
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QDialog
+ F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QHBoxLayout
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QLabel
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QLineEdit
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QMainWindow
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QMessageBox
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QPushButton
+ F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QVBoxLayout
+ F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QWidget
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qabstractbutton.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qabstractitemdelegate.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qabstractslider.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qabstractspinbox.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qapplication.h
+ F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qboxlayout.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qcombobox.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qdesktopwidget.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qdialog.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qframe.h
+ F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qgridlayout.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qlabel.h
+ F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qlayout.h
+ F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qlayoutitem.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qlineedit.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qmainwindow.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qmessagebox.h
@@ -945,6 +952,7 @@ CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj
  E:/Projects/RemoteWorkouts/edituserinfo.h
  E:/Projects/RemoteWorkouts/mainwindow.cpp
  E:/Projects/RemoteWorkouts/mainwindow.h
+ F:/Qt/5.15.1/mingw81_64/include/QtCore/QDate
  F:/Qt/5.15.1/mingw81_64/include/QtCore/QDebug
  F:/Qt/5.15.1/mingw81_64/include/QtCore/QVariant
  F:/Qt/5.15.1/mingw81_64/include/QtCore/qabstractitemmodel.h
@@ -957,7 +965,6 @@ CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj
  F:/Qt/5.15.1/mingw81_64/include/QtCore/qbasicatomic.h
  F:/Qt/5.15.1/mingw81_64/include/QtCore/qbytearray.h
  F:/Qt/5.15.1/mingw81_64/include/QtCore/qbytearraylist.h
- F:/Qt/5.15.1/mingw81_64/include/QtCore/qcalendar.h
  F:/Qt/5.15.1/mingw81_64/include/QtCore/qchar.h
  F:/Qt/5.15.1/mingw81_64/include/QtCore/qcompilerdetection.h
  F:/Qt/5.15.1/mingw81_64/include/QtCore/qconfig-bootstrapped.h
@@ -1063,9 +1070,8 @@ CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj
  F:/Qt/5.15.1/mingw81_64/include/QtSql/qtsql-config.h
  F:/Qt/5.15.1/mingw81_64/include/QtSql/qtsqlglobal.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QApplication
- F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QCalendarWidget
- F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QDateTimeEdit
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QDialog
+ F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QDoubleSpinBox
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QFrame
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QHBoxLayout
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QHeaderView
@@ -1076,6 +1082,7 @@ CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QPushButton
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QStatusBar
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QTabWidget
+ F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QTableView
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QTableWidget
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QVBoxLayout
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/QWidget
@@ -1089,8 +1096,6 @@ CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qactiongroup.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qapplication.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qboxlayout.h
- F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qcalendarwidget.h
- F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qdatetimeedit.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qdesktopwidget.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qdialog.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qframe.h
@@ -1107,6 +1112,7 @@ CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qrubberband.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qsizepolicy.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qslider.h
+ F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qspinbox.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qstatusbar.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qstyle.h
  F:/Qt/5.15.1/mingw81_64/include/QtWidgets/qstyleoption.h
