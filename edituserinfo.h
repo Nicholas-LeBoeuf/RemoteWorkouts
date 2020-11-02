@@ -13,10 +13,16 @@ class EditUserInfo : public QDialog
 
 public:
     explicit EditUserInfo(QWidget *parent = nullptr);
+    void setUser(QString rec);
+    QString getUser();
     ~EditUserInfo();
+
+private slots:
+    void on_editButton_clicked();
 
 private:
     Ui::EditUserInfo *ui;
+    QString received;
 };
 
 #endif // EDITUSERINFO_H

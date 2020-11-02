@@ -27,12 +27,15 @@ void MainWindow::loadData(){
     name.prepare("select firstname, lastname from users where ID='" + getUser() + "';");
     name.exec();
     name.next();
+
     QSqlQuery userInfo;
     userInfo.prepare("select * from userinfo where UserID='" + getUser() + "';");
     userInfo.exec();
     userInfo.next();
+
     ui->firstname->setText(name.value(0).toString());
     ui->lastname->setText(name.value(1).toString());
+
     ui->UserFName->setText(name.value(0).toString());
     ui->UserLName->setText(name.value(1).toString());
     ui->UserAge->setText(userInfo.value(1).toString());
@@ -60,6 +63,7 @@ QString MainWindow::getUser(){
 void MainWindow::on_edit_clicked()
 {
     EditUserInfo EditUserInfo;
+    EditUserInfo.setUser(getUser());
     EditUserInfo.exec();
     update();
 }
