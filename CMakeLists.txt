@@ -52,6 +52,9 @@ else()
     edituserinfo.cpp
     edituserinfo.h
     edituserinfo.ui
+    welcomescreen.cpp
+    welcomescreen.h
+    welcomescreen.ui
           )
 endif()
 
