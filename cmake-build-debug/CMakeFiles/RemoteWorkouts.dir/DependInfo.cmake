@@ -16,6 +16,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "QT_CHARTS_LIB"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
   "QT_SQL_LIB"
@@ -34,6 +35,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "F:/Qt/5.15.1/mingw81_64/include/QtCore"
   "F:/Qt/5.15.1/mingw81_64/./mkspecs/win32-g++"
   "F:/Qt/5.15.1/mingw81_64/include/QtSql"
+  "F:/Qt/5.15.1/mingw81_64/include/QtCharts"
   )
 
 # Targets to which this target links.

@@ -24,8 +24,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #    endif()
 #endif()
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets Sql REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets Sql REQUIRED)
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets Charts Sql REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets Charts Sql REQUIRED)
 
 if(ANDROID)
   add_library(RemoteWorkouts SHARED
@@ -37,7 +37,7 @@ if(ANDROID)
     loginwindow.h
     loginwindow.ui
           )
-else()
+  else()
   add_executable(RemoteWorkouts
     main.cpp
     mainwindow.cpp
@@ -58,4 +58,4 @@ else()
           )
 endif()
 
-target_link_libraries(RemoteWorkouts PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Sql)
+target_link_libraries(RemoteWorkouts PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Sql Qt${QT_VERSION_MAJOR}::Charts)

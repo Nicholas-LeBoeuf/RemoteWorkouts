@@ -6,9 +6,16 @@
 #include <QtSql>
 #include <QDebug>
 #include <QDate>
+
+#include <QChart>
+#include <QChartView>
+#include <QLineSeries>
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "edituserinfo.h"
+
+using namespace QtCharts;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -87,10 +94,32 @@ void MainWindow::on_addWeight_clicked(){
 void MainWindow::on_tabWidget_2_tabBarClicked()
 {
     QSqlDatabase thedata = QSqlDatabase::database("qt_sql_default_connection");
+    QLineSeries *series = new QLineSeries();
+
+    QSqlQuery qry;
+    qry.prepare("select * from " + getUser() + "_wh;");
+    qry.exec();
+
+    series->append(0, 6);
+    series->append(2, 4);
+    series->append(3, 8);
+    series->append(7, 4);
+    series->append(10, 5);
+
+    QChart *chart = new QChart();
+    chart->legend()->hide();
+    chart->addSeries(series);
+    chart->createDefaultAxes();
+    chart->setTitle("Your weight progress over time");
+
+    QChartView *chartView = ui->chartViewer;
+    ui->chartViewer->setChart(chart);
+    chartView->setRenderHint(QPainter::Antialiasing);
+
     QSqlQueryModel *model = new QSqlQueryModel();
-    QSqlQuery* qry=new QSqlQuery(thedata);
-    qry->prepare("select * from " + getUser() + "_wh;");
-    qry->exec();
+    QSqlQuery* qry2=new QSqlQuery(thedata);
+    qry2->prepare("select * from " + getUser() + "_wh;");
+    qry2->exec();
     initializeModel(model);
     ui->weightTable->setModel(model);
     ui->weightTable->show();

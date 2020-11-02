@@ -1,11 +1,4 @@
 "F:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\Projects\RemoteWorkouts
--- The CXX compiler identification is GNU 8.1.0
--- Check for working CXX compiler: F:/Qt/Tools/mingw810_64/bin/g++.exe
--- Check for working CXX compiler: F:/Qt/Tools/mingw810_64/bin/g++.exe - works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: E:/Projects/RemoteWorkouts/cmake-build-debug
