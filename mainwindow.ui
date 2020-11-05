@@ -17,38 +17,121 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>20</x>
       <y>90</y>
       <width>451</width>
       <height>391</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="exerciseTab">
      <attribute name="title">
       <string>Exercises</string>
      </attribute>
-     <widget class="QTableWidget" name="tableWidget">
+     <widget class="QTabWidget" name="tabWidget_3">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>30</y>
-        <width>421</width>
-        <height>321</height>
+        <y>10</y>
+        <width>431</width>
+        <height>341</height>
        </rect>
       </property>
-      <column>
-       <property name="text">
-        <string>Exercise</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Description</string>
-       </property>
-      </column>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Recommended</string>
+       </attribute>
+       <widget class="QTableView" name="recTable">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>401</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Cardio</string>
+       </attribute>
+       <widget class="QTableView" name="cardioTable">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>401</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Core</string>
+       </attribute>
+       <widget class="QTableView" name="coreTable">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>401</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Lower Body</string>
+       </attribute>
+       <widget class="QTableView" name="lowerTable">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>401</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Upper Body</string>
+       </attribute>
+       <widget class="QTableView" name="upperTable">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>401</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="progressTab">
@@ -65,7 +148,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="weightTab">
        <attribute name="title">
@@ -79,6 +162,15 @@
           <width>231</width>
           <height>281</height>
          </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
         </property>
        </widget>
        <widget class="QWidget" name="verticalLayoutWidget_2">
@@ -200,6 +292,12 @@
           <width>231</width>
           <height>281</height>
          </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>false</bool>
         </property>
        </widget>
       </widget>
@@ -435,7 +533,7 @@
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>490</x>
       <y>80</y>
       <width>16</width>
       <height>411</height>
@@ -475,10 +573,10 @@
    <widget class="QChartView" name="chartViewer">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>130</y>
-      <width>361</width>
-      <height>311</height>
+      <x>510</x>
+      <y>100</y>
+      <width>381</width>
+      <height>381</height>
      </rect>
     </property>
     <property name="frameShape">

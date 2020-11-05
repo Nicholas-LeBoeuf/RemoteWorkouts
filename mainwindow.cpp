@@ -57,6 +57,9 @@ void MainWindow::loadData(){
         ui->UserGoal->setText("Gain Muscle");
     else if (userInfo.value(5).toString() == "3")
         ui->UserGoal->setText("Stay Fit");
+
+    loadTracking();
+    loadExercises();
 }
 
 void MainWindow::setUser(QString rec){
@@ -86,25 +89,45 @@ void MainWindow::on_addWeight_clicked(){
     QString weight = ui->doubleSpinBox->text();
 
     QSqlQuery entry;
-    entry.prepare("insert into " + getUser() + "_wh values('" + weight + "', '" + datestr + "');");
+    entry.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
     qDebug() << entry.lastQuery();
     entry.exec();
+    loadTracking();
 }
 
 void MainWindow::on_tabWidget_2_tabBarClicked()
 {
+    loadTracking();
+}
+
+void MainWindow::initializeTrackingModel(QSqlQueryModel *model)
+{
+    model->setQuery("select weight, date from " + getUser() + "_wh;");
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Weight (lbs)"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Date"));
+}
+
+void MainWindow::initializeExerciseModel(QSqlQueryModel *model, QString exercise)
+{
+    model->setQuery("select ExerciseName, ExerciseDesc from " + exercise + ";");
+    qDebug() << model->query().lastQuery();
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Description"));
+}
+
+void MainWindow::loadTracking(){
     QSqlDatabase thedata = QSqlDatabase::database("qt_sql_default_connection");
     QLineSeries *series = new QLineSeries();
 
     QSqlQuery qry;
-    qry.prepare("select * from " + getUser() + "_wh;");
+    qry.prepare("select ID, weight from " + getUser() + "_wh;");
     qry.exec();
 
-    series->append(0, 6);
-    series->append(2, 4);
-    series->append(3, 8);
-    series->append(7, 4);
-    series->append(10, 5);
+    while (qry.next()) {
+        int ID = qry.value(0).toInt();
+        int weight = qry.value(1).toInt();
+        series->append(ID, weight);
+    }
 
     QChart *chart = new QChart();
     chart->legend()->hide();
@@ -117,17 +140,29 @@ void MainWindow::on_tabWidget_2_tabBarClicked()
     chartView->setRenderHint(QPainter::Antialiasing);
 
     QSqlQueryModel *model = new QSqlQueryModel();
-    QSqlQuery* qry2=new QSqlQuery(thedata);
-    qry2->prepare("select * from " + getUser() + "_wh;");
-    qry2->exec();
-    initializeModel(model);
+    initializeTrackingModel(model);
     ui->weightTable->setModel(model);
     ui->weightTable->show();
 }
 
-void MainWindow::initializeModel(QSqlQueryModel *model)
-{
-    model->setQuery("select * from " + getUser() + "_wh;");
-    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Weight (lbs)"));
-    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Date"));
+void MainWindow::loadExercises(){
+    QString execlist[4] = {"cardio", "core", "lowerbody", "upperbody"};
+    for(int i = 0; i < 4; i++) {
+        QSqlQueryModel *model = new QSqlQueryModel();
+        initializeExerciseModel(model, execlist[i]);
+        switch (i) {
+            case 0:
+                ui->cardioTable->setModel(model);
+                break;
+            case 1:
+                ui->coreTable->setModel(model);
+                break;
+            case 2:
+                ui->lowerTable->setModel(model);
+                break;
+            case 3:
+                ui->upperTable->setModel(model);
+                break;
+        }
+    }
 }
