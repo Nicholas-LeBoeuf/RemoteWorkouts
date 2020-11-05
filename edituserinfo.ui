@@ -47,29 +47,6 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
-       <widget class="QLabel" name="HeightLabel">
-        <property name="font">
-         <font>
-          <pointsize>15</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Height (in inches):</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="userHeight">
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
        <widget class="QLabel" name="AgeLabel">
         <property name="font">
          <font>
@@ -83,6 +60,29 @@
       </item>
       <item>
        <widget class="QLineEdit" name="userAge">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="HeightLabel">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Height (in inches):</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="userHeight">
         <property name="text">
          <string/>
         </property>
@@ -155,6 +155,11 @@
       </property>
       <item>
        <property name="text">
+        <string>Make a selection...</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
         <string>Losing weight</string>
        </property>
       </item>
@@ -174,6 +179,13 @@
      <widget class="QPushButton" name="editButton">
       <property name="text">
        <string>Update info</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="close">
+      <property name="text">
+       <string>Close</string>
       </property>
      </widget>
     </item>
