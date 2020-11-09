@@ -84,13 +84,12 @@ void MainWindow::on_edit_clicked()
 void MainWindow::on_addWeight_clicked(){
     QDate date = QDate::currentDate();
     QString datestr = date.toString();
-    qDebug() << datestr;
 
     QString weight = ui->doubleSpinBox->text();
 
     QSqlQuery entry;
     entry.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
-    qDebug() << entry.lastQuery();
+
     entry.exec();
     loadTracking();
 }
@@ -100,11 +99,24 @@ void MainWindow::on_tabWidget_2_tabBarClicked()
     loadTracking();
 }
 
-void MainWindow::initializeTrackingModel(QSqlQueryModel *model)
+void MainWindow::initializeTrackingModel(QSqlQueryModel *model, int type)
 {
-    model->setQuery("select weight, date from " + getUser() + "_wh;");
-    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Weight (lbs)"));
-    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Date"));
+    if (type == 1) {
+        model->setQuery("select weight, date from " + getUser() + "_wh;");
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("Weight (lbs)"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("Date"));
+    }
+    else if (type == 2){
+        QSqlQuery hqry;
+        hqry.prepare("select HeightInches from userinfo where UserID = " +  getUser() + ";");
+        hqry.exec();
+        hqry.next();
+        QString height = hqry.value(0).toString();
+
+        model->setQuery("select ROUND(weight / " + height + "), date from " + getUser() + "_wh;");
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("BMI Measurement"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("Date"));
+    }
 }
 
 void MainWindow::initializeExerciseModel(QSqlQueryModel *model, QString exercise)
@@ -118,15 +130,21 @@ void MainWindow::initializeExerciseModel(QSqlQueryModel *model, QString exercise
 void MainWindow::loadTracking(){
     QSqlDatabase thedata = QSqlDatabase::database("qt_sql_default_connection");
     QLineSeries *series = new QLineSeries();
+    QLineSeries *series2 = new QLineSeries();
 
-    QSqlQuery qry;
+    QSqlQuery qry, hqry;
     qry.prepare("select ID, weight from " + getUser() + "_wh;");
+    hqry.prepare("select HeightInches from userinfo where UserID = " +  getUser() + ";");
     qry.exec();
 
     while (qry.next()) {
+        hqry.exec();
+        hqry.next();
         int ID = qry.value(0).toInt();
         int weight = qry.value(1).toInt();
+        int BMI = qry.value(1).toInt() / hqry.value(0).toInt();
         series->append(ID, weight);
+        series2->append(ID, BMI);
     }
 
     QChart *chart = new QChart();
@@ -135,14 +153,29 @@ void MainWindow::loadTracking(){
     chart->createDefaultAxes();
     chart->setTitle("Your weight progress over time");
 
+    QChart *chart2 = new QChart();
+    chart2->legend()->hide();
+    chart2->addSeries(series2);
+    chart2->createDefaultAxes();
+    chart2->setTitle("Your BMI progress over time");
+
     QChartView *chartView = ui->chartViewer;
     ui->chartViewer->setChart(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
 
+    QChartView *chartView2 = ui->chartViewer2;
+    ui->chartViewer2->setChart(chart2);
+    chartView2->setRenderHint(QPainter::Antialiasing);
+
     QSqlQueryModel *model = new QSqlQueryModel();
-    initializeTrackingModel(model);
+    initializeTrackingModel(model, 1);
     ui->weightTable->setModel(model);
     ui->weightTable->show();
+
+    QSqlQueryModel *model2 = new QSqlQueryModel();
+    initializeTrackingModel(model2, 2);
+    ui->bmiTable->setModel(model2);
+    ui->bmiTable->show();
 }
 
 void MainWindow::loadExercises(){

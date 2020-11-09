@@ -18,7 +18,7 @@ public:
     QString getUser();
     ~MainWindow();
     void loadData();
-    void initializeTrackingModel(QSqlQueryModel *model);
+    void initializeTrackingModel(QSqlQueryModel *model, int type);
     void initializeExerciseModel(QSqlQueryModel *model, QString exercise);
     void loadTracking();
     void loadExercises();
@@ -32,6 +32,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QString received;
+
 
 
 };

@@ -22,7 +22,7 @@ bool LoginWindow::on_login_clicked()
     QSqlDatabase loginbase;
     loginbase = QSqlDatabase::addDatabase("QMYSQL");
 
-    loginbase.setHostName("24.61.234.35");
+    loginbase.setHostName("localhost");
     loginbase.setDatabaseName("remoteworkouts");
     loginbase.setUserName("defaultuser");
     loginbase.setPassword("defaultuserpassword");
