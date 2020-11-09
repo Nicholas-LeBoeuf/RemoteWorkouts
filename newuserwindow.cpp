@@ -19,7 +19,7 @@ void newuserwindow::on_CreateButton_clicked() {
     QSqlDatabase loginbase;
     loginbase = QSqlDatabase::addDatabase("QMYSQL");
 
-    loginbase.setHostName("24.61.234.35");
+    loginbase.setHostName("localhost");
     loginbase.setDatabaseName("remoteworkouts");
     loginbase.setUserName("defaultuser");
     loginbase.setPassword("defaultuserpassword");
@@ -59,6 +59,11 @@ void newuserwindow::on_CreateButton_clicked() {
                     createdefaultinfo.exec();
                     qDebug() << createdefaultinfo.lastQuery();
                     QMessageBox msgBox;
+
+                    QSqlQuery wh;
+                    wh.prepare("create table " + ID + "_wh (ID int auto_increment not null primary key, weight double not null, date varchar(30) not null);");
+                    wh.exec();
+
                     msgBox.setText("account created");
                     msgBox.exec();
                 }

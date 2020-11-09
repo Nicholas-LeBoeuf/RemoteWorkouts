@@ -2,6 +2,7 @@
 #include "ui_loginwindow.h"
 #include "newuserwindow.h"
 #include "mainwindow.h"
+#include "welcomescreen.h"
 #include <iostream>
 #include <QMessageBox>
 #include <QSqlDatabase>
@@ -30,7 +31,7 @@ bool LoginWindow::on_login_clicked()
     const QString username = ui->username->text();
     const QString password = ui->password->text();
 
-    if (fieldCheck())
+    if (fieldCheck())//
     {
 
         QSqlQuery unattempt;
@@ -50,9 +51,11 @@ bool LoginWindow::on_login_clicked()
                         idsend.next();
                         QString idsent = idsend.value(0).toString();
                         MainWindow *newMain = new MainWindow();
+                        WelcomeScreen *newWelcome = new WelcomeScreen();
                         newMain->setUser(idsent);
                         newMain->loadData();
                         newMain->show();
+                        newWelcome->show();
                         this->hide();
                     }
                     else {
