@@ -16,6 +16,9 @@ public:
     void loadQuote();
     ~WelcomeScreen();
 
+private slots:
+    void on_close_clicked();
+
 private:
     Ui::WelcomeScreen *ui;
 };
