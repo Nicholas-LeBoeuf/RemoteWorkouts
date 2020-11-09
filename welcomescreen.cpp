@@ -1,3 +1,15 @@
+#include <iostream>
+#include <QMessageBox>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QtSql>
+#include <QDebug>
+#include <QDate>
+#include <QTime>
+#include <ctime>
+#include <string>
+
+
 #include "welcomescreen.h"
 #include "ui_welcomescreen.h"
 
@@ -11,4 +23,26 @@ WelcomeScreen::WelcomeScreen(QWidget *parent) :
 WelcomeScreen::~WelcomeScreen()
 {
     delete ui;
+}
+
+void WelcomeScreen::loadQuote() {
+    QSqlDatabase logindata = QSqlDatabase::database("qt_sql_default_connection");
+
+    QSqlQuery quoteSql;
+
+    quoteSql.prepare("select quote from quotes order by rand() limit 1;");
+    quoteSql.exec();
+    quoteSql.next();
+
+    QDate date = QDate::currentDate();
+    QTime time = QTime::currentTime();
+
+    ui->quote->setText(quoteSql.value(0).toString());
+    ui->date->setText(date.toString("dddd, MMMM d, yyyy"));
+    ui->time->setText(time.toString("h:m AP"));
+}
+
+void WelcomeScreen::on_close_clicked()
+{
+    close();
 }

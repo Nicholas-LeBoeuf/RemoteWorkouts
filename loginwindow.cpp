@@ -55,6 +55,7 @@ bool LoginWindow::on_login_clicked()
                         newMain->setUser(idsent);
                         newMain->loadData();
                         newMain->show();
+                        newWelcome->loadQuote();
                         newWelcome->show();
                         this->hide();
                     }

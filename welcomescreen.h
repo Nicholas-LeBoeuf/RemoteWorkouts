@@ -13,7 +13,11 @@ class WelcomeScreen : public QDialog
 
 public:
     explicit WelcomeScreen(QWidget *parent = nullptr);
+    void loadQuote();
     ~WelcomeScreen();
+
+private slots:
+    void on_close_clicked();
 
 private:
     Ui::WelcomeScreen *ui;
