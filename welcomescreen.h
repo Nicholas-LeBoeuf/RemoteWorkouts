@@ -13,6 +13,7 @@ class WelcomeScreen : public QDialog
 
 public:
     explicit WelcomeScreen(QWidget *parent = nullptr);
+    void loadQuote();
     ~WelcomeScreen();
 
 private:
