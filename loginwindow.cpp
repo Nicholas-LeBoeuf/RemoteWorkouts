@@ -5,6 +5,7 @@
 #include "welcomescreen.h"
 #include "forgotpassword.h"
 #include <iostream>
+#include <QDate>
 #include <QMessageBox>
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -38,6 +39,7 @@ bool LoginWindow::on_login_clicked()
         QSqlQuery unattempt;
         QSqlQuery pwattempt;
         QSqlQuery idsend;
+        QSqlQuery logindate;
 
         unattempt.prepare("select username from users where username='" + username + "';");
         if (unattempt.exec()){
@@ -47,6 +49,11 @@ bool LoginWindow::on_login_clicked()
                 if (pwattempt.exec()){
                     pwattempt.next();
                     if (password == pwattempt.value(0).toString()) {
+                        QDate date = QDate::currentDate();
+                        QString datestr = date.toString();
+
+                        logindate.prepare("update users set lastlogin= '" + datestr + "' where username='" + username + "';");
+                        logindate.exec();
                         idsend.prepare("select ID from users where username='" + username + "';");
                         idsend.exec();
                         idsend.next();
