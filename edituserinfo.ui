@@ -16,10 +16,10 @@
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>40</x>
      <y>40</y>
-     <width>571</width>
-     <height>371</height>
+     <width>671</width>
+     <height>425</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -43,6 +43,25 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="UsernameLabel">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Username:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="userUsername"/>
+      </item>
+     </layout>
     </item>
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -192,6 +211,15 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>userGender</tabstop>
+  <tabstop>close</tabstop>
+  <tabstop>editButton</tabstop>
+  <tabstop>userHeight</tabstop>
+  <tabstop>userAge</tabstop>
+  <tabstop>userWeight</tabstop>
+  <tabstop>goalCombo</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

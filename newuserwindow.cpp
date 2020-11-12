@@ -67,6 +67,11 @@ void newuserwindow::on_CreateButton_clicked() {
                     msgBox.setText("account created");
                     msgBox.exec();
                 }
+                else if(username == unattempt.value(0).toString()) {
+                    QMessageBox msgBox;
+                    msgBox.setText("Username already being used");
+                    msgBox.exec();
+                }
             } else {
                 QMessageBox msgBox;
                 msgBox.setText("failed");
