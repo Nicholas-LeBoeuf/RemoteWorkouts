@@ -39,7 +39,7 @@ void WelcomeScreen::loadQuote() {
 
     ui->quote->setText(quoteSql.value(0).toString());
     ui->date->setText(date.toString("dddd, MMMM d, yyyy"));
-    ui->time->setText(time.toString("h:m AP"));
+    ui->time->setText(time.toString("h:mm AP"));
 }
 
 void WelcomeScreen::on_close_clicked()
