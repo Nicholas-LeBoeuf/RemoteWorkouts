@@ -6,6 +6,7 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QDebug>
+#include <QDate>
 
 EditUserInfo::EditUserInfo(QWidget *parent) :
     QDialog(parent),
@@ -55,6 +56,14 @@ void EditUserInfo::on_editButton_clicked()
         );
         updatedata.exec();
         updateusername.exec();
+
+        QDate date = QDate::currentDate();
+        QString datestr = date.toString();
+
+        QSqlQuery addWeight;
+        addWeight.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
+        qDebug() << addWeight.lastQuery();
+        addWeight.exec();
         //qDebug() << updateusername.lastQuery();
         //qDebug() << updatedata.lastQuery();
         close();
@@ -131,7 +140,7 @@ bool EditUserInfo::fieldValidation() {
     }
     else {
         QMessageBox msgBox;
-        msgBox.setText("Not all field are filled in!");
+        msgBox.setText("Not all fields are filled in!");
         msgBox.exec();
     }
 }
