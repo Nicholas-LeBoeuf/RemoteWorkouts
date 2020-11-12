@@ -29,6 +29,25 @@ void newuserwindow::on_CreateButton_clicked() {
     const QString fname = ui->firstname->text();
     const QString lname = ui->lastname->text();
     const QString password = ui->password->text();
+    const QString securityQuestion = ui->securityQCombo->currentText();
+    const QString securityQAnswer = ui->SecurityQAnswer->text();
+
+    QString securityQuestionID;
+
+    if (ui->securityQCombo->currentText() == "What city were you born in?")
+        securityQuestionID = "1";
+    else if (ui->securityQCombo->currentText() == "What town did you grow up in?")
+        securityQuestionID = "2";
+    else if (ui->securityQCombo->currentText() == "What was your first houses number?")
+        securityQuestionID = "3";
+    else if (ui->securityQCombo->currentText() == "What was the name of the street of your first house? (don't include st. etc.)")
+        securityQuestionID = "4";
+    else if (ui->securityQCombo->currentText() == "What was the name of your first pet?")
+        securityQuestionID = "5";
+    else if (ui->securityQCombo->currentText() == "Whats your favorite food?")
+        securityQuestionID = "6";
+    else if (ui->securityQCombo->currentText() == "Whats your favorite color?")
+        securityQuestionID = "7";
 
     if (fieldValidation()) {
         if (passwordValidation()) {
@@ -41,9 +60,9 @@ void newuserwindow::on_CreateButton_clicked() {
                 unattempt.next();
                 if (username != unattempt.value(0).toString()) {
                     createacct.prepare(
-                            "insert into users (username, firstname, lastname, password) values ('" + username +
+                            "insert into users (username, firstname, lastname, password, SecurityQuestion, SecurityQAnswer) values ('" + username +
                             "', '" +
-                            fname + "', '" + lname + "', '" + password + "');");
+                            fname + "', '" + lname + "', '" + password + "', '" + securityQuestionID + "', '" + securityQAnswer +"');");
 
                     createacct.exec();
 
@@ -67,6 +86,11 @@ void newuserwindow::on_CreateButton_clicked() {
                     msgBox.setText("account created");
                     msgBox.exec();
                 }
+                else if(username == unattempt.value(0).toString()) {
+                    QMessageBox msgBox;
+                    msgBox.setText("Username already being used");
+                    msgBox.exec();
+                }
             } else {
                 QMessageBox msgBox;
                 msgBox.setText("failed");
@@ -82,14 +106,18 @@ bool newuserwindow::fieldValidation(){
     const QString lName = ui->lastname->text();
     const QString password = ui->password->text();
     const QString confirmPassword = ui->confpw->text();
+    const QString securityQuestion = ui->securityQCombo->currentText();
+    const QString securityQAnswer = ui->SecurityQAnswer->text();
 
     std::string usernameStr = username.toStdString();
     std::string fNameStr = fName.toStdString();
     std::string lNameStr = lName.toStdString();
     std::string passwordStr = password.toStdString();
     std::string confirmPwStr = confirmPassword.toStdString();
+    std::string securityQuestionStr = securityQuestion.toStdString();
+    std::string securityQAnswerStr = securityQAnswer.toStdString();
 
-    if (usernameStr != "" && fNameStr != "" && lNameStr != "" && passwordStr != "" && passwordStr != "" && confirmPwStr != "")
+    if (usernameStr != "" && fNameStr != "" && lNameStr != "" && passwordStr != "" && passwordStr != "" && confirmPwStr != "" && securityQuestionStr != "Make a selection..." && securityQAnswer != "")
         return true;
     else {
         QMessageBox msgBox;

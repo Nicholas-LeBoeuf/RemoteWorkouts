@@ -3,6 +3,7 @@
 #include "newuserwindow.h"
 #include "mainwindow.h"
 #include "welcomescreen.h"
+#include "forgotpassword.h"
 #include <iostream>
 #include <QMessageBox>
 #include <QSqlDatabase>
@@ -31,7 +32,7 @@ bool LoginWindow::on_login_clicked()
     const QString username = ui->username->text();
     const QString password = ui->password->text();
 
-    if (fieldCheck())//
+    if (fieldCheck())
     {
 
         QSqlQuery unattempt;
@@ -102,4 +103,55 @@ void LoginWindow::on_newuser_clicked()
     newuserwindow newuserwindow;
     newuserwindow.exec();
     update();
+}
+
+void LoginWindow::on_forgotPassword_clicked()
+{
+    QSqlDatabase loginbase;
+    loginbase = QSqlDatabase::addDatabase("QMYSQL");
+
+    loginbase.setHostName("24.61.234.35");
+    loginbase.setDatabaseName("remoteworkouts");
+    loginbase.setUserName("defaultuser");
+    loginbase.setPassword("defaultuserpassword");
+    loginbase.open();
+
+    const QString username = ui->username->text();
+
+    QSqlQuery idsend;
+    QSqlQuery unattempt;
+
+    if (usernameFieldCheck())
+    {
+        unattempt.prepare("select username from users where username='" + username + "';");
+        if (unattempt.exec())
+        {
+            unattempt.next();
+            if (username == unattempt.value(0).toString())
+            {
+                idsend.prepare("select ID from users where username='" + username + "';");
+                idsend.exec();
+                idsend.next();
+                QString idsent = idsend.value(0).toString();
+                ForgotPassword *newFP = new ForgotPassword();
+                newFP->setUser(idsent);
+                newFP->loadSecurityQ();
+                newFP->show();
+            }
+        }
+    }
+}
+
+bool LoginWindow::usernameFieldCheck()
+{
+    const QString username = ui->username->text();
+    std::string userstr = username.toStdString();
+
+    if (userstr != "")
+        return true;
+    else {
+        QMessageBox msgBox;
+        msgBox.setText("Please fill in the username to change password.");
+        msgBox.exec();
+    }
 }

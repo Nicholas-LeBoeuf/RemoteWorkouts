@@ -1,4 +1,5 @@
 #include "edituserinfo.h"
+#include <iostream>
 #include "ui_edituserinfo.h"
 #include "mainwindow.h"
 #include <QMessageBox>
@@ -20,6 +21,7 @@ EditUserInfo::~EditUserInfo()
 
 void EditUserInfo::on_editButton_clicked()
 {
+    const QString username = ui->userUsername->text();
     const QString age = ui->userAge->text();
     const QString height = ui->userHeight->text();
     const QString weight = ui->userWeight->text();
@@ -27,6 +29,7 @@ void EditUserInfo::on_editButton_clicked()
     const QString goal = ui->goalCombo->currentText();
 
     QSqlQuery updatedata;
+    QSqlQuery updateusername;
     QString goalID;
 
     if(ui->goalCombo->currentText() == "Losing weight"){
@@ -40,11 +43,19 @@ void EditUserInfo::on_editButton_clicked()
     }
 
     if (fieldValidation()) {
+        if (username != NULL)
+        {
+            updateusername.prepare(
+                    "UPDATE users SET username='" + username + "' WHERE ID='" + getUser() + "'"
+                    );
+        }
         updatedata.prepare(
                 "UPDATE userinfo SET Age='" + age + "', Weight='" + weight + "', HeightInches='" + height +
                 "', Gender='" + gender + "', Goal='" + goalID + "' WHERE userID='" + getUser() + "'"
         );
         updatedata.exec();
+        updateusername.exec();
+        //qDebug() << updateusername.lastQuery();
         //qDebug() << updatedata.lastQuery();
         close();
     }
@@ -59,23 +70,46 @@ QString EditUserInfo::getUser() {
 }
 
 bool EditUserInfo::fieldValidation() {
+    const QString username = ui->userUsername->text();
     const QString age = ui->userAge->text();
     const QString height = ui->userHeight->text();
     const QString weight = ui->userWeight->text();
     const QString gender = ui->userGender->text();
     const QString goal = ui->goalCombo->currentText();
 
+    std::string usernameStr = username.toStdString();
     std::string ageStr = age.toStdString();
     std::string heightStr = height.toStdString();
     std::string weightStr = weight.toStdString();
     std::string genderStr = gender.toStdString();
     std::string goalStr = goal.toStdString();
 
+    QSqlQuery unattempt;
+
     if (ageStr != "" && heightStr != "" && weightStr != "" && genderStr != "" && goalStr != "Make a selection...") {
         if (checkDigits(ageStr)) {
             if (checkDigits(heightStr)) {
                 if (checkDigits(weightStr)) {
-                    return true;
+                    if (username != NULL) {
+                        unattempt.prepare("select username from users where username='" + username + "';");
+
+                        if (unattempt.exec()) {
+                            unattempt.next();
+
+                            if (username == unattempt.value(0).toString()) {
+                                QMessageBox msgBox;
+                                msgBox.setText("Username already being used");
+                                msgBox.exec();
+                                return false;
+                            }
+                            else if (username != unattempt.value(0).toString()) {
+                                return true;
+                            }
+                        }
+                    }
+                    else {
+                        return true;
+                    }
                 }
                 else {
                     QMessageBox msgBox;

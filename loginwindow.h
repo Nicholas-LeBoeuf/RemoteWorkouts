@@ -16,10 +16,13 @@ public:
     explicit LoginWindow(QWidget *parent = nullptr);
     ~LoginWindow();
     bool fieldCheck();
+    bool usernameFieldCheck();
 
 private slots:
     bool on_login_clicked();
     void on_newuser_clicked();
+
+    void on_forgotPassword_clicked();
 
 private:
     Ui::LoginWindow *ui;

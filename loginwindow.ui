@@ -105,6 +105,13 @@
      </widget>
     </item>
     <item>
+     <widget class="QPushButton" name="forgotPassword">
+      <property name="text">
+       <string>Forgot Password?</string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QPushButton" name="login">
       <property name="text">
        <string>Login</string>

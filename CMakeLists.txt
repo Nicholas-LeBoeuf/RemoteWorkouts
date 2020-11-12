@@ -55,6 +55,9 @@ if(ANDROID)
     welcomescreen.cpp
     welcomescreen.h
     welcomescreen.ui
+    forgotpassword.cpp
+    forgotpassword.h
+    forgotpassword.ui
           )
 endif()
 
