@@ -84,11 +84,29 @@ void MainWindow::on_edit_clicked()
 void MainWindow::on_addWeight_clicked(){
     QDate date = QDate::currentDate();
     QString datestr = date.toString();
+    QSqlQuery checkDate;
+
+    checkDate.prepare("select LastLogin from users where ID = " + getUser() + ";");
+    qDebug() << checkDate.lastQuery();
+    checkDate.exec();
+    checkDate.next();
+    qDebug() << checkDate.result();
+    QString dateChecked = checkDate.value(0).toString();
+    qDebug() << dateChecked;
+    qDebug() << datestr;
 
     QString weight = ui->doubleSpinBox->text();
 
     QSqlQuery entry;
-    entry.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
+
+    if (dateChecked != datestr) {
+        entry.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
+        qDebug() << 1;
+    }
+    else {
+        entry.prepare("update " + getUser() + "_wh set weight = " + weight + "where date ='" + datestr + "';");
+        qDebug() << 2;
+    }
 
     entry.exec();
     loadTracking();
@@ -113,7 +131,8 @@ void MainWindow::initializeTrackingModel(QSqlQueryModel *model, int type)
         hqry.next();
         QString height = hqry.value(0).toString();
 
-        model->setQuery("select ROUND(weight / " + height + "), date from " + getUser() + "_wh;");
+        model->setQuery("select ROUND((703*weight) / (" + height + "*" + height + "), 3), date from " + getUser() + "_wh;");
+        qDebug() << model->query().lastQuery();
         model->setHeaderData(0, Qt::Horizontal, QObject::tr("BMI Measurement"));
         model->setHeaderData(1, Qt::Horizontal, QObject::tr("Date"));
     }
@@ -142,7 +161,7 @@ void MainWindow::loadTracking(){
         hqry.next();
         int ID = qry.value(0).toInt();
         int weight = qry.value(1).toInt();
-        int BMI = qry.value(1).toInt() / hqry.value(0).toInt();
+        int BMI = (703*qry.value(1).toInt()) / (hqry.value(0).toInt()*hqry.value(0).toInt());
         series->append(ID, weight);
         series2->append(ID, BMI);
     }
