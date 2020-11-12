@@ -86,7 +86,7 @@ void MainWindow::on_addWeight_clicked(){
     QString datestr = date.toString();
     QSqlQuery checkDate;
 
-    checkDate.prepare("select LastLogin from users where ID = " + getUser() + ";");
+    checkDate.prepare("select date from " + getUser() + "_wh where ID = " + getUser() + ";");
     qDebug() << checkDate.lastQuery();
     checkDate.exec();
     checkDate.next();
@@ -99,7 +99,7 @@ void MainWindow::on_addWeight_clicked(){
 
     QSqlQuery entry;
 
-    if (dateChecked != datestr) {
+    if (dateChecked != "") {
         entry.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
         qDebug() << 1;
     }
