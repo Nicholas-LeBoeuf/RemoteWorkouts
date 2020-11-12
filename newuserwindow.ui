@@ -106,7 +106,7 @@
   <widget class="QLabel" name="ConfirmPw">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>160</x>
      <y>280</y>
      <width>171</width>
      <height>31</height>
@@ -194,7 +194,7 @@
    <property name="geometry">
     <rect>
      <x>350</x>
-     <y>340</y>
+     <y>410</y>
      <width>111</width>
      <height>41</height>
     </rect>
@@ -206,6 +206,105 @@
    </property>
    <property name="text">
     <string>Create!</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="securityQCombo">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>330</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Make a selection...</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>What city were you born in?</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>What town did you grow up in?</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>What was your first houses number?</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>What was the name of the street of your first house? (don't include st. etc.)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>What was the name of your first pet?</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Whats your favorite food?</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Whats your favorite color?</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="ConfirmPw_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>320</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Security Question:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ConfirmPw_3">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>350</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Security Question Answer:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="SecurityQAnswer">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>360</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
    </property>
   </widget>
  </widget>
