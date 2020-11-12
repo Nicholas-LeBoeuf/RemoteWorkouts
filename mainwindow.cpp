@@ -99,7 +99,7 @@ void MainWindow::on_addWeight_clicked(){
 
     QSqlQuery entry;
 
-    if (dateChecked != "") {
+    if (dateChecked == "") {
         entry.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
         qDebug() << 1;
     }
