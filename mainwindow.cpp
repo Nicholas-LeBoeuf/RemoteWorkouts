@@ -86,7 +86,7 @@ void MainWindow::on_addWeight_clicked(){
     QString datestr = date.toString();
     QSqlQuery checkDate;
 
-    checkDate.prepare("select date from " + getUser() + "_wh where date = " + datestr + ";");
+    checkDate.prepare("select date from " + getUser() + "_wh where date = '" + datestr + "';");
     qDebug() << checkDate.lastQuery();
     checkDate.exec();
     checkDate.next();
