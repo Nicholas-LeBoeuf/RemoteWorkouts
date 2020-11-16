@@ -73,8 +73,8 @@ void newuserwindow::on_CreateButton_clicked() {
                     IDtemp.next();
                     QString ID = IDtemp.value(0).toString();
                     createdefaultinfo.prepare(
-                            "insert into userInfo(UserID, Age, Weight, HeightInches, Gender, Goal) values ('" + ID + "', '" + "0" +
-                            "', '" + "0" + "', '" + "0" + "', '" + "NULL" + "', '" + "0" "');");
+                            "insert into userInfo(UserID, Age, Weight, HeightInches, Gender, Goal) values ('" + ID + "', '" + "1" +
+                            "', '" + "1" + "', '" + "1" + "', '" + "NULL" + "', '" + "0" "');");
 
                     createdefaultinfo.exec();
                     qDebug() << createdefaultinfo.lastQuery();
