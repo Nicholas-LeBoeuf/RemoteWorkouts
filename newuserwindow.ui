@@ -213,9 +213,12 @@
     <rect>
      <x>320</x>
      <y>330</y>
-     <width>171</width>
-     <height>21</height>
+     <width>361</width>
+     <height>24</height>
     </rect>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
    </property>
    <item>
     <property name="text">

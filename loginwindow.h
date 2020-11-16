@@ -19,7 +19,7 @@ public:
     bool usernameFieldCheck();
 
 private slots:
-    bool on_login_clicked();
+    void on_login_clicked();
     void on_newuser_clicked();
 
     void on_forgotPassword_clicked();

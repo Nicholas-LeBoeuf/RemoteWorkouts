@@ -19,7 +19,7 @@ void newuserwindow::on_CreateButton_clicked() {
     QSqlDatabase loginbase;
     loginbase = QSqlDatabase::addDatabase("QMYSQL");
 
-    loginbase.setHostName("localhost");
+    loginbase.setHostName("24.61.234.35");
     loginbase.setDatabaseName("remoteworkouts");
     loginbase.setUserName("defaultuser");
     loginbase.setPassword("defaultuserpassword");
@@ -65,6 +65,7 @@ void newuserwindow::on_CreateButton_clicked() {
                             fname + "', '" + lname + "', '" + password + "', '" + securityQuestionID + "', '" + securityQAnswer +"');");
 
                     createacct.exec();
+                    qDebug() << createacct.lastQuery();
 
                     QSqlQuery IDtemp; "select ID from users where username = '" + username + "';";
                     IDtemp.prepare("select ID from users where username = '" + username + "';");
