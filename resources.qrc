@@ -2,5 +2,6 @@
     <qresource prefix="/images"/>
     <qresource prefix="/">
         <file>images/RWLogo.png</file>
+        <file>images/background.jpg</file>
     </qresource>
 </RCC>
