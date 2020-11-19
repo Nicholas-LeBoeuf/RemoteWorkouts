@@ -29,6 +29,8 @@ private slots:
     void on_addWeight_clicked();
     void on_tabWidget_2_tabBarClicked();
 
+    void on_changePassword_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString received;

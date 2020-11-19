@@ -19,12 +19,12 @@ LoginWindow::LoginWindow(QWidget *parent) :
     ui->setupUi(this);
 }
 
-bool LoginWindow::on_login_clicked()
+void LoginWindow::on_login_clicked()
 {
     QSqlDatabase loginbase;
     loginbase = QSqlDatabase::addDatabase("QMYSQL");
 
-    loginbase.setHostName("localhost");
+    loginbase.setHostName("24.61.234.35");
     loginbase.setDatabaseName("remoteworkouts");
     loginbase.setUserName("defaultuser");
     loginbase.setPassword("defaultuserpassword");
@@ -58,12 +58,13 @@ bool LoginWindow::on_login_clicked()
                         idsend.exec();
                         idsend.next();
                         QString idsent = idsend.value(0).toString();
-                        MainWindow *newMain = new MainWindow();
+                        //MainWindow *newMain = new MainWindow();
                         WelcomeScreen *newWelcome = new WelcomeScreen();
-                        newMain->setUser(idsent);
-                        newMain->loadData();
-                        newMain->show();
+                        //newMain->setUser(idsent);
+                        //newMain->loadData();
+                        //newMain->show();
                         newWelcome->loadQuote();
+                        newWelcome->setUser(idsent);
                         newWelcome->show();
                         this->hide();
                     }
@@ -117,7 +118,7 @@ void LoginWindow::on_forgotPassword_clicked()
     QSqlDatabase loginbase;
     loginbase = QSqlDatabase::addDatabase("QMYSQL");
 
-    loginbase.setHostName("localhost");
+    loginbase.setHostName("24.61.234.35");
     loginbase.setDatabaseName("remoteworkouts");
     loginbase.setUserName("defaultuser");
     loginbase.setPassword("defaultuserpassword");
@@ -134,6 +135,7 @@ void LoginWindow::on_forgotPassword_clicked()
         if (unattempt.exec())
         {
             unattempt.next();
+            qDebug()<<unattempt.lastQuery();
             if (username == unattempt.value(0).toString())
             {
                 idsend.prepare("select ID from users where username='" + username + "';");

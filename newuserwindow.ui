@@ -13,22 +13,42 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/images/RWLogo.png</normaloff>:/images/RWLogo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {border-image: url(:/images/background.jpg)}
+QLabel { background: transparent; }</string>
+  </property>
   <widget class="QLabel" name="Title">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>70</y>
-     <width>221</width>
+     <x>250</x>
+     <y>50</y>
+     <width>361</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>17</pointsize>
+     <family>Eras Demi ITC</family>
+     <pointsize>25</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {color: rgb(139, 120, 230);}
+</string>
    </property>
    <property name="text">
     <string>Create an Account</string>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLabel" name="FName">
@@ -44,6 +64,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {color:white;}</string>
    </property>
    <property name="text">
     <string>First Name:</string>
@@ -63,6 +86,9 @@
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {color:white;}</string>
+   </property>
    <property name="text">
     <string>Last Name:</string>
    </property>
@@ -80,6 +106,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {color:white;}</string>
    </property>
    <property name="text">
     <string>Username:</string>
@@ -99,6 +128,9 @@
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {color:white;}</string>
+   </property>
    <property name="text">
     <string>Password:</string>
    </property>
@@ -116,6 +148,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {color:white;}</string>
    </property>
    <property name="text">
     <string>Confirm Password:</string>
@@ -213,9 +248,12 @@
     <rect>
      <x>320</x>
      <y>330</y>
-     <width>171</width>
-     <height>21</height>
+     <width>461</width>
+     <height>24</height>
     </rect>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
    </property>
    <item>
     <property name="text">
@@ -272,6 +310,9 @@
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {color:white;}</string>
+   </property>
    <property name="text">
     <string>Security Question:</string>
    </property>
@@ -290,6 +331,9 @@
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {color:white;}</string>
+   </property>
    <property name="text">
     <string>Security Question Answer:</string>
    </property>
@@ -304,10 +348,31 @@
     </rect>
    </property>
    <property name="echoMode">
-    <enum>QLineEdit::Password</enum>
+    <enum>QLineEdit::Normal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>201</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/images/RWLogo.png</pixmap>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

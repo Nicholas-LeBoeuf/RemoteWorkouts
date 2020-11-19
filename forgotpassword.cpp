@@ -133,7 +133,8 @@ bool ForgotPassword::securityValidation() {
 
         if (securityQAnswer == securityattempt.value(0).toString()) {
             return true;
-        } else {
+        }
+        else {
             QMessageBox msgBox;
             msgBox.setText("Incorrect security question answer");
             msgBox.exec();

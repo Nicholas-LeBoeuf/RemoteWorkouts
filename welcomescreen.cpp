@@ -12,6 +12,7 @@
 
 #include "welcomescreen.h"
 #include "ui_welcomescreen.h"
+#include "mainwindow.h"
 
 WelcomeScreen::WelcomeScreen(QWidget *parent) :
     QDialog(parent),
@@ -23,6 +24,14 @@ WelcomeScreen::WelcomeScreen(QWidget *parent) :
 WelcomeScreen::~WelcomeScreen()
 {
     delete ui;
+}
+
+void WelcomeScreen::setUser(QString rec){
+    received = rec;
+}
+
+QString WelcomeScreen::getUser(){
+    return received;
 }
 
 void WelcomeScreen::loadQuote() {
@@ -44,5 +53,9 @@ void WelcomeScreen::loadQuote() {
 
 void WelcomeScreen::on_close_clicked()
 {
-    close();
+    MainWindow *newMain = new MainWindow();
+    newMain->setUser(getUser());
+    newMain->loadData();
+    newMain->show();
+    this->hide();
 }

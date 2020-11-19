@@ -58,6 +58,7 @@ if(ANDROID)
     forgotpassword.cpp
     forgotpassword.h
     forgotpassword.ui
+    resources.qrc
           )
 endif()
 
