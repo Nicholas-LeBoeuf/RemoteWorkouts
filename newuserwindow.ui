@@ -40,7 +40,7 @@ QLabel { background: transparent; }</string>
     <pixmap resource="resources.qrc">:/images/RWLogo.png</pixmap>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -130,6 +130,9 @@ QLabel { background: transparent; }</string>
           <property name="placeholderText">
            <string>First Name</string>
           </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
          </widget>
         </item>
        </layout>
@@ -173,6 +176,9 @@ QLabel { background: transparent; }</string>
           <property name="placeholderText">
            <string>Last Name</string>
           </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
          </widget>
         </item>
        </layout>
@@ -215,6 +221,9 @@ QLabel { background: transparent; }</string>
           </property>
           <property name="placeholderText">
            <string>Username</string>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -262,6 +271,9 @@ QLabel { background: transparent; }</string>
           <property name="placeholderText">
            <string>Password</string>
           </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
          </widget>
         </item>
        </layout>
@@ -304,6 +316,9 @@ QLabel { background: transparent; }</string>
           </property>
           <property name="placeholderText">
            <string>Confirm Password</string>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -435,6 +450,9 @@ QLabel { background: transparent; }</string>
           <property name="placeholderText">
            <string>Answer</string>
           </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
          </widget>
         </item>
        </layout>
@@ -468,6 +486,9 @@ QLabel { background: transparent; }</string>
         <pointsize>12</pointsize>
        </font>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">QPushButton {color: white; background-color: rgb(58, 58, 58)}</string>
       </property>
@@ -492,6 +513,9 @@ QLabel { background: transparent; }</string>
      <family>Eras Demi ITC</family>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {color: white; background-color: rgb(58, 58, 58)}</string>
