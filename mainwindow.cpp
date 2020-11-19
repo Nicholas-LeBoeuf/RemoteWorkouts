@@ -14,6 +14,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "edituserinfo.h"
+#include "forgotpassword.h"
 
 using namespace QtCharts;
 
@@ -217,4 +218,17 @@ void MainWindow::loadExercises(){
                 break;
         }
     }
+}
+void MainWindow::on_changePassword_clicked()
+{
+        QSqlQuery idsend;
+
+        idsend.prepare("select ID from users where ID='" + getUser() + "';");
+        idsend.exec();
+        idsend.next();
+        QString idsent = idsend.value(0).toString();
+        ForgotPassword *newCP = new ForgotPassword();
+        newCP->setUser(idsent);
+        newCP->loadSecurityQ();
+        newCP->show();
 }

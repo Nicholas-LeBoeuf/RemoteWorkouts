@@ -2,6 +2,7 @@
 #include <iostream>
 #include "ui_edituserinfo.h"
 #include "mainwindow.h"
+#include "forgotpassword.h"
 #include <QMessageBox>
 #include <QSqlDatabase>
 #include <QSqlQuery>

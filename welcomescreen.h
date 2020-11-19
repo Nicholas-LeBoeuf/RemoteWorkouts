@@ -13,6 +13,8 @@ class WelcomeScreen : public QDialog
 
 public:
     explicit WelcomeScreen(QWidget *parent = nullptr);
+    void setUser(QString rec);
+    QString getUser();
     void loadQuote();
     ~WelcomeScreen();
 
@@ -21,6 +23,7 @@ private slots:
 
 private:
     Ui::WelcomeScreen *ui;
+    QString received;
 };
 
 #endif // WELCOMESCREEN_H

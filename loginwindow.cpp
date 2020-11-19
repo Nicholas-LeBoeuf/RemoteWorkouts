@@ -58,12 +58,13 @@ void LoginWindow::on_login_clicked()
                         idsend.exec();
                         idsend.next();
                         QString idsent = idsend.value(0).toString();
-                        MainWindow *newMain = new MainWindow();
+                        //MainWindow *newMain = new MainWindow();
                         WelcomeScreen *newWelcome = new WelcomeScreen();
-                        newMain->setUser(idsent);
-                        newMain->loadData();
-                        newMain->show();
+                        //newMain->setUser(idsent);
+                        //newMain->loadData();
+                        //newMain->show();
                         newWelcome->loadQuote();
+                        newWelcome->setUser(idsent);
                         newWelcome->show();
                         this->hide();
                     }
