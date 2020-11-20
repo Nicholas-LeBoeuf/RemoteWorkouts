@@ -15,6 +15,7 @@
 #include "ui_mainwindow.h"
 #include "edituserinfo.h"
 #include "forgotpassword.h"
+#include "loginwindow.h"
 
 using namespace QtCharts;
 
@@ -231,4 +232,11 @@ void MainWindow::on_changePassword_clicked()
         newCP->setUser(idsent);
         newCP->loadSecurityQ();
         newCP->show();
+}
+
+void MainWindow::on_logout_clicked()
+{
+    LoginWindow *newLogin = new LoginWindow();
+    newLogin->show();
+    this->close();
 }

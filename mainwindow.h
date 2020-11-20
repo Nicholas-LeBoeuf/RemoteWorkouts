@@ -31,6 +31,8 @@ private slots:
 
     void on_changePassword_clicked();
 
+    void on_logout_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString received;
