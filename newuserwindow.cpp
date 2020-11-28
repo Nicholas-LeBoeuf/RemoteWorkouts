@@ -1,4 +1,5 @@
 #include "newuserwindow.h"
+#include "loginwindow.h"
 #include "ui_newuserwindow.h"
 #include <iostream>
 #include <QMessageBox>
@@ -87,6 +88,9 @@ void newuserwindow::on_CreateButton_clicked() {
 
                     msgBox.setText("account created");
                     msgBox.exec();
+                    LoginWindow *login = new LoginWindow();
+                    this->close();
+                    login->show();
                 }
                 else if(username == unattempt.value(0).toString()) {
                     QMessageBox msgBox;
@@ -151,5 +155,7 @@ newuserwindow::~newuserwindow()
 
 void newuserwindow::on_close_clicked()
 {
-    close();
+    LoginWindow *login = new LoginWindow();
+    login->show();
+    this->close();
 }

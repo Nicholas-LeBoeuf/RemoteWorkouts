@@ -109,6 +109,7 @@ LoginWindow::~LoginWindow()
 void LoginWindow::on_newuser_clicked()
 {
     newuserwindow newuserwindow;
+    this->hide();
     newuserwindow.exec();
     update();
 }
