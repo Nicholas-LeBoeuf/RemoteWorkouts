@@ -41,7 +41,7 @@ QLabel { background: transparent; }</string>
       <widget class="QLabel" name="Title">
        <property name="font">
         <font>
-         <family>Eras Demi ITC</family>
+         <family>Rockwell</family>
          <pointsize>25</pointsize>
          <weight>50</weight>
          <italic>false</italic>
@@ -67,7 +67,7 @@ QLabel { background: transparent; }</string>
         <widget class="QLabel" name="PWord">
          <property name="font">
           <font>
-           <family>Eras Demi ITC</family>
+           <family>Rockwell</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -86,7 +86,7 @@ QLabel { background: transparent; }</string>
         <widget class="QLabel" name="ConfirmPw">
          <property name="font">
           <font>
-           <family>Eras Demi ITC</family>
+           <family>Rockwell</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -207,7 +207,7 @@ QLabel { background: transparent; }</string>
         <widget class="QLabel" name="ConfirmPw_3">
          <property name="font">
           <font>
-           <family>Eras Demi ITC</family>
+           <family>Rockwell</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -232,7 +232,7 @@ QLabel { background: transparent; }</string>
          </property>
          <property name="font">
           <font>
-           <family>Eras Demi ITC</family>
+           <family>Rockwell</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -251,7 +251,7 @@ QLabel { background: transparent; }</string>
         <widget class="QLabel" name="ConfirmPw_2">
          <property name="font">
           <font>
-           <family>Eras Demi ITC</family>
+           <family>Rockwell</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -270,7 +270,7 @@ QLabel { background: transparent; }</string>
         <widget class="QLabel" name="LName">
          <property name="font">
           <font>
-           <family>Eras Demi ITC</family>
+           <family>Rockwell</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -356,7 +356,7 @@ QLabel { background: transparent; }</string>
         <widget class="QLabel" name="UName">
          <property name="font">
           <font>
-           <family>Eras Demi ITC</family>
+           <family>Rockwell</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -482,7 +482,7 @@ QLabel { background: transparent; }</string>
          </property>
          <property name="font">
           <font>
-           <family>Eras Demi ITC</family>
+           <family>Rockwell</family>
            <pointsize>12</pointsize>
           </font>
          </property>
@@ -504,7 +504,7 @@ QLabel { background: transparent; }</string>
         <widget class="QPushButton" name="close">
          <property name="font">
           <font>
-           <family>Eras Demi ITC</family>
+           <family>Rockwell</family>
            <pointsize>12</pointsize>
           </font>
          </property>

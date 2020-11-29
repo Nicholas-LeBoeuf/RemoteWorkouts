@@ -169,9 +169,16 @@ QLabel { background: transparent; }
          <height>0</height>
         </size>
        </property>
+       <property name="maximumSize">
+        <size>
+         <width>175</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="font">
         <font>
-         <family>Eras Demi ITC</family>
+         <family>Rockwell</family>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="cursor">
@@ -215,9 +222,16 @@ QLabel { background: transparent; }
          <height>0</height>
         </size>
        </property>
+       <property name="maximumSize">
+        <size>
+         <width>175</width>
+         <height>150</height>
+        </size>
+       </property>
        <property name="font">
         <font>
-         <family>Eras Demi ITC</family>
+         <family>Rockwell</family>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="cursor">
@@ -261,9 +275,16 @@ QLabel { background: transparent; }
          <height>0</height>
         </size>
        </property>
+       <property name="maximumSize">
+        <size>
+         <width>175</width>
+         <height>150</height>
+        </size>
+       </property>
        <property name="font">
         <font>
-         <family>Eras Demi ITC</family>
+         <family>Rockwell</family>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="cursor">
