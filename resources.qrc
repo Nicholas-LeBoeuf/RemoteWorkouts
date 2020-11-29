@@ -3,5 +3,6 @@
     <qresource prefix="/">
         <file>images/RWLogo.png</file>
         <file>images/background.jpg</file>
+        <file>images/dryEraseBoard.jpg</file>
     </qresource>
 </RCC>
