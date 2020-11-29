@@ -29,7 +29,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="exerciseTab">
      <attribute name="title">
@@ -55,9 +55,9 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>10</y>
+          <y>80</y>
           <width>401</width>
-          <height>301</height>
+          <height>231</height>
          </rect>
         </property>
         <property name="frameShape">
@@ -656,7 +656,7 @@
      <x>0</x>
      <y>0</y>
      <width>912</width>
-     <height>24</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

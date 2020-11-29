@@ -62,6 +62,7 @@ void MainWindow::loadData(){
 
     loadTracking();
     loadExercises();
+    loadRecommendations();
 }
 
 void MainWindow::setUser(QString rec){
@@ -199,6 +200,27 @@ void MainWindow::loadTracking(){
     ui->bmiTable->show();
 }
 
+void MainWindow::loadRecommendations(){
+    QSqlQueryModel *model = new QSqlQueryModel();
+    initializeRecModel(model);
+    ui->recTable->setModel(model);
+}
+
+void MainWindow::initializeRecModel(QSqlQueryModel *model)
+{
+    QSqlQuery goal;
+    goal.prepare("select Goal from userinfo where UserID = " +  getUser() + ";");
+    goal.exec();
+    goal.next();
+    QString usg = goal.value(0).toString();
+    model->setQuery("select Exercise, Reps, Weights from GoalBasedExerciseList where GoalID =" + usg + ";");
+    qDebug() << model->query().lastQuery();
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Reps"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Weights"));
+
+}
+
 void MainWindow::loadExercises(){
     QString execlist[4] = {"cardio", "core", "lowerbody", "upperbody"};
     for(int i = 0; i < 4; i++) {
@@ -220,6 +242,7 @@ void MainWindow::loadExercises(){
         }
     }
 }
+
 void MainWindow::on_changePassword_clicked()
 {
         QSqlQuery idsend;
