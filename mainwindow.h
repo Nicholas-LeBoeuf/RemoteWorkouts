@@ -38,6 +38,8 @@ private:
     QString received;
 
 
+    void loadRecommendations();
 
+    void initializeRecModel(QSqlQueryModel *model);
 };
 #endif // MAINWINDOW_H
