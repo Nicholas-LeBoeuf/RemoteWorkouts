@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Welcome to Remote Workouts</string>
   </property>
   <property name="windowIcon">
    <iconset resource="resources.qrc">
@@ -104,7 +104,7 @@ QLabel { background: transparent; }
     <string>Lets get started!</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -175,10 +175,9 @@ QLabel { background: transparent; }
     </item>
    </layout>
   </widget>
+  <zorder>layoutWidget</zorder>
   <zorder>whiteboard</zorder>
   <zorder>quote</zorder>
-  <zorder>date</zorder>
-  <zorder>time</zorder>
   <zorder>close</zorder>
  </widget>
  <resources>
