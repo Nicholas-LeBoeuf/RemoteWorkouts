@@ -77,6 +77,7 @@ void MainWindow::on_edit_clicked()
 {
     EditUserInfo EditUserInfo(this);
     EditUserInfo.setUser(getUser());
+    EditUserInfo.loadData();
     EditUserInfo.exec();
     if(EditUserInfo.close()){
         loadData();
