@@ -210,7 +210,7 @@ QLabel {border: transparent}
              <string notr="true"/>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>4</number>
             </property>
             <widget class="QWidget" name="tab_5">
              <attribute name="title">
@@ -853,7 +853,7 @@ QLabel {border: transparent}
      <x>0</x>
      <y>0</y>
      <width>1432</width>
-     <height>24</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

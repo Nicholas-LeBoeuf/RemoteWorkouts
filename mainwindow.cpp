@@ -264,3 +264,44 @@ void MainWindow::on_logout_clicked()
     newLogin->show();
     this->close();
 }
+
+void MainWindow::on_recTable_doubleClicked(const QModelIndex &index)
+{
+    QMessageBox msgBox;
+    int ind = index.row() + 1;
+    msgBox.setText(QString::fromStdString(std::to_string(test)));
+    msgBox.exec();
+
+}
+
+void MainWindow::on_cardioTable_doubleClicked(const QModelIndex &index)
+{
+    QMessageBox msgBox;
+    int test = index.row();
+    msgBox.setText(QString::fromStdString(std::to_string(test)));
+    msgBox.exec();
+}
+
+void MainWindow::on_coreTable_doubleClicked(const QModelIndex &index)
+{
+    QMessageBox msgBox;
+    int test = index.row();
+    msgBox.setText(QString::fromStdString(std::to_string(test)));
+    msgBox.exec();
+}
+
+void MainWindow::on_lowerTable_doubleClicked(const QModelIndex &index)
+{
+    QMessageBox msgBox;
+    int test = index.row();
+    msgBox.setText(QString::fromStdString(std::to_string(test)));
+    msgBox.exec();
+}
+
+void MainWindow::on_upperTable_doubleClicked(const QModelIndex &index)
+{
+    QMessageBox msgBox;
+    int test = index.row();
+    msgBox.setText(QString::fromStdString(std::to_string(test)));
+    msgBox.exec();
+}

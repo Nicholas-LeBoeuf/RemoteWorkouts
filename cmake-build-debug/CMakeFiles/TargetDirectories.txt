@@ -1,4 +1,4 @@
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/_SNHU/- Soph Software Engineering/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts_autogen.dir
+E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts.dir
+E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts_autogen.dir
