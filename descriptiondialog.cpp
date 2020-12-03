@@ -114,5 +114,11 @@ void descriptionDialog::on_reset_clicked()
 
 void descriptionDialog::on_youtube_clicked()
 {
-    QDesktopServices::openUrl(QUrl("https://www.youtube.com/watch?v=dQw4w9WgXcQ", QUrl::TolerantMode));
+    QString youtube = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    QDesktopServices::openUrl(QUrl(youtube, QUrl::TolerantMode));
+}
+
+void descriptionDialog::on_close_clicked()
+{
+    close();
 }

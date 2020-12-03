@@ -26,7 +26,7 @@ QLabel { background: transparent; }
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>150</y>
+     <y>190</y>
      <width>541</width>
      <height>321</height>
     </rect>
@@ -55,7 +55,7 @@ QLabel { background: transparent; }
    <property name="geometry">
     <rect>
      <x>90</x>
-     <y>140</y>
+     <y>180</y>
      <width>601</width>
      <height>361</height>
     </rect>
@@ -74,7 +74,7 @@ QLabel { background: transparent; }
    <property name="geometry">
     <rect>
      <x>310</x>
-     <y>550</y>
+     <y>560</y>
      <width>171</width>
      <height>31</height>
     </rect>
@@ -110,7 +110,7 @@ QLabel { background: transparent; }
      <x>0</x>
      <y>10</y>
      <width>781</width>
-     <height>113</height>
+     <height>151</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -174,14 +174,32 @@ QLabel { background: transparent; }
      </widget>
     </item>
     <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
      <widget class="QLabel" name="notif">
       <property name="font">
        <font>
+        <family>Rockwell</family>
         <pointsize>14</pointsize>
         <weight>75</weight>
         <bold>true</bold>
         <underline>true</underline>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {color: rgb(139, 120, 230);}
+</string>
       </property>
       <property name="text">
        <string>nextworkout</string>

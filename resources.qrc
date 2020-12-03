@@ -6,5 +6,6 @@
         <file>images/dryEraseBoard.jpg</file>
         <file>images/stopwatch.png</file>
         <file>images/youtube.png</file>
+        <file>images/chalkboard.jpg</file>
     </qresource>
 </RCC>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>603</width>
-    <height>532</height>
+    <width>929</width>
+    <height>725</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,16 +25,19 @@ QLabel { background: transparent; }
   <widget class="QPushButton" name="start">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>270</y>
-     <width>81</width>
-     <height>21</height>
+     <x>690</x>
+     <y>450</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Rockwell</family>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {color: white; background-color: rgb(58, 58, 58)}</string>
@@ -49,16 +52,19 @@ QLabel { background: transparent; }
   <widget class="QPushButton" name="stop">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>500</y>
-     <width>80</width>
-     <height>25</height>
+     <x>690</x>
+     <y>690</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Rockwell</family>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {color: white; background-color: rgb(58, 58, 58)}</string>
@@ -70,16 +76,19 @@ QLabel { background: transparent; }
   <widget class="QPushButton" name="reset">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>380</y>
-     <width>80</width>
-     <height>25</height>
+     <x>830</x>
+     <y>570</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Rockwell</family>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {color: white; background-color: rgb(58, 58, 58)}</string>
@@ -91,8 +100,8 @@ QLabel { background: transparent; }
   <widget class="QLabel" name="timer">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>300</y>
+     <x>630</x>
+     <y>490</y>
      <width>211</width>
      <height>191</height>
     </rect>
@@ -112,16 +121,13 @@ QLabel { background: transparent; }
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
    </property>
    <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap resource="resources.qrc">:/images/stopwatch.png</pixmap>
+    <string>0</string>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -136,8 +142,8 @@ QLabel { background: transparent; }
   <widget class="QLabel" name="stopwatch">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>300</y>
+     <x>630</x>
+     <y>490</y>
      <width>211</width>
      <height>191</height>
     </rect>
@@ -158,8 +164,8 @@ QLabel { background: transparent; }
   <widget class="QPushButton" name="youtube">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>300</y>
+     <x>60</x>
+     <y>490</y>
      <width>211</width>
      <height>151</height>
     </rect>
@@ -179,76 +185,160 @@ color: transparent;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QLabel" name="chalkboard">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>10</y>
-     <width>601</width>
-     <height>241</height>
+     <x>104</x>
+     <y>90</y>
+     <width>721</width>
+     <height>351</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QLabel" name="exerciseName">
-      <property name="font">
-       <font>
-        <family>Rockwell</family>
-        <pointsize>25</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel {color: rgb(139, 120, 230);}</string>
-      </property>
-      <property name="text">
-       <string>Exercise</string>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item alignment="Qt::AlignHCenter">
-     <widget class="QLabel" name="exerciseDesc">
-      <property name="font">
-       <font>
-        <family>Rockwell</family>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel {color: rgb(139, 120, 230);}</string>
-      </property>
-      <property name="text">
-       <string>Description</string>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-      <property name="openExternalLinks">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/images/chalkboard.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>650</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {color: rgb(139, 120, 230);}</string>
+   </property>
+   <property name="text">
+    <string>Click the YouTube logo to see a video tutorial!</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>570</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {color: white; background-color: rgb(58, 58, 58)}</string>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="exerciseName">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>30</y>
+     <width>711</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell</family>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {color: rgb(139, 120, 230);}</string>
+   </property>
+   <property name="text">
+    <string>Exercise</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="exerciseDesc">
+   <property name="geometry">
+    <rect>
+     <x>124</x>
+     <y>110</y>
+     <width>681</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Description</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+   <property name="openExternalLinks">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>chalkboard</zorder>
   <zorder>stopwatch</zorder>
+  <zorder>layoutWidget</zorder>
   <zorder>timer</zorder>
-  <zorder>exerciseName</zorder>
-  <zorder>exerciseDesc</zorder>
   <zorder>start</zorder>
   <zorder>stop</zorder>
   <zorder>reset</zorder>
   <zorder>youtube</zorder>
+  <zorder>exerciseDesc</zorder>
+  <zorder>label</zorder>
+  <zorder>close</zorder>
  </widget>
  <resources>
   <include location="resources.qrc"/>

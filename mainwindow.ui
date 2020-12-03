@@ -521,7 +521,7 @@ QLabel {border: transparent}
               <x>30</x>
               <y>310</y>
               <width>361</width>
-              <height>241</height>
+              <height>261</height>
              </rect>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout">
@@ -771,10 +771,10 @@ QLabel {border: transparent}
            <widget class="QLabel" name="label_3">
             <property name="geometry">
              <rect>
-              <x>250</x>
-              <y>30</y>
-              <width>241</width>
-              <height>16</height>
+              <x>130</x>
+              <y>20</y>
+              <width>351</width>
+              <height>31</height>
              </rect>
             </property>
             <property name="font">
@@ -792,10 +792,10 @@ QLabel {border: transparent}
            <widget class="QLabel" name="label_6">
             <property name="geometry">
              <rect>
-              <x>250</x>
+              <x>80</x>
               <y>270</y>
               <width>241</width>
-              <height>16</height>
+              <height>31</height>
              </rect>
             </property>
             <property name="font">
@@ -813,9 +813,9 @@ QLabel {border: transparent}
            <widget class="QLabel" name="nextWkLabel">
             <property name="geometry">
              <rect>
-              <x>540</x>
+              <x>530</x>
               <y>140</y>
-              <width>111</width>
+              <width>151</width>
               <height>71</height>
              </rect>
             </property>
@@ -826,6 +826,9 @@ QLabel {border: transparent}
             </property>
             <property name="text">
              <string>nextworkout</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
             </property>
            </widget>
           </widget>
@@ -932,7 +935,7 @@ QLabel {border: transparent}
      <x>0</x>
      <y>0</y>
      <width>1432</width>
-     <height>21</height>
+     <height>24</height>
     </rect>
    </property>
   </widget>
