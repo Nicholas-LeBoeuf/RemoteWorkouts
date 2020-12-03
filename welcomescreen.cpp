@@ -49,6 +49,7 @@ void WelcomeScreen::loadQuote() {
     ui->quote->setText(quoteSql.value(0).toString());
     ui->date->setText(date.toString("dddd, MMMM d, yyyy"));
     ui->time->setText(time.toString("h:mm AP"));
+    dateNotif();
 }
 
 void WelcomeScreen::on_close_clicked()
@@ -58,4 +59,26 @@ void WelcomeScreen::on_close_clicked()
     newMain->loadData();
     newMain->show();
     this->hide();
+}
+
+void WelcomeScreen::dateNotif(){
+    QDate today = QDate::currentDate();
+
+    QSqlQuery getsch;
+    getsch.prepare("select NextScheduled from users where ID = " + getUser() + ";");
+    getsch.exec();
+    getsch.next();
+
+    QString getschstr = getsch.value(0).toString();
+
+    QDate scheduled = QDate::fromString(getschstr, "ddd MMM d yyyy");
+    if(today.daysTo(scheduled) < 0){
+        ui->notif->setText("Your scheduled session on " + scheduled.toString() + " is overdue by " + QString::number(today.daysTo(scheduled) * -1) + " days!");
+    }
+    if(today.daysTo(scheduled) == 0){
+        ui->notif->setText("You have a scheduled session today!");
+    }
+    if(today.daysTo(scheduled) > 0){
+        ui->notif->setText("You have a scheduled session on " + scheduled.toString());
+    }
 }

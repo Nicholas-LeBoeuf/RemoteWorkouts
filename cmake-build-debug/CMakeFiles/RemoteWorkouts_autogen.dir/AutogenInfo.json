@@ -10,6 +10,11 @@
 	"HEADERS" : 
 	[
 		[
+			"E:/Projects/RemoteWorkouts/descriptiondialog.h",
+			"MU",
+			"EWIEGA46WW/moc_descriptiondialog.cpp"
+		],
+		[
 			"E:/Projects/RemoteWorkouts/edituserinfo.h",
 			"MU",
 			"EWIEGA46WW/moc_edituserinfo.cpp"
@@ -101,6 +106,7 @@
 	"SETTINGS_FILE" : "E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "E:/Projects/RemoteWorkouts/descriptiondialog.cpp", "MU" ],
 		[ "E:/Projects/RemoteWorkouts/edituserinfo.cpp", "MU" ],
 		[ "E:/Projects/RemoteWorkouts/forgotpassword.cpp", "MU" ],
 		[ "E:/Projects/RemoteWorkouts/loginwindow.cpp", "MU" ],

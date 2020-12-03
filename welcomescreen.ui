@@ -108,9 +108,9 @@ QLabel { background: transparent; }
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>30</y>
+     <y>10</y>
      <width>781</width>
-     <height>90</height>
+     <height>113</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -170,6 +170,27 @@ QLabel { background: transparent; }
       </property>
       <property name="wordWrap">
        <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="notif">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>nextworkout</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::PlainText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>

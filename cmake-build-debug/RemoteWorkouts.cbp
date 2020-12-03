@@ -131,6 +131,15 @@
 		<Unit filename="E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/mocs_compilation.cpp">
 			<Option target="RemoteWorkouts"/>
 		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/descriptiondialog.cpp">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/descriptiondialog.h">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/descriptiondialog.ui">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
 		<Unit filename="E:/Projects/RemoteWorkouts/edituserinfo.cpp">
 			<Option target="RemoteWorkouts"/>
 		</Unit>

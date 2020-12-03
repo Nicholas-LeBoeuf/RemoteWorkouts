@@ -24,7 +24,7 @@ void LoginWindow::on_login_clicked()
     QSqlDatabase loginbase;
     loginbase = QSqlDatabase::addDatabase("QMYSQL");
 
-    loginbase.setHostName("24.61.234.35");
+    loginbase.setHostName("localhost");
     loginbase.setDatabaseName("remoteworkouts");
     loginbase.setUserName("defaultuser");
     loginbase.setPassword("defaultuserpassword");
@@ -54,17 +54,16 @@ void LoginWindow::on_login_clicked()
 
                         logindate.prepare("update users set lastlogin= '" + datestr + "' where username='" + username + "';");
                         logindate.exec();
+
                         idsend.prepare("select ID from users where username='" + username + "';");
                         idsend.exec();
                         idsend.next();
+
                         QString idsent = idsend.value(0).toString();
-                        //MainWindow *newMain = new MainWindow();
+
                         WelcomeScreen *newWelcome = new WelcomeScreen();
-                        //newMain->setUser(idsent);
-                        //newMain->loadData();
-                        //newMain->show();
-                        newWelcome->loadQuote();
                         newWelcome->setUser(idsent);
+                        newWelcome->loadQuote();
                         newWelcome->show();
                         this->hide();
                     }
@@ -83,7 +82,6 @@ void LoginWindow::on_login_clicked()
         }
     }
 }
-
 
 bool LoginWindow::fieldCheck() {
     const QString username = ui->username->text();
@@ -119,7 +117,7 @@ void LoginWindow::on_forgotPassword_clicked()
     QSqlDatabase loginbase;
     loginbase = QSqlDatabase::addDatabase("QMYSQL");
 
-    loginbase.setHostName("24.61.234.35");
+    loginbase.setHostName("localhost");
     loginbase.setDatabaseName("remoteworkouts");
     loginbase.setUserName("defaultuser");
     loginbase.setPassword("defaultuserpassword");

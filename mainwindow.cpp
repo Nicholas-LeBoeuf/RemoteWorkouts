@@ -6,7 +6,7 @@
 #include <QtSql>
 #include <QDebug>
 #include <QDate>
-
+#include <QCalendarWidget>
 #include <QChart>
 #include <QChartView>
 #include <QLineSeries>
@@ -321,4 +321,23 @@ void MainWindow::on_upperTable_doubleClicked(const QModelIndex &index)
     upperbody->loadData();
     upperbody->show();
 
+}
+
+void MainWindow::on_calendarWidget_selectionChanged()
+{
+    QMessageBox msgBox;
+    QString test = ui->calendarWidget->selectedDate().toString();
+    msgBox.setText("Do you wish to set the date of your next workout to " + test + "?");
+    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+    int ret = msgBox.exec();
+    QSqlQuery setDate;
+    switch(ret){
+    case QMessageBox::Yes:
+        setDate.prepare("UPDATE users SET NextScheduled = '" + test + "' where ID = " + getUser() + ";");
+        setDate.exec();
+        qDebug() << setDate.lastQuery();
+        break;
+    case QMessageBox::No:
+        break;
+    }
 }

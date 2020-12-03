@@ -43,6 +43,8 @@ private slots:
 
     void on_upperTable_doubleClicked(const QModelIndex &index);
 
+    void on_calendarWidget_selectionChanged();
+
 private:
     Ui::MainWindow *ui;
     QString received;

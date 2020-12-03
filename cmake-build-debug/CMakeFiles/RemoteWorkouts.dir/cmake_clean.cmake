@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
   "CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj"
+  "CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.obj"
   "CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.obj"
   "CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.obj"
   "CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj"
