@@ -4,5 +4,7 @@
         <file>images/RWLogo.png</file>
         <file>images/background.jpg</file>
         <file>images/dryEraseBoard.jpg</file>
+        <file>images/stopwatch.png</file>
+        <file>images/youtube.png</file>
     </qresource>
 </RCC>

@@ -1,5 +1,6 @@
 #ifndef WELCOMESCREEN_H
 #define WELCOMESCREEN_H
+#include <QDialog>
 
 namespace Ui {
 class WelcomeScreen;

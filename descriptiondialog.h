@@ -31,6 +31,9 @@ private slots:
 
     void on_reset_clicked();
 
+
+    void on_youtube_clicked();
+
 private:
     Ui::descriptionDialog *ui;
     QTimer *timer;

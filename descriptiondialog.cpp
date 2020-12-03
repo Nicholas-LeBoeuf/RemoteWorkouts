@@ -8,6 +8,9 @@
 #include <QDebug>
 #include <iostream>
 #include <QTimer>
+#include <QUrl>
+#include <QtCore>
+#include <QDesktopServices>
 
 descriptionDialog::descriptionDialog(QWidget *parent) :
     QDialog(parent),
@@ -69,6 +72,7 @@ void descriptionDialog::loadData()
     ui->exerciseName->setText(exercise.value(0).toString());
     ui->exerciseDesc->setText(exercise.value(1).toString());
 
+    ui->youtube->setText("<a href=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\">Click Here!</a>");
 
     //ui->label->setText(ID);
 }
@@ -105,4 +109,10 @@ void descriptionDialog::on_reset_clicked()
     timeStr = std::to_string(time);
     timer->stop();
     updateUI();
+}
+
+
+void descriptionDialog::on_youtube_clicked()
+{
+    QDesktopServices::openUrl(QUrl("https://www.youtube.com/watch?v=dQw4w9WgXcQ", QUrl::TolerantMode));
 }
