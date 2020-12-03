@@ -7,9 +7,11 @@
 #include <QtSql>
 #include <QDebug>
 #include <iostream>
+#include <QTimer>
 
 descriptionDialog::descriptionDialog(QWidget *parent) :
     QDialog(parent),
+    time { 0 },
     ui(new Ui::descriptionDialog)
 {
     ui->setupUi(this);
@@ -69,4 +71,38 @@ void descriptionDialog::loadData()
 
 
     //ui->label->setText(ID);
+}
+
+void descriptionDialog::updateUI()
+{
+    ui->timer->setText(QString::fromStdString(timeStr));
+}
+
+void descriptionDialog::on_start_clicked()
+{
+    timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateTime()));
+    timer->start(1000);
+
+}
+
+void descriptionDialog::updateTime()
+{
+    time = time + 1;
+    timeStr = std::to_string(time);
+    updateUI();
+
+}
+
+void descriptionDialog::on_stop_clicked()
+{
+    timer->stop();
+}
+
+void descriptionDialog::on_reset_clicked()
+{
+    time = 0;
+    timeStr = std::to_string(time);
+    timer->stop();
+    updateUI();
 }
