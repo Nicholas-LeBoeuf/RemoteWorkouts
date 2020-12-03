@@ -16,6 +16,7 @@
 #include "edituserinfo.h"
 #include "forgotpassword.h"
 #include "loginwindow.h"
+#include "descriptiondialog.h"
 
 using namespace QtCharts;
 
@@ -269,39 +270,55 @@ void MainWindow::on_recTable_doubleClicked(const QModelIndex &index)
 {
     QMessageBox msgBox;
     int ind = index.row() + 1;
-    msgBox.setText(QString::fromStdString(std::to_string(test)));
+    msgBox.setText(QString::fromStdString(std::to_string(ind)));
     msgBox.exec();
 
 }
 
 void MainWindow::on_cardioTable_doubleClicked(const QModelIndex &index)
 {
-    QMessageBox msgBox;
-    int test = index.row();
-    msgBox.setText(QString::fromStdString(std::to_string(test)));
-    msgBox.exec();
+    descriptionDialog *cardio = new descriptionDialog();
+
+    cardio->setIndexID(index.row() + 1);
+    cardio->setTableIndex(1);
+    cardio->loadData();
+    cardio->show();
+
+
+    //QMessageBox msgBox;
+    //int test = index.row() + 1;
+    //msgBox.setText(QString::fromStdString(std::to_string(test)));
+    //msgBox.exec();
 }
 
 void MainWindow::on_coreTable_doubleClicked(const QModelIndex &index)
 {
-    QMessageBox msgBox;
-    int test = index.row();
-    msgBox.setText(QString::fromStdString(std::to_string(test)));
-    msgBox.exec();
+    descriptionDialog *core = new descriptionDialog();
+
+    core->setIndexID(index.row() + 1);
+    core->setTableIndex(2);
+    core->loadData();
+    core->show();
 }
 
 void MainWindow::on_lowerTable_doubleClicked(const QModelIndex &index)
 {
-    QMessageBox msgBox;
-    int test = index.row();
-    msgBox.setText(QString::fromStdString(std::to_string(test)));
-    msgBox.exec();
+    descriptionDialog *lowerbody = new descriptionDialog();
+
+    lowerbody->setIndexID(index.row() + 1);
+    lowerbody->setTableIndex(3);
+    lowerbody->loadData();
+    lowerbody->show();
+
 }
 
 void MainWindow::on_upperTable_doubleClicked(const QModelIndex &index)
 {
-    QMessageBox msgBox;
-    int test = index.row();
-    msgBox.setText(QString::fromStdString(std::to_string(test)));
-    msgBox.exec();
+    descriptionDialog *upperbody = new descriptionDialog();
+
+    upperbody->setIndexID(index.row() + 1);
+    upperbody->setTableIndex(4);
+    upperbody->loadData();
+    upperbody->show();
+
 }
