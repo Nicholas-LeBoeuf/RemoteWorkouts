@@ -21,6 +21,28 @@ EditUserInfo::~EditUserInfo()
     delete ui;
 }
 
+void EditUserInfo::loadData()
+{
+    QSqlQuery info;
+    info.prepare("select age, heightinches, weight, gender, goal from userinfo where UserID='" + getUser() + "';");
+    info.exec();
+    info.next();
+
+    ui->userAge->setText(info.value(0).toString());
+    ui->userHeight->setText(info.value(1).toString());
+    ui->userWeight->setText(info.value(2).toString());
+    ui->userGender->setText(info.value(3).toString());
+
+    const QString goal = info.value(4).toString();
+
+    if(goal == "1")
+        ui->goalCombo->setCurrentText("Losing weight");
+    else if (goal == "2")
+        ui->goalCombo->setCurrentText("Gaining muscle");
+    else if(goal == "3")
+        ui->goalCombo->setCurrentText("Staying fit");
+}
+
 void EditUserInfo::on_editButton_clicked()
 {
     const QString username = ui->userUsername->text();

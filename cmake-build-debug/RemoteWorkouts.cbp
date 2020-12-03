@@ -122,7 +122,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.rule">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
 		<Unit filename="E:/Projects/RemoteWorkouts/cmake-build-debug/RemoteWorkouts_autogen/mocs_compilation.cpp">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/descriptiondialog.cpp">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/descriptiondialog.h">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/descriptiondialog.ui">
 			<Option target="RemoteWorkouts"/>
 		</Unit>
 		<Unit filename="E:/Projects/RemoteWorkouts/edituserinfo.cpp">
@@ -132,6 +147,15 @@
 			<Option target="RemoteWorkouts"/>
 		</Unit>
 		<Unit filename="E:/Projects/RemoteWorkouts/edituserinfo.ui">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/forgotpassword.cpp">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/forgotpassword.h">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/forgotpassword.ui">
 			<Option target="RemoteWorkouts"/>
 		</Unit>
 		<Unit filename="E:/Projects/RemoteWorkouts/loginwindow.cpp">
@@ -164,6 +188,9 @@
 		<Unit filename="E:/Projects/RemoteWorkouts/newuserwindow.ui">
 			<Option target="RemoteWorkouts"/>
 		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/resources.qrc">
+			<Option target="RemoteWorkouts"/>
+		</Unit>
 		<Unit filename="E:/Projects/RemoteWorkouts/welcomescreen.cpp">
 			<Option target="RemoteWorkouts"/>
 		</Unit>
@@ -174,6 +201,9 @@
 			<Option target="RemoteWorkouts"/>
 		</Unit>
 		<Unit filename="E:/Projects/RemoteWorkouts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="E:/Projects/RemoteWorkouts/resources.qrc">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="E:/Projects/RemoteWorkouts/Qt/5.15.1/mingw81_64/lib/cmake/Qt5/Qt5Config.cmake">

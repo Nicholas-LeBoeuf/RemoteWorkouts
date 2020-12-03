@@ -1,4 +1,5 @@
 #include "newuserwindow.h"
+#include "loginwindow.h"
 #include "ui_newuserwindow.h"
 #include <iostream>
 #include <QMessageBox>
@@ -6,6 +7,7 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QDebug>
+#include <QDate>
 #include <string.h>
 
 newuserwindow::newuserwindow(QWidget *parent) :
@@ -34,26 +36,26 @@ void newuserwindow::on_CreateButton_clicked() {
 
     QString securityQuestionID;
 
-    if (ui->securityQCombo->currentText() == "What city were you born in?")
+    if (ui->securityQCombo->currentText() == "City were you born in?")
         securityQuestionID = "1";
-    else if (ui->securityQCombo->currentText() == "What town did you grow up in?")
+    else if (ui->securityQCombo->currentText() == "Town you grew up in?")
         securityQuestionID = "2";
-    else if (ui->securityQCombo->currentText() == "What was your first houses number?")
+    else if (ui->securityQCombo->currentText() == "First houses number?")
         securityQuestionID = "3";
-    else if (ui->securityQCombo->currentText() == "What was the name of the street of your first house? (don't include st. etc.)")
+    else if (ui->securityQCombo->currentText() == "Name of your first pet?")
         securityQuestionID = "4";
-    else if (ui->securityQCombo->currentText() == "What was the name of your first pet?")
+    else if (ui->securityQCombo->currentText() == "Favorite food?")
         securityQuestionID = "5";
-    else if (ui->securityQCombo->currentText() == "Whats your favorite food?")
+    else if (ui->securityQCombo->currentText() == "Favorite color?")
         securityQuestionID = "6";
-    else if (ui->securityQCombo->currentText() == "Whats your favorite color?")
-        securityQuestionID = "7";
 
     if (fieldValidation()) {
         if (passwordValidation()) {
 
 
-            QSqlQuery unattempt, createacct, createdefaultinfo;
+            QSqlQuery unattempt, createacct, createdefaultinfo, logindate;
+            QDate date = QDate::currentDate();
+            QString datestr = date.toString();
 
             unattempt.prepare("select username from users where username='" + username + "';");
             if (unattempt.exec()) {
@@ -86,6 +88,9 @@ void newuserwindow::on_CreateButton_clicked() {
 
                     msgBox.setText("account created");
                     msgBox.exec();
+                    LoginWindow *login = new LoginWindow();
+                    this->close();
+                    login->show();
                 }
                 else if(username == unattempt.value(0).toString()) {
                     QMessageBox msgBox;
@@ -150,5 +155,7 @@ newuserwindow::~newuserwindow()
 
 void newuserwindow::on_close_clicked()
 {
-    close();
+    LoginWindow *login = new LoginWindow();
+    login->show();
+    this->close();
 }

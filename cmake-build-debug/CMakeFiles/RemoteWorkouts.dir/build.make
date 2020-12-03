@@ -76,10 +76,19 @@ include CMakeFiles/RemoteWorkouts.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/RemoteWorkouts.dir/flags.make
 
+RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp: ../resources.qrc
+RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/RemoteWorkouts_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp: ../images/dryEraseBoard.jpg
+RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp: ../images/background.jpg
+RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp: ../images/RWLogo.png
+RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp: F:/Qt/5.15.1/mingw81_64/bin/rcc.exe
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for resources.qrc"
+	"F:\Program Files\JetBrains\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E cmake_autorcc E:/Projects/RemoteWorkouts/cmake-build-debug/CMakeFiles/RemoteWorkouts_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json Debug
+
 CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj: RemoteWorkouts_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj"
 	F:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\RemoteWorkouts_autogen\mocs_compilation.cpp.obj -c E:\Projects\RemoteWorkouts\cmake-build-debug\RemoteWorkouts_autogen\mocs_compilation.cpp
 
 CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.i: cmake_force
@@ -93,7 +102,7 @@ CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.s: cma
 CMakeFiles/RemoteWorkouts.dir/main.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/main.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RemoteWorkouts.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RemoteWorkouts.dir/main.cpp.obj"
 	F:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\main.cpp.obj -c E:\Projects\RemoteWorkouts\main.cpp
 
 CMakeFiles/RemoteWorkouts.dir/main.cpp.i: cmake_force
@@ -107,7 +116,7 @@ CMakeFiles/RemoteWorkouts.dir/main.cpp.s: cmake_force
 CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj: ../mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.obj"
 	F:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\mainwindow.cpp.obj -c E:\Projects\RemoteWorkouts\mainwindow.cpp
 
 CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.i: cmake_force
@@ -121,7 +130,7 @@ CMakeFiles/RemoteWorkouts.dir/mainwindow.cpp.s: cmake_force
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj: ../loginwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj"
 	F:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\loginwindow.cpp.obj -c E:\Projects\RemoteWorkouts\loginwindow.cpp
 
 CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.i: cmake_force
@@ -135,7 +144,7 @@ CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.s: cmake_force
 CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj: ../newuserwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj"
 	F:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\newuserwindow.cpp.obj -c E:\Projects\RemoteWorkouts\newuserwindow.cpp
 
 CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.i: cmake_force
@@ -149,7 +158,7 @@ CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.s: cmake_force
 CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.obj: ../edituserinfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.obj"
 	F:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\edituserinfo.cpp.obj -c E:\Projects\RemoteWorkouts\edituserinfo.cpp
 
 CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.i: cmake_force
@@ -163,7 +172,7 @@ CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.s: cmake_force
 CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
 CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
 CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.obj: ../welcomescreen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.obj"
 	F:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\welcomescreen.cpp.obj -c E:\Projects\RemoteWorkouts\welcomescreen.cpp
 
 CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.i: cmake_force
@@ -174,6 +183,48 @@ CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.s"
 	F:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Projects\RemoteWorkouts\welcomescreen.cpp -o CMakeFiles\RemoteWorkouts.dir\welcomescreen.cpp.s
 
+CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
+CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
+CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.obj: ../forgotpassword.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.obj"
+	F:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\forgotpassword.cpp.obj -c E:\Projects\RemoteWorkouts\forgotpassword.cpp
+
+CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.i"
+	F:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Projects\RemoteWorkouts\forgotpassword.cpp > CMakeFiles\RemoteWorkouts.dir\forgotpassword.cpp.i
+
+CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.s"
+	F:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Projects\RemoteWorkouts\forgotpassword.cpp -o CMakeFiles\RemoteWorkouts.dir\forgotpassword.cpp.s
+
+CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
+CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
+CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.obj: ../descriptiondialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.obj"
+	F:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\descriptiondialog.cpp.obj -c E:\Projects\RemoteWorkouts\descriptiondialog.cpp
+
+CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.i"
+	F:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Projects\RemoteWorkouts\descriptiondialog.cpp > CMakeFiles\RemoteWorkouts.dir\descriptiondialog.cpp.i
+
+CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.s"
+	F:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Projects\RemoteWorkouts\descriptiondialog.cpp -o CMakeFiles\RemoteWorkouts.dir\descriptiondialog.cpp.s
+
+CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/RemoteWorkouts.dir/flags.make
+CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/RemoteWorkouts.dir/includes_CXX.rsp
+CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.obj: RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+	F:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RemoteWorkouts.dir\RemoteWorkouts_autogen\EWIEGA46WW\qrc_resources.cpp.obj -c E:\Projects\RemoteWorkouts\cmake-build-debug\RemoteWorkouts_autogen\EWIEGA46WW\qrc_resources.cpp
+
+CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.i"
+	F:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Projects\RemoteWorkouts\cmake-build-debug\RemoteWorkouts_autogen\EWIEGA46WW\qrc_resources.cpp > CMakeFiles\RemoteWorkouts.dir\RemoteWorkouts_autogen\EWIEGA46WW\qrc_resources.cpp.i
+
+CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.s"
+	F:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Projects\RemoteWorkouts\cmake-build-debug\RemoteWorkouts_autogen\EWIEGA46WW\qrc_resources.cpp -o CMakeFiles\RemoteWorkouts.dir\RemoteWorkouts_autogen\EWIEGA46WW\qrc_resources.cpp.s
+
 # Object files for target RemoteWorkouts
 RemoteWorkouts_OBJECTS = \
 "CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/mocs_compilation.cpp.obj" \
@@ -182,7 +233,10 @@ RemoteWorkouts_OBJECTS = \
 "CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj" \
 "CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj" \
 "CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.obj" \
-"CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.obj"
+"CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.obj" \
+"CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.obj" \
+"CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.obj" \
+"CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 
 # External object files for target RemoteWorkouts
 RemoteWorkouts_EXTERNAL_OBJECTS =
@@ -194,6 +248,9 @@ RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/loginwindow.cpp.obj
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/newuserwindow.cpp.obj
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/edituserinfo.cpp.obj
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/welcomescreen.cpp.obj
+RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/forgotpassword.cpp.obj
+RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/descriptiondialog.cpp.obj
+RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/build.make
 RemoteWorkouts.exe: F:/Qt/5.15.1/mingw81_64/lib/libQt5Sql.a
 RemoteWorkouts.exe: F:/Qt/5.15.1/mingw81_64/lib/libQt5Charts.a
@@ -203,7 +260,7 @@ RemoteWorkouts.exe: F:/Qt/5.15.1/mingw81_64/lib/libQt5Core.a
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/linklibs.rsp
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/objects1.rsp
 RemoteWorkouts.exe: CMakeFiles/RemoteWorkouts.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable RemoteWorkouts.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable RemoteWorkouts.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RemoteWorkouts.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -215,7 +272,7 @@ CMakeFiles/RemoteWorkouts.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\RemoteWorkouts.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/RemoteWorkouts.dir/clean
 
-CMakeFiles/RemoteWorkouts.dir/depend:
+CMakeFiles/RemoteWorkouts.dir/depend: RemoteWorkouts_autogen/EWIEGA46WW/qrc_resources.cpp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\Projects\RemoteWorkouts E:\Projects\RemoteWorkouts E:\Projects\RemoteWorkouts\cmake-build-debug E:\Projects\RemoteWorkouts\cmake-build-debug E:\Projects\RemoteWorkouts\cmake-build-debug\CMakeFiles\RemoteWorkouts.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RemoteWorkouts.dir/depend
 

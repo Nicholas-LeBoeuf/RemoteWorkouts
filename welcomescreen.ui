@@ -6,36 +6,43 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>537</width>
-    <height>444</height>
+    <width>781</width>
+    <height>611</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Welcome to Remote Workouts</string>
   </property>
   <property name="windowIcon">
    <iconset resource="resources.qrc">
     <normaloff>:/images/RWLogo.png</normaloff>:/images/RWLogo.png</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {border-image: url(:/images/background.jpg)}
+QLabel { background: transparent; }
+</string>
+  </property>
   <widget class="QLabel" name="quote">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>230</y>
-     <width>471</width>
-     <height>121</height>
+     <x>120</x>
+     <y>190</y>
+     <width>541</width>
+     <height>321</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>15</pointsize>
+     <family>Freestyle Script</family>
+     <pointsize>25</pointsize>
+     <italic>false</italic>
     </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>Quote</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -44,67 +51,173 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="date">
+  <widget class="QLabel" name="whiteboard">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>40</y>
-     <width>471</width>
-     <height>51</height>
+     <x>90</x>
+     <y>180</y>
+     <width>601</width>
+     <height>361</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/images/dryEraseBoard.jpg</pixmap>
    </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="time">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>100</y>
-     <width>371</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
+   <property name="scaledContents">
     <bool>true</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="close">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>370</y>
-     <width>121</width>
-     <height>25</height>
+     <x>310</x>
+     <y>560</y>
+     <width>171</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Create&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {color: white; background-color: rgb(58, 58, 58)}</string>
    </property>
    <property name="text">
     <string>Lets get started!</string>
    </property>
   </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>781</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignVCenter">
+     <widget class="QLabel" name="date">
+      <property name="font">
+       <font>
+        <family>Rockwell</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {color: rgb(139, 120, 230);}
+</string>
+      </property>
+      <property name="text">
+       <string>Date</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item alignment="Qt::AlignVCenter">
+     <widget class="QLabel" name="time">
+      <property name="font">
+       <font>
+        <family>Rockwell</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {color: rgb(139, 120, 230);}
+</string>
+      </property>
+      <property name="text">
+       <string>Time</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="notif">
+      <property name="font">
+       <font>
+        <family>Rockwell</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {color: rgb(139, 120, 230);}
+</string>
+      </property>
+      <property name="text">
+       <string>nextworkout</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::PlainText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>whiteboard</zorder>
+  <zorder>quote</zorder>
+  <zorder>close</zorder>
  </widget>
  <resources>
   <include location="resources.qrc"/>

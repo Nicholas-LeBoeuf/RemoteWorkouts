@@ -31,11 +31,27 @@ private slots:
 
     void on_changePassword_clicked();
 
+    void on_logout_clicked();
+
+    void on_recTable_doubleClicked(const QModelIndex &index);
+
+    void on_cardioTable_doubleClicked(const QModelIndex &index);
+
+    void on_coreTable_doubleClicked(const QModelIndex &index);
+
+    void on_lowerTable_doubleClicked(const QModelIndex &index);
+
+    void on_upperTable_doubleClicked(const QModelIndex &index);
+
+    void on_calendarWidget_selectionChanged();
+
 private:
     Ui::MainWindow *ui;
     QString received;
 
 
+    void loadRecommendations();
 
+    void initializeRecModel(QSqlQueryModel *model);
 };
 #endif // MAINWINDOW_H

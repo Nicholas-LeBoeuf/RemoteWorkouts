@@ -17,6 +17,7 @@ public:
     QString getUser();
     ~EditUserInfo();
 
+    void loadData();
     bool fieldValidation();
     bool checkDigits(const std::string &str);
 

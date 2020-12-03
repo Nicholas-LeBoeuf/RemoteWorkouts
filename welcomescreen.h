@@ -1,6 +1,5 @@
 #ifndef WELCOMESCREEN_H
 #define WELCOMESCREEN_H
-
 #include <QDialog>
 
 namespace Ui {
@@ -17,6 +16,7 @@ public:
     QString getUser();
     void loadQuote();
     ~WelcomeScreen();
+    void dateNotif();
 
 private slots:
     void on_close_clicked();
@@ -24,6 +24,7 @@ private slots:
 private:
     Ui::WelcomeScreen *ui;
     QString received;
+
 };
 
 #endif // WELCOMESCREEN_H

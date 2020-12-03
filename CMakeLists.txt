@@ -58,6 +58,9 @@ if(ANDROID)
     forgotpassword.cpp
     forgotpassword.h
     forgotpassword.ui
+    descriptiondialog.cpp
+    descriptiondialog.h
+    descriptiondialog.ui
     resources.qrc
           )
 endif()

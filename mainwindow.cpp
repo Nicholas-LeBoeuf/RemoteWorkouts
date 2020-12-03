@@ -6,7 +6,7 @@
 #include <QtSql>
 #include <QDebug>
 #include <QDate>
-
+#include <QCalendarWidget>
 #include <QChart>
 #include <QChartView>
 #include <QLineSeries>
@@ -15,6 +15,8 @@
 #include "ui_mainwindow.h"
 #include "edituserinfo.h"
 #include "forgotpassword.h"
+#include "loginwindow.h"
+#include "descriptiondialog.h"
 
 using namespace QtCharts;
 
@@ -61,6 +63,7 @@ void MainWindow::loadData(){
 
     loadTracking();
     loadExercises();
+    loadRecommendations();
 }
 
 void MainWindow::setUser(QString rec){
@@ -75,6 +78,7 @@ void MainWindow::on_edit_clicked()
 {
     EditUserInfo EditUserInfo(this);
     EditUserInfo.setUser(getUser());
+    EditUserInfo.loadData();
     EditUserInfo.exec();
     if(EditUserInfo.close()){
         loadData();
@@ -198,6 +202,27 @@ void MainWindow::loadTracking(){
     ui->bmiTable->show();
 }
 
+void MainWindow::loadRecommendations(){
+    QSqlQueryModel *model = new QSqlQueryModel();
+    initializeRecModel(model);
+    ui->recTable->setModel(model);
+}
+
+void MainWindow::initializeRecModel(QSqlQueryModel *model)
+{
+    QSqlQuery goal;
+    goal.prepare("select Goal from userinfo where UserID = " +  getUser() + ";");
+    goal.exec();
+    goal.next();
+    QString usg = goal.value(0).toString();
+    model->setQuery("select Exercise, Reps, Weights from GoalBasedExerciseList where GoalID =" + usg + ";");
+    qDebug() << model->query().lastQuery();
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Reps"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Weights"));
+
+}
+
 void MainWindow::loadExercises(){
     QString execlist[4] = {"cardio", "core", "lowerbody", "upperbody"};
     for(int i = 0; i < 4; i++) {
@@ -219,6 +244,7 @@ void MainWindow::loadExercises(){
         }
     }
 }
+
 void MainWindow::on_changePassword_clicked()
 {
         QSqlQuery idsend;
@@ -231,4 +257,87 @@ void MainWindow::on_changePassword_clicked()
         newCP->setUser(idsent);
         newCP->loadSecurityQ();
         newCP->show();
+}
+
+void MainWindow::on_logout_clicked()
+{
+    LoginWindow *newLogin = new LoginWindow();
+    newLogin->show();
+    this->close();
+}
+
+void MainWindow::on_recTable_doubleClicked(const QModelIndex &index)
+{
+    QMessageBox msgBox;
+    int ind = index.row() + 1;
+    msgBox.setText(QString::fromStdString(std::to_string(ind)));
+    msgBox.exec();
+
+}
+
+void MainWindow::on_cardioTable_doubleClicked(const QModelIndex &index)
+{
+    descriptionDialog *cardio = new descriptionDialog();
+
+    cardio->setIndexID(index.row() + 1);
+    cardio->setTableIndex(1);
+    cardio->loadData();
+    cardio->show();
+
+
+    //QMessageBox msgBox;
+    //int test = index.row() + 1;
+    //msgBox.setText(QString::fromStdString(std::to_string(test)));
+    //msgBox.exec();
+}
+
+void MainWindow::on_coreTable_doubleClicked(const QModelIndex &index)
+{
+    descriptionDialog *core = new descriptionDialog();
+
+    core->setIndexID(index.row() + 1);
+    core->setTableIndex(2);
+    core->loadData();
+    core->show();
+}
+
+void MainWindow::on_lowerTable_doubleClicked(const QModelIndex &index)
+{
+    descriptionDialog *lowerbody = new descriptionDialog();
+
+    lowerbody->setIndexID(index.row() + 1);
+    lowerbody->setTableIndex(3);
+    lowerbody->loadData();
+    lowerbody->show();
+
+}
+
+void MainWindow::on_upperTable_doubleClicked(const QModelIndex &index)
+{
+    descriptionDialog *upperbody = new descriptionDialog();
+
+    upperbody->setIndexID(index.row() + 1);
+    upperbody->setTableIndex(4);
+    upperbody->loadData();
+    upperbody->show();
+
+}
+
+void MainWindow::on_calendarWidget_selectionChanged()
+{
+    QMessageBox msgBox;
+    QString test = ui->calendarWidget->selectedDate().toString();
+    msgBox.setText("Do you wish to set the date of your next workout to " + test + "?");
+    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+    int ret = msgBox.exec();
+    QSqlQuery setDate;
+    switch(ret){
+    case QMessageBox::Yes:
+        setDate.prepare("UPDATE users SET NextScheduled = '" + test + "' where ID = " + getUser() + ";");
+        setDate.exec();
+        qDebug() << setDate.lastQuery();
+        break;
+    case QMessageBox::No:
+        break;
+    }
 }
