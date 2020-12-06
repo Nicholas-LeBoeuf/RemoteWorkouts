@@ -62,7 +62,7 @@ void descriptionDialog::loadData()
         exercise.prepare("select ExerciseName, ExerciseDesc from lowerbody where ExerciseID='" + ID + "';");
         break;
     case 4:
-        exercise.prepare("select ExerciseName, ExerciseDesc from lowerbody where ExerciseID='" + ID + "';");
+        exercise.prepare("select ExerciseName, ExerciseDesc from upperbody where ExerciseID='" + ID + "';");
         break;
     }
 
@@ -129,7 +129,7 @@ void descriptionDialog::on_youtube_clicked()
             url.prepare("select URL from lowerbody where ExerciseID='" + ID + "';");
             break;
         case 4:
-            url.prepare("select URL from lowerbody where ExerciseID='" + ID + "';");
+            url.prepare("select URL from upperbody where ExerciseID='" + ID + "';");
             break;
     }
 
