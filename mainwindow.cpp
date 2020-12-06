@@ -64,6 +64,7 @@ void MainWindow::loadData(){
     loadTracking();
     loadExercises();
     loadRecommendations();
+    loadObjects();
 }
 
 void MainWindow::setUser(QString rec){
@@ -243,6 +244,20 @@ void MainWindow::loadExercises(){
                 break;
         }
     }
+}
+
+void MainWindow::loadObjects()
+{
+    QSqlQueryModel *model = new QSqlQueryModel();
+    initializeObjectsModel(model);
+    ui->objectTable->setModel(model);
+}
+
+void MainWindow::initializeObjectsModel(QSqlQueryModel *model)
+{
+    model->setQuery("select ObjectName from objects;");
+    qDebug() << model->query().lastQuery();
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Object"));
 }
 
 void MainWindow::on_changePassword_clicked()

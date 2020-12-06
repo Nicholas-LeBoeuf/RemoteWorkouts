@@ -20,8 +20,10 @@ public:
     void loadData();
     void initializeTrackingModel(QSqlQueryModel *model, int type);
     void initializeExerciseModel(QSqlQueryModel *model, QString exercise);
+    void initializeObjectsModel(QSqlQueryModel *model);
     void loadTracking();
     void loadExercises();
+    void loadObjects();
 
 private slots:
 

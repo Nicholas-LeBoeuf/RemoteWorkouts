@@ -191,13 +191,13 @@ QLabel {border: transparent}
 </string>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="exerciseTab">
            <attribute name="title">
             <string>Exercises</string>
            </attribute>
-           <widget class="QTabWidget" name="tabWidget_3">
+           <widget class="QTabWidget" name="Object">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -210,7 +210,7 @@ QLabel {border: transparent}
              <string notr="true"/>
             </property>
             <property name="currentIndex">
-             <number>4</number>
+             <number>5</number>
             </property>
             <widget class="QWidget" name="tab_5">
              <attribute name="title">
@@ -343,6 +343,30 @@ QLabel {border: transparent}
               <string>Upper Body</string>
              </attribute>
              <widget class="QTableView" name="upperTable">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>601</width>
+                <height>531</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::WinPanel</enum>
+              </property>
+              <property name="alternatingRowColors">
+               <bool>true</bool>
+              </property>
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>289</number>
+              </attribute>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="tab_8">
+             <attribute name="title">
+              <string>Objects</string>
+             </attribute>
+             <widget class="QTableView" name="objectTable">
               <property name="geometry">
                <rect>
                 <x>10</x>
@@ -515,7 +539,7 @@ QLabel {border: transparent}
            <attribute name="title">
             <string>Profile</string>
            </attribute>
-           <widget class="QWidget" name="">
+           <widget class="QWidget" name="layoutWidget">
             <property name="geometry">
              <rect>
               <x>170</x>
@@ -868,7 +892,7 @@ QLabel {border: transparent}
              </item>
             </layout>
            </widget>
-           <widget class="QWidget" name="">
+           <widget class="QWidget" name="layoutWidget">
             <property name="geometry">
              <rect>
               <x>20</x>
