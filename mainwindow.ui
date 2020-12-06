@@ -187,11 +187,11 @@ QLabel {border: transparent}
         <item>
          <widget class="QTabWidget" name="tabWidget">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(126, 126, 126);
+           <string notr="true">background-color: rgb(83, 72, 138);;
 </string>
           </property>
           <property name="currentIndex">
-           <number>2</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="exerciseTab">
            <attribute name="title">
@@ -373,8 +373,8 @@ QLabel {border: transparent}
              <rect>
               <x>0</x>
               <y>10</y>
-              <width>441</width>
-              <height>281</height>
+              <width>691</width>
+              <height>481</height>
              </rect>
             </property>
             <property name="currentIndex">
@@ -389,8 +389,8 @@ QLabel {border: transparent}
                <rect>
                 <x>10</x>
                 <y>10</y>
-                <width>421</width>
-                <height>231</height>
+                <width>671</width>
+                <height>431</height>
                </rect>
               </property>
               <property name="frameShape">
@@ -400,7 +400,7 @@ QLabel {border: transparent}
                <enum>QFrame::Sunken</enum>
               </property>
               <property name="alternatingRowColors">
-               <bool>true</bool>
+               <bool>false</bool>
               </property>
               <property name="sortingEnabled">
                <bool>true</bool>
@@ -436,8 +436,8 @@ QLabel {border: transparent}
             <property name="geometry">
              <rect>
               <x>0</x>
-              <y>290</y>
-              <width>441</width>
+              <y>500</y>
+              <width>691</width>
               <height>71</height>
              </rect>
             </property>
@@ -515,321 +515,430 @@ QLabel {border: transparent}
            <attribute name="title">
             <string>Profile</string>
            </attribute>
-           <widget class="QWidget" name="verticalLayoutWidget">
+           <widget class="QWidget" name="">
             <property name="geometry">
              <rect>
-              <x>30</x>
-              <y>310</y>
-              <width>361</width>
-              <height>261</height>
+              <x>170</x>
+              <y>250</y>
+              <width>353</width>
+              <height>347</height>
              </rect>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout">
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="font">
+                <font>
+                 <family>Rockwell</family>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: white;
+</string>
+               </property>
+               <property name="text">
+                <string>Your profile information</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="2" column="1">
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="GoalLabel">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:black;</string>
+                   </property>
+                   <property name="text">
+                    <string>Goal</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="UserGoal">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(193, 250, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>userGoal</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="FNameLabel">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:black;</string>
+                   </property>
+                   <property name="text">
+                    <string>First Name</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="UserFName">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(193, 250, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>userFName</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="4" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="AgeLabel">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:black;</string>
+                   </property>
+                   <property name="text">
+                    <string>Age</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="UserAge">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(193, 250, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>userAge</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="1">
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="HeightLabel">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:black;</string>
+                   </property>
+                   <property name="text">
+                    <string>Height (inches)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="UserHeight">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(193, 250, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>userHeight</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="GenderLabel">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:black;</string>
+                   </property>
+                   <property name="text">
+                    <string>Gender</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="UserGender">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(193, 250, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>userGender</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="4" column="1">
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="2" column="0">
+                  <widget class="QPushButton" name="changePassword">
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {color: white; background-color: rgb(58, 58, 58)}</string>
+                   </property>
+                   <property name="text">
+                    <string>Change Password</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="edit">
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {color: white; background-color: rgb(58, 58, 58)}</string>
+                   </property>
+                   <property name="text">
+                    <string>Edit Info</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="1">
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="WeightLabel">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:black;</string>
+                   </property>
+                   <property name="text">
+                    <string>Initial Weight (lbs)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="UserWeight">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(193, 250, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>userWeight</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="LNameLabel">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:black;</string>
+                   </property>
+                   <property name="text">
+                    <string>Last Name</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="UserLName">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(193, 250, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>userLName</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="3" column="1">
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>0</y>
+              <width>658</width>
+              <height>234</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <family>Rockwell</family>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:white;
+</string>
+               </property>
+               <property name="text">
+                <string>Schedule your next workout</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_2">
-               <item>
-                <widget class="QLabel" name="FNameLabel">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QCalendarWidget" name="calendarWidget">
+                 <property name="gridVisible">
+                  <bool>true</bool>
                  </property>
-                 <property name="text">
-                  <string>First Name:</string>
+                 <property name="horizontalHeaderFormat">
+                  <enum>QCalendarWidget::LongDayNames</enum>
                  </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="UserFName">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
+                 <property name="verticalHeaderFormat">
+                  <enum>QCalendarWidget::NoVerticalHeader</enum>
                  </property>
                 </widget>
                </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_4">
-               <item>
-                <widget class="QLabel" name="LNameLabel">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="nextWkLabel">
                  <property name="font">
                   <font>
-                   <pointsize>15</pointsize>
+                   <family>Rockwell</family>
+                   <pointsize>14</pointsize>
                   </font>
                  </property>
-                 <property name="text">
-                  <string>Last Name:</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="UserLName">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
+                 <property name="styleSheet">
+                  <string notr="true">color:white;
+</string>
                  </property>
                  <property name="text">
-                  <string>TextLabel</string>
+                  <string>nextworkout</string>
                  </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_5">
-               <item>
-                <widget class="QLabel" name="HeightLabel">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <property name="text">
-                  <string>Height (inches):</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="UserHeight">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_7">
-               <item>
-                <widget class="QLabel" name="AgeLabel">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Age:</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="UserAge">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_6">
-               <item>
-                <widget class="QLabel" name="WeightLabel">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Initial Weight (lbs):</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="UserWeight">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_9">
-               <item>
-                <widget class="QLabel" name="GoalLabel">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Goal:</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="UserGoal">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_8">
-               <item>
-                <widget class="QLabel" name="GenderLabel">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Gender:</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="UserGender">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
+                 <property name="wordWrap">
+                  <bool>true</bool>
                  </property>
                 </widget>
                </item>
               </layout>
              </item>
             </layout>
-           </widget>
-           <widget class="QPushButton" name="edit">
-            <property name="geometry">
-             <rect>
-              <x>440</x>
-              <y>410</y>
-              <width>211</width>
-              <height>23</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>Edit Info</string>
-            </property>
-           </widget>
-           <widget class="QPushButton" name="changePassword">
-            <property name="geometry">
-             <rect>
-              <x>440</x>
-              <y>440</y>
-              <width>211</width>
-              <height>25</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>Change Password</string>
-            </property>
-           </widget>
-           <widget class="QCalendarWidget" name="calendarWidget">
-            <property name="geometry">
-             <rect>
-              <x>40</x>
-              <y>70</y>
-              <width>461</width>
-              <height>183</height>
-             </rect>
-            </property>
-            <property name="gridVisible">
-             <bool>true</bool>
-            </property>
-            <property name="horizontalHeaderFormat">
-             <enum>QCalendarWidget::LongDayNames</enum>
-            </property>
-            <property name="verticalHeaderFormat">
-             <enum>QCalendarWidget::NoVerticalHeader</enum>
-            </property>
-           </widget>
-           <widget class="QLabel" name="label_3">
-            <property name="geometry">
-             <rect>
-              <x>130</x>
-              <y>20</y>
-              <width>351</width>
-              <height>31</height>
-             </rect>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>14</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>Schedule your next workout</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-           <widget class="QLabel" name="label_6">
-            <property name="geometry">
-             <rect>
-              <x>80</x>
-              <y>270</y>
-              <width>241</width>
-              <height>31</height>
-             </rect>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>14</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>Your profile information</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-           <widget class="QLabel" name="nextWkLabel">
-            <property name="geometry">
-             <rect>
-              <x>530</x>
-              <y>140</y>
-              <width>151</width>
-              <height>71</height>
-             </rect>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>14</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>nextworkout</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
            </widget>
           </widget>
          </widget>
