@@ -187,11 +187,13 @@ QLabel {border: transparent}
         <item>
          <widget class="QTabWidget" name="tabWidget">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(83, 72, 138);;
+           <string notr="true">background-color: rgb(51, 44, 84);
+
+
 </string>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="exerciseTab">
            <attribute name="title">
