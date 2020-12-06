@@ -114,7 +114,30 @@ void descriptionDialog::on_reset_clicked()
 
 void descriptionDialog::on_youtube_clicked()
 {
-    QString youtube = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    QString ID = QString::number(indexID);
+
+    QSqlQuery url;
+
+    switch (tableIndex) {
+        case 1:
+            url.prepare("select URL from cardio where ExerciseID='" + ID + "';");
+            break;
+        case 2:
+            url.prepare("select URL from core where ExerciseID='" + ID + "';");
+            break;
+        case 3:
+            url.prepare("select URL from lowerbody where ExerciseID='" + ID + "';");
+            break;
+        case 4:
+            url.prepare("select URL from lowerbody where ExerciseID='" + ID + "';");
+            break;
+    }
+
+    url.exec();
+    url.next();
+
+    /*QString youtube = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";*/
+    QString youtube = url.value(0).toString();
     QDesktopServices::openUrl(QUrl(youtube, QUrl::TolerantMode));
 }
 
