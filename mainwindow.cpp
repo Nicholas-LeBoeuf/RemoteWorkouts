@@ -36,7 +36,7 @@ void MainWindow::loadData(){
     QSqlDatabase logindata = QSqlDatabase::database("qt_sql_default_connection");
 
     QSqlQuery name;
-    name.prepare("select username, firstname, lastname from users where ID='" + getUser() + "';");
+    name.prepare("select username, firstname, lastname, NextScheduled from users where ID='" + getUser() + "';");
     name.exec();
     name.next();
 
@@ -47,6 +47,8 @@ void MainWindow::loadData(){
     qDebug() << userInfo.lastQuery();
 
     ui->displayname->setText("Hello, " + name.value(0).toString());
+    ui->nextWkLabel->setText("Your next workout is on " + name.value(3).toString());
+    ui->calendarWidget->setMinimumDate(QDate(QDate::currentDate()));
 
     ui->UserFName->setText(name.value(1).toString());
     ui->UserLName->setText(name.value(2).toString());
@@ -64,6 +66,7 @@ void MainWindow::loadData(){
     loadTracking();
     loadExercises();
     loadRecommendations();
+    loadObjects();
 }
 
 void MainWindow::setUser(QString rec){
@@ -104,13 +107,13 @@ void MainWindow::on_addWeight_clicked(){
 
     QSqlQuery entry;
 
-    if (dateChecked == "") {
+    if (dateChecked != datestr) {
         entry.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
-        qDebug() << 1;
+        qDebug() << entry.lastQuery();
     }
     else {
-        entry.prepare("update " + getUser() + "_wh set weight = " + weight + "where date ='" + datestr + "';");
-        qDebug() << 2;
+        entry.prepare("update " + getUser() + "_wh set weight = " + weight + " where date ='" + datestr + "';");
+        qDebug() << entry.lastQuery();
     }
 
     entry.exec();
@@ -143,12 +146,33 @@ void MainWindow::initializeTrackingModel(QSqlQueryModel *model, int type)
     }
 }
 
-void MainWindow::initializeExerciseModel(QSqlQueryModel *model, QString exercise)
+void MainWindow::initializeExerciseModel(QSqlQueryModel *model, QString exercise, int id)
 {
-    model->setQuery("select ExerciseName, ExerciseDesc from " + exercise + ";");
-    qDebug() << model->query().lastQuery();
-    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
-    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Description"));
+    if(id == 0){
+        model->setQuery("select ExerciseName, ObjectName from cardio, objects where cardio.ObjectID = objects.CardioID;");
+        qDebug() << model->query().lastQuery();
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("Object"));
+    }
+    if(id == 1){
+        model->setQuery("select ExerciseName, ObjectName from core, objects where core.ObjectID = objects.CoreID;");
+        qDebug() << model->query().lastQuery();
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("Object"));
+    }
+    if(id == 2){
+        model->setQuery("select ExerciseName, ObjectName from lowerbody, objects where lowerbody.ObjectID = objects.LowBodID;");
+        qDebug() << model->query().lastQuery();
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("Object"));
+    }
+    if(id == 3){
+        model->setQuery("select ExerciseName, ObjectName from upperbody, objects where upperbody.ObjectID = objects.UpBodID;");
+        qDebug() << model->query().lastQuery();
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("Object"));
+    }
+    //model->setHeaderData(1, Qt::Horizontal, QObject::tr("Description"));
 }
 
 void MainWindow::loadTracking(){
@@ -215,19 +239,18 @@ void MainWindow::initializeRecModel(QSqlQueryModel *model)
     goal.exec();
     goal.next();
     QString usg = goal.value(0).toString();
-    model->setQuery("select Exercise, Reps, Weights from GoalBasedExerciseList where GoalID =" + usg + ";");
+    model->setQuery("select Exercise, Reps, BodyGroup from GoalBasedExerciseList where GoalID =" + usg + ";");
     qDebug() << model->query().lastQuery();
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Reps"));
-    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Weights"));
-
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Body Group"));
 }
 
 void MainWindow::loadExercises(){
     QString execlist[4] = {"cardio", "core", "lowerbody", "upperbody"};
     for(int i = 0; i < 4; i++) {
         QSqlQueryModel *model = new QSqlQueryModel();
-        initializeExerciseModel(model, execlist[i]);
+        initializeExerciseModel(model, execlist[i], i);
         switch (i) {
             case 0:
                 ui->cardioTable->setModel(model);
@@ -243,6 +266,21 @@ void MainWindow::loadExercises(){
                 break;
         }
     }
+}
+
+void MainWindow::loadObjects()
+{
+    QSqlQueryModel *model = new QSqlQueryModel();
+    initializeObjectsModel(model);
+    ui->objectTable->setModel(model);
+}
+
+void MainWindow::initializeObjectsModel(QSqlQueryModel *model)
+{
+    model->setQuery("select ObjectName, AvgWeight from objects;");
+    qDebug() << model->query().lastQuery();
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Object"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Average Weight"));
 }
 
 void MainWindow::on_changePassword_clicked()
@@ -268,34 +306,43 @@ void MainWindow::on_logout_clicked()
 
 void MainWindow::on_recTable_doubleClicked(const QModelIndex &index)
 {
-    QMessageBox msgBox;
-    int ind = index.row() + 1;
-    msgBox.setText(QString::fromStdString(std::to_string(ind)));
-    msgBox.exec();
+    descriptionDialog *rec = new descriptionDialog();
+    int send;
+    QString check = ui->recTable->model()->index(index.row(),2).data().toString();
+    rec->setExName(ui->recTable->model()->index(index.row(),0).data().toString());
+    qDebug() << check;
 
+    if (check == "Cardio"){
+        send = 1;
+    }
+    if (check == "Core"){
+        send = 2;
+    }
+    if (check == "Lower Body"){
+        send = 3;
+    }
+    if (check == "Upper Body"){
+        send = 4;
+    }
+    rec->setTableIndex(send);
+    rec->loadData();
+    rec->show();
 }
 
 void MainWindow::on_cardioTable_doubleClicked(const QModelIndex &index)
 {
     descriptionDialog *cardio = new descriptionDialog();
-
-    cardio->setIndexID(index.row() + 1);
+    cardio->setExName(ui->cardioTable->model()->index(index.row(),0).data().toString());
     cardio->setTableIndex(1);
     cardio->loadData();
     cardio->show();
-
-
-    //QMessageBox msgBox;
-    //int test = index.row() + 1;
-    //msgBox.setText(QString::fromStdString(std::to_string(test)));
-    //msgBox.exec();
 }
 
 void MainWindow::on_coreTable_doubleClicked(const QModelIndex &index)
 {
     descriptionDialog *core = new descriptionDialog();
-
-    core->setIndexID(index.row() + 1);
+    qDebug() << ui->coreTable->model()->index(index.row(),0).data().toString();
+    core->setExName(ui->coreTable->model()->index(index.row(),0).data().toString());
     core->setTableIndex(2);
     core->loadData();
     core->show();
@@ -304,8 +351,8 @@ void MainWindow::on_coreTable_doubleClicked(const QModelIndex &index)
 void MainWindow::on_lowerTable_doubleClicked(const QModelIndex &index)
 {
     descriptionDialog *lowerbody = new descriptionDialog();
-
-    lowerbody->setIndexID(index.row() + 1);
+    qDebug() << ui->lowerTable->model()->index(index.row(),0).data().toString();
+    lowerbody->setExName(ui->lowerTable->model()->index(index.row(),0).data().toString());
     lowerbody->setTableIndex(3);
     lowerbody->loadData();
     lowerbody->show();
@@ -315,8 +362,8 @@ void MainWindow::on_lowerTable_doubleClicked(const QModelIndex &index)
 void MainWindow::on_upperTable_doubleClicked(const QModelIndex &index)
 {
     descriptionDialog *upperbody = new descriptionDialog();
-
-    upperbody->setIndexID(index.row() + 1);
+    qDebug() << ui->upperTable->model()->index(index.row(),0).data().toString();
+    upperbody->setExName(ui->upperTable->model()->index(index.row(),0).data().toString());
     upperbody->setTableIndex(4);
     upperbody->loadData();
     upperbody->show();

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QSqlQueryModel>
 
+
 namespace Ui {
     class MainWindow;
 }
@@ -19,9 +20,11 @@ public:
     ~MainWindow();
     void loadData();
     void initializeTrackingModel(QSqlQueryModel *model, int type);
-    void initializeExerciseModel(QSqlQueryModel *model, QString exercise);
+    void initializeExerciseModel(QSqlQueryModel *model, QString exercise, int id);
+    void initializeObjectsModel(QSqlQueryModel *model);
     void loadTracking();
     void loadExercises();
+    void loadObjects();
 
 private slots:
 

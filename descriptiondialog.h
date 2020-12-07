@@ -14,8 +14,8 @@ class descriptionDialog : public QDialog
 public:
     explicit descriptionDialog(QWidget *parent = nullptr);
     ~descriptionDialog();
-    void setIndexID(int rec);
-    int getIndexID();
+    void setExName(QString rec);
+    QString getExName();
 
     void updateUI();
     void setTableIndex(int rec);
@@ -39,7 +39,7 @@ private slots:
 private:
     Ui::descriptionDialog *ui;
     QTimer *timer;
-    int indexID;
+    QString exname;
     int tableIndex;
     int time;
     std::string timeStr;
