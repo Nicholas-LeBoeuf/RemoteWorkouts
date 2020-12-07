@@ -105,13 +105,13 @@ void MainWindow::on_addWeight_clicked(){
 
     QSqlQuery entry;
 
-    if (dateChecked == "") {
+    if (dateChecked != datestr) {
         entry.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
-        qDebug() << 1;
+        qDebug() << entry.lastQuery();
     }
     else {
-        entry.prepare("update " + getUser() + "_wh set weight = " + weight + "where date ='" + datestr + "';");
-        qDebug() << 2;
+        entry.prepare("update " + getUser() + "_wh set weight = " + weight + " where date ='" + datestr + "';");
+        qDebug() << entry.lastQuery();
     }
 
     entry.exec();
@@ -144,7 +144,7 @@ void MainWindow::initializeTrackingModel(QSqlQueryModel *model, int type)
     }
 }
 
-void MainWindow::initializeExerciseModel(QSqlQueryModel *model, QString exercise)
+void MainWindow::initializeExerciseModel(QSqlQueryModel *model, QString exercise, int id)
 {
     model->setQuery("select ExerciseName from " + exercise + ";");
     qDebug() << model->query().lastQuery();
@@ -229,7 +229,7 @@ void MainWindow::loadExercises(){
     QString execlist[4] = {"cardio", "core", "lowerbody", "upperbody"};
     for(int i = 0; i < 4; i++) {
         QSqlQueryModel *model = new QSqlQueryModel();
-        initializeExerciseModel(model, execlist[i]);
+        initializeExerciseModel(model, execlist[i], i);
         switch (i) {
             case 0:
                 ui->cardioTable->setModel(model);
@@ -311,7 +311,7 @@ void MainWindow::on_cardioTable_doubleClicked(const QModelIndex &index)
 void MainWindow::on_coreTable_doubleClicked(const QModelIndex &index)
 {
     descriptionDialog *core = new descriptionDialog();
-
+    qDebug() << ui->cardioTable->model()->index(index.row(),0).data().toString();
     core->setIndexID(index.row() + 1);
     core->setTableIndex(2);
     core->loadData();

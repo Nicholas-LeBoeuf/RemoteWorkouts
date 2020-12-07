@@ -82,13 +82,29 @@ void EditUserInfo::on_editButton_clicked()
 
         QDate date = QDate::currentDate();
         QString datestr = date.toString();
+        QSqlQuery checkDate;
 
-        QSqlQuery addWeight;
-        addWeight.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
-        qDebug() << addWeight.lastQuery();
-        addWeight.exec();
-        //qDebug() << updateusername.lastQuery();
-        //qDebug() << updatedata.lastQuery();
+        checkDate.prepare("select date from " + getUser() + "_wh where date = '" + datestr + "';");
+        qDebug() << checkDate.lastQuery();
+        checkDate.exec();
+        checkDate.next();
+        qDebug() << checkDate.result();
+        QString dateChecked = checkDate.value(0).toString();
+        qDebug() << dateChecked;
+        qDebug() << datestr;
+
+        QSqlQuery entry;
+
+        if (dateChecked != datestr) {
+            entry.prepare("insert into " + getUser() + "_wh(weight, date) values('" + weight + "', '" + datestr + "');");
+            qDebug() << entry.lastQuery();
+        }
+        else {
+            entry.prepare("update " + getUser() + "_wh set weight = " + weight + " where date ='" + datestr + "';");
+            qDebug() << entry.lastQuery();
+        }
+
+        entry.exec();
         close();
     }
 }
