@@ -216,12 +216,11 @@ void MainWindow::initializeRecModel(QSqlQueryModel *model)
     goal.exec();
     goal.next();
     QString usg = goal.value(0).toString();
-    model->setQuery("select Exercise, Reps, Weights, BodyGroup from GoalBasedExerciseList where GoalID =" + usg + ";");
+    model->setQuery("select Exercise, Reps, BodyGroup from GoalBasedExerciseList where GoalID =" + usg + ";");
     qDebug() << model->query().lastQuery();
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Reps"));
-    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Weights"));
-    model->setHeaderData(3, Qt::Horizontal, QObject::tr("Body Group"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Body Group"));
 
 
 }
@@ -257,9 +256,10 @@ void MainWindow::loadObjects()
 
 void MainWindow::initializeObjectsModel(QSqlQueryModel *model)
 {
-    model->setQuery("select ObjectName from objects;");
+    model->setQuery("select ObjectName, AvgWeight from objects;");
     qDebug() << model->query().lastQuery();
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Object"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Average Weight"));
 }
 
 void MainWindow::on_changePassword_clicked()

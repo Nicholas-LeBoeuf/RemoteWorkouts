@@ -212,7 +212,7 @@ QLabel {border: transparent}
              <string notr="true"/>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="tab_5">
              <attribute name="title">
@@ -288,9 +288,9 @@ QLabel {border: transparent}
              <widget class="QTableView" name="cardioTable">
               <property name="geometry">
                <rect>
-                <x>120</x>
-                <y>20</y>
-                <width>371</width>
+                <x>10</x>
+                <y>90</y>
+                <width>381</width>
                 <height>341</height>
                </rect>
               </property>
@@ -309,6 +309,84 @@ QLabel {border: transparent}
               <attribute name="horizontalHeaderDefaultSectionSize">
                <number>355</number>
               </attribute>
+             </widget>
+             <widget class="QLabel" name="label_8">
+              <property name="geometry">
+               <rect>
+                <x>420</x>
+                <y>90</y>
+                <width>171</width>
+                <height>341</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="resources.qrc">:/images/cardio.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="cardio">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>381</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(193, 250, 255);</string>
+              </property>
+              <property name="text">
+               <string>Cardio Exercises</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_15">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>470</y>
+                <width>611</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 215, 0);</string>
+              </property>
+              <property name="text">
+               <string>Tip: Double click on the exercise to see how to do it! We also provided a timer!</string>
+              </property>
+              <property name="scaledContents">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
              </widget>
             </widget>
             <widget class="QWidget" name="tab_2">
@@ -318,9 +396,9 @@ QLabel {border: transparent}
              <widget class="QTableView" name="coreTable">
               <property name="geometry">
                <rect>
-                <x>120</x>
-                <y>30</y>
-                <width>371</width>
+                <x>10</x>
+                <y>90</y>
+                <width>381</width>
                 <height>341</height>
                </rect>
               </property>
@@ -339,6 +417,87 @@ QLabel {border: transparent}
               <attribute name="horizontalHeaderDefaultSectionSize">
                <number>355</number>
               </attribute>
+             </widget>
+             <widget class="QLabel" name="core">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>381</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(193, 250, 255);</string>
+              </property>
+              <property name="text">
+               <string>Core Exercises</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_9">
+              <property name="geometry">
+               <rect>
+                <x>410</x>
+                <y>150</y>
+                <width>201</width>
+                <height>231</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="resources.qrc">:/images/core.jpg</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_14">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>470</y>
+                <width>611</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 215, 0);</string>
+              </property>
+              <property name="text">
+               <string>Tip: Double click on the exercise to see how to do it! We also provided a timer!</string>
+              </property>
+              <property name="scaledContents">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
              </widget>
             </widget>
             <widget class="QWidget" name="tab_3">
@@ -348,9 +507,9 @@ QLabel {border: transparent}
              <widget class="QTableView" name="lowerTable">
               <property name="geometry">
                <rect>
-                <x>100</x>
+                <x>10</x>
                 <y>90</y>
-                <width>371</width>
+                <width>381</width>
                 <height>341</height>
                </rect>
               </property>
@@ -370,6 +529,84 @@ QLabel {border: transparent}
                <number>355</number>
               </attribute>
              </widget>
+             <widget class="QLabel" name="lower">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>381</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(193, 250, 255);</string>
+              </property>
+              <property name="text">
+               <string>Lower Body Exercises</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_10">
+              <property name="geometry">
+               <rect>
+                <x>400</x>
+                <y>130</y>
+                <width>211</width>
+                <height>261</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="resources.qrc">:/images/lowerBody.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_13">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>470</y>
+                <width>611</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 215, 0);</string>
+              </property>
+              <property name="text">
+               <string>Tip: Double click on the exercise to see how to do it! We also provided a timer!</string>
+              </property>
+              <property name="scaledContents">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
             </widget>
             <widget class="QWidget" name="tab_4">
              <attribute name="title">
@@ -378,9 +615,9 @@ QLabel {border: transparent}
              <widget class="QTableView" name="upperTable">
               <property name="geometry">
                <rect>
-                <x>140</x>
-                <y>30</y>
-                <width>371</width>
+                <x>10</x>
+                <y>90</y>
+                <width>381</width>
                 <height>341</height>
                </rect>
               </property>
@@ -399,6 +636,84 @@ QLabel {border: transparent}
               <attribute name="horizontalHeaderDefaultSectionSize">
                <number>355</number>
               </attribute>
+             </widget>
+             <widget class="QLabel" name="upper">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>381</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>20</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(193, 250, 255);</string>
+              </property>
+              <property name="text">
+               <string>Upper Body Exercises</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_11">
+              <property name="geometry">
+               <rect>
+                <x>400</x>
+                <y>160</y>
+                <width>211</width>
+                <height>231</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="resources.qrc">:/images/upperBody.jpg</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_12">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>470</y>
+                <width>611</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 215, 0);</string>
+              </property>
+              <property name="text">
+               <string>Tip: Double click on the exercise to see how to do it! We also provided a timer!</string>
+              </property>
+              <property name="scaledContents">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
              </widget>
             </widget>
             <widget class="QWidget" name="tab_8">
@@ -642,7 +957,7 @@ border-color: rgb(75, 75, 75);</string>
               <x>170</x>
               <y>240</y>
               <width>361</width>
-              <height>371</height>
+              <height>401</height>
              </rect>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_11">

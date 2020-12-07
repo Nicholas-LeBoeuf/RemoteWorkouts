@@ -7,5 +7,9 @@
         <file>images/stopwatch.png</file>
         <file>images/youtube.png</file>
         <file>images/chalkboard.jpg</file>
+        <file>images/cardio.png</file>
+        <file>images/core.jpg</file>
+        <file>images/lowerBody.png</file>
+        <file>images/upperBody.jpg</file>
     </qresource>
 </RCC>
