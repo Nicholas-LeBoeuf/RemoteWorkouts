@@ -242,8 +242,6 @@ void MainWindow::initializeRecModel(QSqlQueryModel *model)
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Reps"));
     model->setHeaderData(2, Qt::Horizontal, QObject::tr("Body Group"));
-
-
 }
 
 void MainWindow::loadExercises(){
@@ -306,27 +304,36 @@ void MainWindow::on_logout_clicked()
 
 void MainWindow::on_recTable_doubleClicked(const QModelIndex &index)
 {
-    QMessageBox msgBox;
-    int ind = index.row() + 1;
-    msgBox.setText(QString::fromStdString(std::to_string(ind)));
-    msgBox.exec();
+    descriptionDialog *rec = new descriptionDialog();
+    int send;
+    QString check = ui->recTable->model()->index(index.row(),2).data().toString();
+    rec->setExName(ui->recTable->model()->index(index.row(),0).data().toString());
+    qDebug() << check;
 
+    if (check == "Cardio"){
+        send = 1;
+    }
+    if (check == "Core"){
+        send = 2;
+    }
+    if (check == "Lower Body"){
+        send = 3;
+    }
+    if (check == "Upper Body"){
+        send = 4;
+    }
+    rec->setTableIndex(send);
+    rec->loadData();
+    rec->show();
 }
 
 void MainWindow::on_cardioTable_doubleClicked(const QModelIndex &index)
 {
     descriptionDialog *cardio = new descriptionDialog();
-    qDebug() << ui->cardioTable->model()->index(index.row(),0).data().toString();
     cardio->setExName(ui->cardioTable->model()->index(index.row(),0).data().toString());
     cardio->setTableIndex(1);
     cardio->loadData();
     cardio->show();
-
-
-    //QMessageBox msgBox;
-    //int test = index.row() + 1;
-    //msgBox.setText(QString::fromStdString(std::to_string(test)));
-    //msgBox.exec();
 }
 
 void MainWindow::on_coreTable_doubleClicked(const QModelIndex &index)
