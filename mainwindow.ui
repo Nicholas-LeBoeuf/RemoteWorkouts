@@ -1326,7 +1326,7 @@ border-color: rgb(75, 75, 75);</string>
                   <string notr="true">color: rgb(193, 250, 255);</string>
                  </property>
                  <property name="text">
-                  <string>userGoal</string>
+                  <string>userGoals</string>
                  </property>
                 </widget>
                </item>
@@ -1764,7 +1764,9 @@ color: black;</string>
                <bool>true</bool>
               </property>
              </widget>
-             <zorder>layoutWidget_3</zorder>
+             <zorder>label_6</zorder>
+             <zorder>calendarWidget</zorder>
+             <zorder>nextWkLabel</zorder>
              <zorder>line_4</zorder>
              <zorder>label_21</zorder>
              <zorder>label_20</zorder>
