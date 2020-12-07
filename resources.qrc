@@ -13,5 +13,6 @@
         <file>images/upperBody.jpg</file>
         <file>images/personwithobject.png</file>
         <file>images/pumpkin.png</file>
+        <file>images/profile.png</file>
     </qresource>
 </RCC>
