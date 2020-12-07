@@ -146,10 +146,10 @@ void MainWindow::initializeTrackingModel(QSqlQueryModel *model, int type)
 
 void MainWindow::initializeExerciseModel(QSqlQueryModel *model, QString exercise)
 {
-    model->setQuery("select ExerciseName, ExerciseDesc from " + exercise + ";");
+    model->setQuery("select ExerciseName from " + exercise + ";");
     qDebug() << model->query().lastQuery();
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
-    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Description"));
+    //model->setHeaderData(1, Qt::Horizontal, QObject::tr("Description"));
 }
 
 void MainWindow::loadTracking(){
@@ -216,11 +216,13 @@ void MainWindow::initializeRecModel(QSqlQueryModel *model)
     goal.exec();
     goal.next();
     QString usg = goal.value(0).toString();
-    model->setQuery("select Exercise, Reps, Weights from GoalBasedExerciseList where GoalID =" + usg + ";");
+    model->setQuery("select Exercise, Reps, Weights, BodyGroup from GoalBasedExerciseList where GoalID =" + usg + ";");
     qDebug() << model->query().lastQuery();
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Reps"));
     model->setHeaderData(2, Qt::Horizontal, QObject::tr("Weights"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("Body Group"));
+
 
 }
 
