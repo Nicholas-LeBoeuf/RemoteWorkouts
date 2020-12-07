@@ -1095,13 +1095,13 @@ border-color: rgb(75, 75, 75);</string>
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>10</y>
+              <y>20</y>
               <width>681</width>
               <height>561</height>
              </rect>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="tab_9">
              <attribute name="title">
@@ -1133,7 +1133,15 @@ border-color: rgb(75, 75, 75);</string>
                <set>Qt::AlignCenter</set>
               </property>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>104</width>
+                <height>58</height>
+               </rect>
+              </property>
               <layout class="QVBoxLayout" name="verticalLayout_14">
                <item alignment="Qt::AlignHCenter">
                 <widget class="QLabel" name="FNameLabel">
@@ -1169,7 +1177,15 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>81</width>
+                <height>58</height>
+               </rect>
+              </property>
               <layout class="QVBoxLayout" name="verticalLayout_15">
                <item alignment="Qt::AlignHCenter">
                 <widget class="QLabel" name="GoalLabel">
@@ -1205,7 +1221,7 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
               <property name="geometry">
                <rect>
                 <x>230</x>
@@ -1249,7 +1265,7 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
               <property name="geometry">
                <rect>
                 <x>410</x>
@@ -1293,7 +1309,7 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
               <property name="geometry">
                <rect>
                 <x>210</x>
@@ -1337,7 +1353,7 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
               <property name="geometry">
                <rect>
                 <x>20</x>
@@ -1381,7 +1397,7 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
               <property name="geometry">
                <rect>
                 <x>420</x>
@@ -1493,10 +1509,10 @@ border-color: rgb(75, 75, 75);</string>
              <widget class="QWidget" name="layoutWidget_3">
               <property name="geometry">
                <rect>
-                <x>20</x>
+                <x>30</x>
                 <y>40</y>
-                <width>665</width>
-                <height>234</height>
+                <width>621</width>
+                <height>411</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_21">
@@ -1521,9 +1537,32 @@ border-color: rgb(75, 75, 75);</string>
                 </widget>
                </item>
                <item>
+                <widget class="QLabel" name="nextWkLabel">
+                 <property name="font">
+                  <font>
+                   <family>Rockwell</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color:white;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>nextworkout</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
                 <layout class="QHBoxLayout" name="horizontalLayout_4">
                  <item>
-                  <spacer name="horizontalSpacer_10">
+                  <spacer name="horizontalSpacer_12">
                    <property name="orientation">
                     <enum>Qt::Horizontal</enum>
                    </property>
@@ -1535,7 +1574,7 @@ border-color: rgb(75, 75, 75);</string>
                    </property>
                   </spacer>
                  </item>
-                 <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                 <item>
                   <widget class="QCalendarWidget" name="calendarWidget">
                    <property name="gridVisible">
                     <bool>true</bool>
@@ -1548,28 +1587,18 @@ border-color: rgb(75, 75, 75);</string>
                    </property>
                   </widget>
                  </item>
-                 <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-                  <widget class="QLabel" name="nextWkLabel">
-                   <property name="font">
-                    <font>
-                     <family>Rockwell</family>
-                     <pointsize>14</pointsize>
-                    </font>
+                 <item>
+                  <spacer name="horizontalSpacer_11">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
                    </property>
-                   <property name="styleSheet">
-                    <string notr="true">color:white;
-</string>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
                    </property>
-                   <property name="text">
-                    <string>nextworkout</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="wordWrap">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
+                  </spacer>
                  </item>
                 </layout>
                </item>
@@ -1682,7 +1711,7 @@ border-color: rgb(75, 75, 75);</string>
      <x>0</x>
      <y>0</y>
      <width>1432</width>
-     <height>24</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
