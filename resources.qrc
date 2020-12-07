@@ -11,5 +11,7 @@
         <file>images/core.jpg</file>
         <file>images/lowerBody.png</file>
         <file>images/upperBody.jpg</file>
+        <file>images/personwithobject.png</file>
+        <file>images/pumpkin.png</file>
     </qresource>
 </RCC>
