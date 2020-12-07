@@ -146,9 +146,30 @@ void MainWindow::initializeTrackingModel(QSqlQueryModel *model, int type)
 
 void MainWindow::initializeExerciseModel(QSqlQueryModel *model, QString exercise, int id)
 {
-    model->setQuery("select ExerciseName from " + exercise + ";");
-    qDebug() << model->query().lastQuery();
-    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+    if(id == 0){
+        model->setQuery("select ExerciseName, ObjectName from cardio, objects where cardio.ObjectID = objects.CardioID;");
+        qDebug() << model->query().lastQuery();
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("Object"));
+    }
+    if(id == 1){
+        model->setQuery("select ExerciseName, ObjectName from core, objects where core.ObjectID = objects.CoreID;");
+        qDebug() << model->query().lastQuery();
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("Object"));
+    }
+    if(id == 2){
+        model->setQuery("select ExerciseName, ObjectName from lowerbody, objects where lowerbody.ObjectID = objects.LowBodID;");
+        qDebug() << model->query().lastQuery();
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("Object"));
+    }
+    if(id == 3){
+        model->setQuery("select ExerciseName, ObjectName from upperbody, objects where upperbody.ObjectID = objects.UpBodID;");
+        qDebug() << model->query().lastQuery();
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("Exercise"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("Object"));
+    }
     //model->setHeaderData(1, Qt::Horizontal, QObject::tr("Description"));
 }
 
@@ -295,8 +316,8 @@ void MainWindow::on_recTable_doubleClicked(const QModelIndex &index)
 void MainWindow::on_cardioTable_doubleClicked(const QModelIndex &index)
 {
     descriptionDialog *cardio = new descriptionDialog();
-
-    cardio->setIndexID(index.row() + 1);
+    qDebug() << ui->cardioTable->model()->index(index.row(),0).data().toString();
+    cardio->setExName(ui->cardioTable->model()->index(index.row(),0).data().toString());
     cardio->setTableIndex(1);
     cardio->loadData();
     cardio->show();
@@ -311,8 +332,8 @@ void MainWindow::on_cardioTable_doubleClicked(const QModelIndex &index)
 void MainWindow::on_coreTable_doubleClicked(const QModelIndex &index)
 {
     descriptionDialog *core = new descriptionDialog();
-    qDebug() << ui->cardioTable->model()->index(index.row(),0).data().toString();
-    core->setIndexID(index.row() + 1);
+    qDebug() << ui->coreTable->model()->index(index.row(),0).data().toString();
+    core->setExName(ui->coreTable->model()->index(index.row(),0).data().toString());
     core->setTableIndex(2);
     core->loadData();
     core->show();
@@ -321,8 +342,8 @@ void MainWindow::on_coreTable_doubleClicked(const QModelIndex &index)
 void MainWindow::on_lowerTable_doubleClicked(const QModelIndex &index)
 {
     descriptionDialog *lowerbody = new descriptionDialog();
-
-    lowerbody->setIndexID(index.row() + 1);
+    qDebug() << ui->lowerTable->model()->index(index.row(),0).data().toString();
+    lowerbody->setExName(ui->lowerTable->model()->index(index.row(),0).data().toString());
     lowerbody->setTableIndex(3);
     lowerbody->loadData();
     lowerbody->show();
@@ -332,8 +353,8 @@ void MainWindow::on_lowerTable_doubleClicked(const QModelIndex &index)
 void MainWindow::on_upperTable_doubleClicked(const QModelIndex &index)
 {
     descriptionDialog *upperbody = new descriptionDialog();
-
-    upperbody->setIndexID(index.row() + 1);
+    qDebug() << ui->upperTable->model()->index(index.row(),0).data().toString();
+    upperbody->setExName(ui->upperTable->model()->index(index.row(),0).data().toString());
     upperbody->setTableIndex(4);
     upperbody->loadData();
     upperbody->show();

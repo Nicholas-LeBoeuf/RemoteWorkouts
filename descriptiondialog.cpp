@@ -25,14 +25,14 @@ descriptionDialog::~descriptionDialog()
     delete ui;
 }
 
-void descriptionDialog::setIndexID(int rec)
+void descriptionDialog::setExName(QString rec)
 {
-    indexID = rec;
+    exname = rec;
 }
 
-int descriptionDialog::getIndexID()
+QString descriptionDialog::getExName()
 {
-    return indexID;
+    return exname;
 }
 
 void descriptionDialog::setTableIndex(int rec)
@@ -47,22 +47,22 @@ int descriptionDialog::getTableIndex()
 
 void descriptionDialog::loadData()
 {
-    QString ID = QString::number(indexID);
+    //QString ID = QString::number(indexID);
 
     QSqlQuery exercise;
 
     switch (tableIndex) {
     case 1:
-        exercise.prepare("select ExerciseName, ExerciseDesc from cardio where ExerciseID='" + ID + "';");
+        exercise.prepare("select ExerciseName, ExerciseDesc from cardio where ExerciseName='" + exname + "';");
         break;
     case 2:
-        exercise.prepare("select ExerciseName, ExerciseDesc from core where ExerciseID='" + ID + "';");
+        exercise.prepare("select ExerciseName, ExerciseDesc from core where ExerciseName='" + exname + "';");
         break;
     case 3:
-        exercise.prepare("select ExerciseName, ExerciseDesc from lowerbody where ExerciseID='" + ID + "';");
+        exercise.prepare("select ExerciseName, ExerciseDesc from lowerbody where ExerciseName='" + exname + "';");
         break;
     case 4:
-        exercise.prepare("select ExerciseName, ExerciseDesc from upperbody where ExerciseID='" + ID + "';");
+        exercise.prepare("select ExerciseName, ExerciseDesc from upperbody where ExerciseName='" + exname + "';");
         break;
     }
 
@@ -114,22 +114,22 @@ void descriptionDialog::on_reset_clicked()
 
 void descriptionDialog::on_youtube_clicked()
 {
-    QString ID = QString::number(indexID);
+    //QString ID = QString::number(indexID);
 
     QSqlQuery url;
 
     switch (tableIndex) {
         case 1:
-            url.prepare("select URL from cardio where ExerciseID='" + ID + "';");
+            url.prepare("select URL from cardio where ExerciseName='" + exname + "';");
             break;
         case 2:
-            url.prepare("select URL from core where ExerciseID='" + ID + "';");
+            url.prepare("select URL from core where ExerciseName='" + exname + "';");
             break;
         case 3:
-            url.prepare("select URL from lowerbody where ExerciseID='" + ID + "';");
+            url.prepare("select URL from lowerbody where ExerciseName='" + exname + "';");
             break;
         case 4:
-            url.prepare("select URL from upperbody where ExerciseID='" + ID + "';");
+            url.prepare("select URL from upperbody where ExerciseName='" + exname + "';");
             break;
     }
 
