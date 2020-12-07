@@ -14,5 +14,7 @@
         <file>images/personwithobject.png</file>
         <file>images/pumpkin.png</file>
         <file>images/profile.png</file>
+        <file>images/calender.png</file>
+        <file>images/recommended.png</file>
     </qresource>
 </RCC>
