@@ -212,7 +212,7 @@ QLabel {border: transparent}
              <string notr="true"/>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>4</number>
             </property>
             <widget class="QWidget" name="tab_5">
              <attribute name="title">
@@ -300,6 +300,9 @@ QLabel {border: transparent}
               <property name="frameShape">
                <enum>QFrame::WinPanel</enum>
               </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
               <property name="alternatingRowColors">
                <bool>true</bool>
               </property>
@@ -307,7 +310,10 @@ QLabel {border: transparent}
                <number>40</number>
               </attribute>
               <attribute name="horizontalHeaderDefaultSectionSize">
-               <number>355</number>
+               <number>175</number>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
               </attribute>
              </widget>
              <widget class="QLabel" name="label_8">
@@ -408,6 +414,9 @@ QLabel {border: transparent}
               <property name="frameShape">
                <enum>QFrame::WinPanel</enum>
               </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
               <property name="alternatingRowColors">
                <bool>true</bool>
               </property>
@@ -415,7 +424,10 @@ QLabel {border: transparent}
                <number>40</number>
               </attribute>
               <attribute name="horizontalHeaderDefaultSectionSize">
-               <number>355</number>
+               <number>175</number>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
               </attribute>
              </widget>
              <widget class="QLabel" name="core">
@@ -519,6 +531,9 @@ QLabel {border: transparent}
               <property name="frameShape">
                <enum>QFrame::WinPanel</enum>
               </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
               <property name="alternatingRowColors">
                <bool>true</bool>
               </property>
@@ -526,7 +541,10 @@ QLabel {border: transparent}
                <number>40</number>
               </attribute>
               <attribute name="horizontalHeaderDefaultSectionSize">
-               <number>355</number>
+               <number>175</number>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
               </attribute>
              </widget>
              <widget class="QLabel" name="lower">
@@ -627,6 +645,9 @@ QLabel {border: transparent}
               <property name="frameShape">
                <enum>QFrame::WinPanel</enum>
               </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
               <property name="alternatingRowColors">
                <bool>true</bool>
               </property>
@@ -634,7 +655,10 @@ QLabel {border: transparent}
                <number>40</number>
               </attribute>
               <attribute name="horizontalHeaderDefaultSectionSize">
-               <number>355</number>
+               <number>175</number>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
               </attribute>
              </widget>
              <widget class="QLabel" name="upper">
@@ -954,7 +978,7 @@ border-color: rgb(75, 75, 75);</string>
            <widget class="QWidget" name="layoutWidget">
             <property name="geometry">
              <rect>
-              <x>170</x>
+              <x>180</x>
               <y>240</y>
               <width>361</width>
               <height>401</height>
@@ -994,7 +1018,7 @@ border-color: rgb(75, 75, 75);</string>
                     </font>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">color:black;</string>
+                    <string notr="true">color: rgb(255, 215, 0);</string>
                    </property>
                    <property name="text">
                     <string>First Name</string>
@@ -1030,7 +1054,7 @@ border-color: rgb(75, 75, 75);</string>
                     </font>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">color:black;</string>
+                    <string notr="true">color: rgb(255, 215, 0);</string>
                    </property>
                    <property name="text">
                     <string>Goal</string>
@@ -1066,7 +1090,7 @@ border-color: rgb(75, 75, 75);</string>
                     </font>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">color:black;</string>
+                    <string notr="true">color: rgb(255, 215, 0);</string>
                    </property>
                    <property name="text">
                     <string>Height (inches)</string>
@@ -1102,7 +1126,7 @@ border-color: rgb(75, 75, 75);</string>
                     </font>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">color:black;</string>
+                    <string notr="true">color: rgb(255, 215, 0);</string>
                    </property>
                    <property name="text">
                     <string>Initial Weight (lbs)</string>
@@ -1138,7 +1162,7 @@ border-color: rgb(75, 75, 75);</string>
                     </font>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">color:black;</string>
+                    <string notr="true">color: rgb(255, 215, 0);</string>
                    </property>
                    <property name="text">
                     <string>Age</string>
@@ -1226,7 +1250,7 @@ border-color: rgb(75, 75, 75);</string>
                     </font>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">color:black;</string>
+                    <string notr="true">color: rgb(255, 215, 0);</string>
                    </property>
                    <property name="text">
                     <string>Gender</string>
@@ -1275,7 +1299,7 @@ border-color: rgb(75, 75, 75);</string>
                     </font>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">color:black;</string>
+                    <string notr="true">color: rgb(255, 215, 0);</string>
                    </property>
                    <property name="text">
                     <string>Last Name</string>
@@ -1336,7 +1360,7 @@ border-color: rgb(75, 75, 75);</string>
               <x>14</x>
               <y>0</y>
               <width>671</width>
-              <height>234</height>
+              <height>241</height>
              </rect>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_12">
