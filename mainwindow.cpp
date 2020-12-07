@@ -36,7 +36,7 @@ void MainWindow::loadData(){
     QSqlDatabase logindata = QSqlDatabase::database("qt_sql_default_connection");
 
     QSqlQuery name;
-    name.prepare("select username, firstname, lastname from users where ID='" + getUser() + "';");
+    name.prepare("select username, firstname, lastname, NextScheduled from users where ID='" + getUser() + "';");
     name.exec();
     name.next();
 
@@ -47,6 +47,8 @@ void MainWindow::loadData(){
     qDebug() << userInfo.lastQuery();
 
     ui->displayname->setText("Hello, " + name.value(0).toString());
+    ui->nextWkLabel->setText("Your next workout is on " + name.value(3).toString());
+    ui->calendarWidget->setMinimumDate(QDate(QDate::currentDate()));
 
     ui->UserFName->setText(name.value(1).toString());
     ui->UserLName->setText(name.value(2).toString());
