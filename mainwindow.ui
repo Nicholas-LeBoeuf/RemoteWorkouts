@@ -195,7 +195,7 @@ border-color: rgb(75, 75, 75);
 </string>
           </property>
           <property name="currentIndex">
-           <number>2</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="exerciseTab">
            <attribute name="title">
@@ -215,7 +215,7 @@ border-color: rgb(75, 75, 75);
 border-right-color: rgb(75, 75, 75);</string>
             </property>
             <property name="currentIndex">
-             <number>5</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="tab_5">
              <attribute name="title">
@@ -1237,16 +1237,16 @@ border-color: rgb(75, 75, 75);</string>
              <widget class="QLabel" name="label_19">
               <property name="geometry">
                <rect>
-                <x>31</x>
-                <y>21</y>
-                <width>343</width>
-                <height>36</height>
+                <x>260</x>
+                <y>120</y>
+                <width>161</width>
+                <height>101</height>
                </rect>
               </property>
               <property name="font">
                <font>
                 <family>Rockwell</family>
-                <pointsize>20</pointsize>
+                <pointsize>15</pointsize>
                </font>
               </property>
               <property name="styleSheet">
@@ -1259,8 +1259,19 @@ border-color: rgb(75, 75, 75);</string>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
               </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>-10</x>
+                <y>240</y>
+                <width>221</width>
+                <height>63</height>
+               </rect>
+              </property>
               <layout class="QVBoxLayout" name="verticalLayout_14">
                <item alignment="Qt::AlignHCenter">
                 <widget class="QLabel" name="FNameLabel">
@@ -1296,7 +1307,15 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>230</x>
+                <y>420</y>
+                <width>221</width>
+                <height>63</height>
+               </rect>
+              </property>
               <layout class="QVBoxLayout" name="verticalLayout_15">
                <item alignment="Qt::AlignHCenter">
                 <widget class="QLabel" name="GoalLabel">
@@ -1332,12 +1351,12 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
               <property name="geometry">
                <rect>
                 <x>230</x>
-                <y>190</y>
-                <width>173</width>
+                <y>330</y>
+                <width>221</width>
                 <height>63</height>
                </rect>
               </property>
@@ -1376,12 +1395,12 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
               <property name="geometry">
                <rect>
-                <x>410</x>
-                <y>190</y>
-                <width>137</width>
+                <x>470</x>
+                <y>240</y>
+                <width>221</width>
                 <height>63</height>
                </rect>
               </property>
@@ -1420,12 +1439,12 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
               <property name="geometry">
                <rect>
-                <x>210</x>
-                <y>90</y>
-                <width>129</width>
+                <x>230</x>
+                <y>240</y>
+                <width>221</width>
                 <height>63</height>
                </rect>
               </property>
@@ -1464,12 +1483,12 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
               <property name="geometry">
                <rect>
-                <x>20</x>
-                <y>190</y>
-                <width>205</width>
+                <x>-10</x>
+                <y>330</y>
+                <width>221</width>
                 <height>63</height>
                </rect>
               </property>
@@ -1490,7 +1509,7 @@ border-color: rgb(75, 75, 75);</string>
                  </property>
                 </widget>
                </item>
-               <item>
+               <item alignment="Qt::AlignHCenter">
                 <widget class="QLabel" name="UserWeight">
                  <property name="font">
                   <font>
@@ -1508,12 +1527,12 @@ border-color: rgb(75, 75, 75);</string>
                </item>
               </layout>
              </widget>
-             <widget class="QWidget" name="">
+             <widget class="QWidget" name="layoutWidget">
               <property name="geometry">
                <rect>
-                <x>420</x>
-                <y>90</y>
-                <width>97</width>
+                <x>470</x>
+                <y>330</y>
+                <width>221</width>
                 <height>63</height>
                </rect>
               </property>
@@ -1555,9 +1574,9 @@ border-color: rgb(75, 75, 75);</string>
              <widget class="QPushButton" name="edit">
               <property name="geometry">
                <rect>
-                <x>177</x>
-                <y>397</y>
-                <width>80</width>
+                <x>510</x>
+                <y>440</y>
+                <width>111</width>
                 <height>25</height>
                </rect>
               </property>
@@ -1585,8 +1604,8 @@ border-color: rgb(75, 75, 75);</string>
              <widget class="QPushButton" name="changePassword">
               <property name="geometry">
                <rect>
-                <x>177</x>
-                <y>429</y>
+                <x>60</x>
+                <y>440</y>
                 <width>114</width>
                 <height>25</height>
                </rect>
@@ -1610,6 +1629,41 @@ border-color: rgb(75, 75, 75);</string>
               </property>
               <property name="text">
                <string>Change Password</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_3">
+              <property name="geometry">
+               <rect>
+                <x>270</x>
+                <y>0</y>
+                <width>141</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="resources.qrc">:/images/profile.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="Line" name="line_3">
+              <property name="geometry">
+               <rect>
+                <x>-20</x>
+                <y>200</y>
+                <width>721</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
               </property>
              </widget>
             </widget>
