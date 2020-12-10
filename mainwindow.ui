@@ -188,7 +188,7 @@ QLabel {border: transparent}
          <widget class="QTabWidget" name="tabWidget">
           <property name="styleSheet">
            <string notr="true">background-color: rgb(51, 44, 84);
-selection-color: rgb(38, 255, 14);
+selection-color: rgb(255, 192, 3);
 border-color: rgb(75, 75, 75);
 
 
