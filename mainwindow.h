@@ -25,6 +25,7 @@ public:
     void loadTracking();
     void loadExercises();
     void loadObjects();
+    void updateUI();
 
 private slots:
 

@@ -383,8 +383,19 @@ void MainWindow::on_calendarWidget_selectionChanged()
         setDate.prepare("UPDATE users SET NextScheduled = '" + test + "' where ID = " + getUser() + ";");
         setDate.exec();
         qDebug() << setDate.lastQuery();
+        updateUI();
         break;
     case QMessageBox::No:
         break;
     }
+}
+
+void MainWindow::updateUI()
+{
+    QSqlQuery next;
+    next.prepare("select NextScheduled from users where ID='" + getUser() + "';");
+    next.exec();
+    next.next();
+
+    ui->nextWkLabel->setText("Your next workout is on " + next.value(0).toString());
 }

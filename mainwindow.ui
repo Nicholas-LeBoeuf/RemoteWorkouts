@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>RemoteWork(outs)</string>
+   <string>Remote Workouts</string>
   </property>
   <property name="windowIcon">
    <iconset theme="RWLogo">
@@ -195,7 +195,7 @@ border-color: rgb(75, 75, 75);
 </string>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="exerciseTab">
            <attribute name="title">
