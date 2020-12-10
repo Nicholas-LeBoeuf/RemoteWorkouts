@@ -177,10 +177,12 @@ void MainWindow::initializeExerciseModel(QSqlQueryModel *model, QString exercise
 
 void MainWindow::loadTracking(){
     QSqlDatabase thedata = QSqlDatabase::database("qt_sql_default_connection");
+
     QLineSeries *series = new QLineSeries();
     QLineSeries *series2 = new QLineSeries();
 
     QSqlQuery qry, hqry;
+    //qry.prepare("select date, weight from " + getUser() + "_wh;");
     qry.prepare("select ID, weight from " + getUser() + "_wh;");
     hqry.prepare("select HeightInches from userinfo where UserID = " +  getUser() + ";");
     qry.exec();
@@ -189,29 +191,44 @@ void MainWindow::loadTracking(){
         hqry.exec();
         hqry.next();
         int ID = qry.value(0).toInt();
+        //QDate date = qry.value(0).toDate();
         int weight = qry.value(1).toInt();
-        int BMI = (703*qry.value(1).toInt()) / (hqry.value(0).toInt()*hqry.value(0).toInt());
+        double BMI = (703.0*qry.value(1).toInt()) / (hqry.value(0).toInt()*hqry.value(0).toInt());
         series->append(ID, weight);
         series2->append(ID, BMI);
     }
+
+    QChartView *chartView = ui->chartViewer;
+    QChartView *chartView2 = ui->chartViewer2;
+
 
     QChart *chart = new QChart();
     chart->legend()->hide();
     chart->addSeries(series);
     chart->createDefaultAxes();
+    QValueAxis *axisY = new QValueAxis;
+    axisY->setRange(110,210);
+    axisY->setLabelFormat("%.2f");
+    axisY->setTitleText("Weight (lbs)");
+    chart->setAxisY(axisY);//, Qt::AlignLeft);
+    series->attachAxis(axisY);
     chart->setTitle("Your weight progress over time");
 
     QChart *chart2 = new QChart();
     chart2->legend()->hide();
     chart2->addSeries(series2);
     chart2->createDefaultAxes();
+    QValueAxis *axisY2 = new QValueAxis;
+    axisY2->setRange(15,35);
+    axisY2->setLabelFormat("%.2f");
+    axisY2->setTitleText("BMI");
+    chart2->setAxisY(axisY2);//, Qt::AlignLeft);
+    series2->attachAxis(axisY2);
     chart2->setTitle("Your BMI progress over time");
 
-    QChartView *chartView = ui->chartViewer;
     ui->chartViewer->setChart(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
 
-    QChartView *chartView2 = ui->chartViewer2;
     ui->chartViewer2->setChart(chart2);
     chartView2->setRenderHint(QPainter::Antialiasing);
 
