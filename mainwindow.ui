@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>RemoteWork(outs)</string>
+   <string>Remote Workouts</string>
   </property>
   <property name="windowIcon">
    <iconset theme="RWLogo">
@@ -188,14 +188,14 @@ QLabel {border: transparent}
          <widget class="QTabWidget" name="tabWidget">
           <property name="styleSheet">
            <string notr="true">background-color: rgb(51, 44, 84);
-selection-color: rgb(38, 255, 14);
+selection-color: rgb(255, 192, 3);
 border-color: rgb(75, 75, 75);
 
 
 </string>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="exerciseTab">
            <attribute name="title">
