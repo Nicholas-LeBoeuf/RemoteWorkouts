@@ -182,20 +182,25 @@ void MainWindow::loadTracking(){
     QLineSeries *series2 = new QLineSeries();
 
     QSqlQuery qry, hqry;
-    //qry.prepare("select date, weight from " + getUser() + "_wh;");
-    qry.prepare("select ID, weight from " + getUser() + "_wh;");
+    qry.prepare("select date, weight from " + getUser() + "_wh;");
+    //qry.prepare("select ID, weight from " + getUser() + "_wh;");
     hqry.prepare("select HeightInches from userinfo where UserID = " +  getUser() + ";");
     qry.exec();
 
     while (qry.next()) {
         hqry.exec();
         hqry.next();
-        int ID = qry.value(0).toInt();
-        //QDate date = qry.value(0).toDate();
+        //int ID = qry.value(0).toInt();
+        qDebug() << qry.value(0);
+        QString datestr = qry.value(0).toString();
+        QDate date = QDate::fromString(datestr);
+        QDateTime datetime = QDateTime(date);
+        qDebug() << datetime;
+        datetime.setTime(QTime(0, 0));
         int weight = qry.value(1).toInt();
         double BMI = (703.0*qry.value(1).toInt()) / (hqry.value(0).toInt()*hqry.value(0).toInt());
-        series->append(ID, weight);
-        series2->append(ID, BMI);
+        series->append(datetime.toMSecsSinceEpoch(), weight);
+        series2->append(datetime.toMSecsSinceEpoch(), BMI);
     }
 
     QChartView *chartView = ui->chartViewer;
@@ -206,24 +211,40 @@ void MainWindow::loadTracking(){
     chart->legend()->hide();
     chart->addSeries(series);
     chart->createDefaultAxes();
+
     QValueAxis *axisY = new QValueAxis;
     axisY->setRange(110,210);
     axisY->setLabelFormat("%.2f");
     axisY->setTitleText("Weight (lbs)");
     chart->setAxisY(axisY);//, Qt::AlignLeft);
     series->attachAxis(axisY);
+
+    QDateTimeAxis *axisX = new QDateTimeAxis;
+    axisX->setFormat("dd-MMM-yyyy");
+    axisX->setTitleText("Date of entry");
+    chart->setAxisX(axisX);
+    series->attachAxis(axisX);
+
     chart->setTitle("Your weight progress over time");
 
     QChart *chart2 = new QChart();
     chart2->legend()->hide();
     chart2->addSeries(series2);
     chart2->createDefaultAxes();
+
     QValueAxis *axisY2 = new QValueAxis;
     axisY2->setRange(15,35);
     axisY2->setLabelFormat("%.2f");
     axisY2->setTitleText("BMI");
     chart2->setAxisY(axisY2);//, Qt::AlignLeft);
     series2->attachAxis(axisY2);
+
+    QDateTimeAxis *axisX2 = new QDateTimeAxis;
+    axisX2->setFormat("dd-MMM-yyyy");
+    axisX2->setTitleText("Date of entry");
+    chart2->setAxisX(axisX2);
+    series2->attachAxis(axisX2);
+
     chart2->setTitle("Your BMI progress over time");
 
     ui->chartViewer->setChart(chart);
